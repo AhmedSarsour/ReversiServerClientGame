@@ -8,6 +8,7 @@ TEST_F(TestBoard,CheckMargins) {
     EXPECT_EQ(board->getRows(), 8);
     //Chceck the cols of the board.
     EXPECT_EQ(board->getCols(), 8);
+
 }
 //Test the board in it's start position
 TEST_F(TestBoard, CheckCells) {
@@ -40,3 +41,4 @@ TEST_F(TestBoard, CheckCurrentTurn) {
     player = board->getCurrentTurnPlayer(0);
     EXPECT_EQ(player->getName(),"X");
 }
+
