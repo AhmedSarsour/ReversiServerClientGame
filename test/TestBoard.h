@@ -6,14 +6,16 @@
 #define TESTBOARD_H
 #include "gtest/gtest.h"
 #include "../src/ConsoleBoard.h"
+#include "../src/BasicRules.h"
+
 class TestBoard: public testing::Test {
-protected :
+protected:
      int row;
      int col;
       HumanPlayer * firstPlayer;
       AiPlayer *secondPlayer;
     //	//creating the board.
-     ConsoleBoard * board;
+     ConsoleBoard * board; BasicRules * rules;
 public:
     TestBoard() {
         row = 8;
@@ -21,13 +23,12 @@ public:
         firstPlayer = new HumanPlayer("X");
         secondPlayer = new AiPlayer("O");
         board = new ConsoleBoard(row, col, firstPlayer, secondPlayer);
+        rules = new BasicRules(row,col);
+        //Build the board by the rules.
+        board->buildTheBoard(rules);
     }
 
 };
-//Put tests here
-TEST_F(TestBoard,TESTBOUNDARIES) {
-    EXPECT_EQ(board->getRows(),4);
-}
 
 
 #endif //REVERSITESTS_TESTBOARD_H
