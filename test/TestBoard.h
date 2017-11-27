@@ -28,6 +28,13 @@ public:
         board->buildTheBoard(rules);
     }
 
+    ~TestBoard() {
+        delete board;
+        delete firstPlayer;
+        delete secondPlayer;
+        delete rules;
+    }
+
 };
 
 

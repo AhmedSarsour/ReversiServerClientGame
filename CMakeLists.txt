@@ -13,7 +13,7 @@ add_subdirectory(lib/googletest-release-1.8.0)
 include_directories(lib/googletest-release-1.8.0/googletest/include)
 include_directories(lib/googletest-release-1.8.0/googlemock/include)
 
-set(TEST_FILES test/JustATest.cpp test/TestBoard.h test/TestBoard.cpp)
+set(TEST_FILES test/JustATest.cpp test/TestBoard.h test/TestBoard.cpp test/TestPoint.cpp test/TestPoint.h)
 
 add_executable(ReversiTests ${SOURCE_FILES} ${TEST_FILES} test/gtest_main.cpp)
 add_executable(Reversi ${SOURCE_FILES} src/main.cpp)
