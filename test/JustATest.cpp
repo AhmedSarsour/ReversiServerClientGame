@@ -2,8 +2,8 @@
 // Created by ori on 23/11/17.
 //
 #include "gtest/gtest.h"
-
-TEST(TestSomething, Test1) {
-    EXPECT_EQ(1,1);
-}
-
+//
+//TEST(TestSomething, TEST1) {
+//    EXPECT_EQ(1,1);
+//}
+//
