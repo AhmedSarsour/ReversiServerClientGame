@@ -1,15 +1,13 @@
-//
-// Created by eliad1998 on 27/11/17.
-//
+#include <iostream>
+#include <gtest/gtest.h>
+#include <gmock/gmock.h>
 
-#include "gtest_main.h"
-//
-// Created by ori on 23/11/17.
-//
-#include "gtest/gtest.h"
+using namespace testing;
 
-TEST(TestSomething, Test1) {
-    EXPECT_EQ(1,1);
+int main(int argc, char *argv[]) {
+    InitGoogleTest(&argc, argv);
+    RUN_ALL_TESTS();
+    return 0;
 }
 
-
+//DELETE MAIN.CPP FROM THE ORIGINAL PROJECT
