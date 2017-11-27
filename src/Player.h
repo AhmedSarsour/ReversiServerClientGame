@@ -8,7 +8,6 @@
 #ifndef PLAYER_H_
 #define PLAYER_H_
 #include <string>
-
 #include "Point.h"
 #include "PointsList.h"
 
