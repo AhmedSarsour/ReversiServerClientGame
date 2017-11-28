@@ -1,8 +1,7 @@
 /*
  * main.cpp
- *  Created on: Oct 24, 2017.
- *      Author: ahmed sarsour.
- *      student ID:315397059
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 #include <iostream>
 #include "Player.h"
@@ -24,35 +23,37 @@ int main() {
     cout << endl;
     cout << "Press 2 to play against the computer." << endl;
     cin >>option;
-
+//Human player.
     if (option == 1) {
         cout << "You selected to play against other player" << endl;
         firstPlayer= new HumanPlayer("X");
 
         secondPlayer = new HumanPlayer("O");
     }
+    //Computer player.
     if (option == 2) {
         cout << "You selected to play against the computer" << endl;
         firstPlayer= new HumanPlayer("X");
 
         secondPlayer = new AiPlayer("O");
     }
+    //We selected option from the menu.
+    if (option == 1 || option ==2) {
+        secondPlayer->setBoardRowNCol(row, col);
+        BasicRules *rules = new BasicRules(row, col);
+        //	//creating the board.
+        Board *theGameBoard = new ConsoleBoard(row, col, firstPlayer, secondPlayer);
+        theGameBoard->buildTheBoard(rules);
+        theGameBoard->printBoard();
+        theGameBoard->playGame();
+        //Deletes the memmory we just allocated.
+        theGameBoard->deleteBoard();
+        delete theGameBoard;
+        delete firstPlayer;
+        delete secondPlayer;
+        delete rules;
 
 
-    secondPlayer->setBoardRowNCol(row, col);
-	BasicRules* rules = new BasicRules(row,col);
-	//	//creating the board.
-	Board* theGameBoard = new ConsoleBoard(row, col, firstPlayer, secondPlayer);
-	theGameBoard->buildTheBoard(rules);
-    theGameBoard->printBoard();
-	theGameBoard->playGame();
-	theGameBoard->deleteBoard();
-	delete theGameBoard;
-	delete firstPlayer;
-	delete secondPlayer;
-	delete rules;
-
-
-
+    }
 	return 0;
 }

@@ -1,8 +1,12 @@
-//
-// Created by eliad1998 on 27/11/17.
-//
-#include "TestBoard.h"
+/*
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
+ */
 
+
+
+#include "TestBoard.h"
+//Tests the board get margins function.
 TEST_F(TestBoard,CheckMargins) {
     //Check the rows of the board.
     EXPECT_EQ(board->getRows(), 8);
@@ -31,7 +35,7 @@ TEST_F(TestBoard, CheckCells) {
         }
     }
 }
-
+//Test the board's check the current turn function.
 TEST_F(TestBoard, CheckCurrentTurn) {
     //The first is 0 x starts from 0 than 1 is O
     Player * player = board->getCurrentTurnPlayer(1);

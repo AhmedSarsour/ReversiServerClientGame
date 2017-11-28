@@ -1,8 +1,7 @@
 /*
  * Player.h interface.
- *  Created on: Nov 12, 2017
- *      Author: Ahmed sarsour.
- *      Student ID: 315397059.
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 
 #ifndef PLAYER_H_
@@ -11,7 +10,10 @@
 
 #include "Point.h"
 #include "PointsList.h"
-
+/**
+ * Player.
+ * Interface of player in the game.
+ */
 class Player{
 public:
 	virtual void setBoardRowNCol(int rowsSize, int colsSize) = 0;

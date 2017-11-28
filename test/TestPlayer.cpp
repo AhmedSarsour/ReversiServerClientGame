@@ -1,6 +1,7 @@
-//
-// Created by AhmedSarsour on 27/11/17.
-//
+/*
+ * student 1: ahmed sarsour. 315397059
+ * student 2: Eliad Arzuan 206482622
+ */
 #include "gtest/gtest.h"
 #include "TestPlayer.h"
 #include "../src/BasicRules.h"
@@ -9,8 +10,9 @@
 #include "../src/HumanPlayer.h"
 #include "../src/PointsList.h"
 #include "../src/Point.h"
-
+//Tests the play turn function.
 TEST_F(TestPlayer, TestPlayTurn) {
+    //Setting a board and players.
     int row = 8, col = 8;
     HumanPlayer firstPlayer = HumanPlayer("X");
     AiPlayer secondPlayer = AiPlayer("O");
@@ -27,7 +29,9 @@ TEST_F(TestPlayer, TestPlayTurn) {
     //checks if the AiPlayer(computer) picks the playable chooice (5,3).
     EXPECT_TRUE(Point(5, 3).equals(secondPlayer.playTurn(theGameBoard.getReversi(), &initBoardAiPlayerChoices, 1)));
 }
+//Tests if the getName function work.
 TEST_F(TestPlayer, TestGetName) {
+    //Creates function for example.
     HumanPlayer firstPlayer = HumanPlayer("X");
     AiPlayer secondPlayer = AiPlayer("O");
     EXPECT_EQ(firstPlayer.getName(), "X");

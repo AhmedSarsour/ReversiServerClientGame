@@ -1,9 +1,7 @@
 /*
  * Rules.h
- *
- *  Created on: Nov 11, 2017
- *      Author: Ahmed sarsour.
- *      Student ID: 315397059.
+ *       student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 #ifndef RULES_H_
 #define RULES_H_

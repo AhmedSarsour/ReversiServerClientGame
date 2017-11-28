@@ -1,8 +1,7 @@
 /*
  * ConsoleBoard.h.
- *  Created on: Oct 24, 2017
- *      Author: ahmed sarsour.
- *      Student ID: 315397059.
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 #ifndef CONSOLEBOARD_H_
 #define CONSOLEBOARD_H_
@@ -51,25 +50,19 @@ public:
 	 * the function operation: this function prints the game's Board.
 	 */
 	void printBoard() const;
-	/**
-	 * function name: getBoardSize.
-	 * the Input: void.
-	 * the output: int.
-	 * the function operation: it returns the size of the game's Board.
-	 */
+/**
+ * getRows
+ * @return how many rows the board has.
+ */
 	int getRows() const;
-	/**
-	 * function name: setBoardRows.
-	 * the Input: int.
-	 * the output: void.
-	 * the function operation: it sets a new rows size of the game's Board.
-	 */
+/**
+ * getCols
+ * @return how many columns the board has.
+ */
 	int getCols() const;
 	/**
-	 * function name: SetBoardCols.
-	 * the Input: int.
-	 * the output: void.
-	 * the function operation: it sets new size of the game's Board columns.
+	 * playGame.
+	 * Doing the game process.
 	 */
 	void playGame();
 

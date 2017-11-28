@@ -1,3 +1,7 @@
+/*
+ * student 1: ahmed sarsour. 315397059
+ * student 2: Eliad Arzuan 206482622
+ */
 #include "gtest/gtest.h"
 #include "TestPoint.h"
 //Tests the point value
@@ -12,7 +16,7 @@ TEST_F(TestPoint, TestSet) {
     p.setY(5);
     EXPECT_EQ(p.getY(), 5);
 }
-
+//Test if the function equals works on point.
 TEST_F(TestPoint, TestEqual) {
     //Point that equal to our point.
     Point p2(2, 3);

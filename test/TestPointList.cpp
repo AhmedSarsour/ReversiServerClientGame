@@ -1,6 +1,7 @@
-//
-// Created by eliad1998 on 27/11/17.
-//
+/*
+ * student 1: ahmed sarsour. 315397059
+ * student 2: Eliad Arzuan 206482622
+ */
 #include "gtest/gtest.h"
 #include "TestPointList.h"
 
@@ -15,7 +16,7 @@ TEST_F(TestPointList, TestAdd) {
     //Check if added the point.
     EXPECT_TRUE(point.equals(Point(1, 2)));
 }
-
+//Tests the function contain in PointsList.
 TEST_F(TestPointList, TestContains) {
     lst.addPoint(Point(1, 2));
     lst.addPoint(Point(5, 2));

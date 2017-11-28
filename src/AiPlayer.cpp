@@ -1,9 +1,7 @@
 /*
  * HumanPlayer.cpp
- *
- *  Created on: Nov 11, 2017
- *      Author: Ahmed sarsour.
- *      Student ID: 315397059.
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 #include <iostream>
 #include "AiPlayer.h"
@@ -14,7 +12,7 @@
 #include "BasicRules.h"
 
 /**
- * HumanPlayer constructor.
+ * Computer player constructor.
  * @param pName.
  * function: build the player and saves his name.
  */

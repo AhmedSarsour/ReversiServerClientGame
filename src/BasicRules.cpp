@@ -1,8 +1,7 @@
 /*
  * BasicRules.cpp
- *  Created on: Nov 9, 2017.
- *  ID: 315397059.
- *      Author: ahmed sarsour.
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 
 #include "BasicRules.h"

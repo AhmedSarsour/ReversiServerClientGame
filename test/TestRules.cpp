@@ -1,6 +1,7 @@
-//
-// Created by coraledge on 27/11/17.
-//
+/*
+ * student 1: ahmed sarsour. 315397059
+ * student 2: Eliad Arzuan 206482622
+ */
 
 #include "TestRules.h"
 #include "gtest/gtest.h"
@@ -8,7 +9,7 @@
 #include "../src/HumanPlayer.h"
 #include "../src/BasicRules.h"
 #include "../src/ConsoleBoard.h"
-
+//Test the check board cells function.
 TEST_F(TestRules, CheckCells) {
     int row = 8, col = 8;
     HumanPlayer firstPlayer = HumanPlayer("X");
@@ -34,7 +35,7 @@ TEST_F(TestRules, CheckCells) {
         }
     }
 }
-
+//Test the convertPieces function for bboard for examp;e.
 TEST_F(TestRules, TestConvertPieces) {
     int row = 8, col = 8;
     HumanPlayer firstPlayer = HumanPlayer("X");
@@ -54,7 +55,7 @@ TEST_F(TestRules, TestConvertPieces) {
     //it should convert then we check "not equal".
     EXPECT_NE(reversi[4][4], 2);
 }
-
+//Tests the function that check points in the rules class.
 TEST_F(TestRules, TestCheckPoints) {
     int row = 8, col = 8;
     HumanPlayer firstPlayer = HumanPlayer("X");

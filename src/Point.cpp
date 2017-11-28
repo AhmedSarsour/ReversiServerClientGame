@@ -1,8 +1,7 @@
 /*
  * Point.cpp
- *  Created on: Oct 26, 2017
- *      Author: Ahmed sarsour.
- *      Student ID: 315397059.
+ *      student 1: ahmed sarsour. 315397059
+ *      student 2: Eliad Arzuan 206482622
  */
 #include "Point.h"
 #include <iostream>
