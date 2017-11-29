@@ -26,8 +26,10 @@ TEST_F(TestPlayer, TestPlayTurn) {
     initBoardAiPlayerChoices.addPoint(Point(3, 5));
     initBoardAiPlayerChoices.addPoint(Point(5, 3));
     secondPlayer.setBoardRowNCol(8, 8);
-    //checks if the AiPlayer(computer) picks the playable chooice (5,3).
-    EXPECT_TRUE(Point(5, 3).equals(secondPlayer.playTurn(theGameBoard.getReversi(), &initBoardAiPlayerChoices, 1)));
+    //checks if the AiPlayer(computer) picks the playable chooice (6,4).
+    EXPECT_TRUE(Point(6, 4).equals(secondPlayer.playTurn(theGameBoard.getReversi(), &initBoardAiPlayerChoices, 1)));
+  //  EXPECT_EQ(secondPlayer.playTurn(theGameBoard.getReversi(), &initBoardAiPlayerChoices, 1).getY(),3);
+
 }
 //Tests if the getName function work.
 TEST_F(TestPlayer, TestGetName) {
