@@ -1,0 +1,3 @@
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Server/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Server/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Server/cmake-build-debug/CMakeFiles/Server.dir
