@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/coraledge/Documents/ex4/cmake-build-debug/client/googletest-release-1.8.0/cmake_install.cmake")
+  include("/home/coraledge/Documents/ex4/cmake-build-debug/lib/googletest-release-1.8.0/cmake_install.cmake")
 
 endif()
 

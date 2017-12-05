@@ -6,5 +6,5 @@ CXX_FLAGS =  -lpthread -g   -std=gnu++98
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/coraledge/Documents/ex4/client/googletest-release-1.8.0/googletest/include -I/home/coraledge/Documents/ex4/client/googletest-release-1.8.0/googlemock/include 
+CXX_INCLUDES = -I/home/coraledge/Documents/ex4/lib/googletest-release-1.8.0/googletest/include -I/home/coraledge/Documents/ex4/lib/googletest-release-1.8.0/googlemock/include 
 

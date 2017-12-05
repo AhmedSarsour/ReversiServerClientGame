@@ -18,8 +18,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../client/googletest-release-1.8.0/googletest/include"
-  "../client/googletest-release-1.8.0/googlemock/include"
+  "../lib/googletest-release-1.8.0/googletest/include"
+  "../lib/googletest-release-1.8.0/googlemock/include"
   )
 
 # Targets to which this target links.

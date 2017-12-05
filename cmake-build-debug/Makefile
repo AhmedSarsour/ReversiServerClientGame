@@ -205,7 +205,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) -f client/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make client/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -218,7 +218,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) -f client/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make client/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -231,7 +231,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) -f client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 #=============================================================================
@@ -244,7 +244,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) -f client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
+	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 server/Server.o: server/Server.cpp.o

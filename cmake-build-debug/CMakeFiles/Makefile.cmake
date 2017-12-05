@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
   "../CMakeLists.txt"
-  "../client/googletest-release-1.8.0/CMakeLists.txt"
-  "../client/googletest-release-1.8.0/googlemock/CMakeLists.txt"
-  "../client/googletest-release-1.8.0/googletest/CMakeLists.txt"
-  "../client/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake"
   "CMakeFiles/3.8.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.8.2/CMakeSystem.cmake"
+  "../lib/googletest-release-1.8.0/CMakeLists.txt"
+  "../lib/googletest-release-1.8.0/googlemock/CMakeLists.txt"
+  "../lib/googletest-release-1.8.0/googletest/CMakeLists.txt"
+  "../lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake"
   "/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCInformation.cmake"
   "/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCXXInformation.cmake"
   "/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CMakeCommonLanguageInclude.cmake"
@@ -51,9 +51,9 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
-  "client/googletest-release-1.8.0/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "client/googletest-release-1.8.0/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/googletest-release-1.8.0/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/googletest-release-1.8.0/googlemock/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -61,8 +61,8 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Server.dir/DependInfo.cmake"
   "CMakeFiles/Client.dir/DependInfo.cmake"
   "CMakeFiles/ReversiTests.dir/DependInfo.cmake"
-  "client/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
-  "client/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
-  "client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
-  "client/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
+  "lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/DependInfo.cmake"
+  "lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/DependInfo.cmake"
+  "lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/DependInfo.cmake"
+  "lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/DependInfo.cmake"
   )

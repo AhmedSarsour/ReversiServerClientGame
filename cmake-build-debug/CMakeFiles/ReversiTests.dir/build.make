@@ -402,9 +402,9 @@ ReversiTests: CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o
 ReversiTests: CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o
 ReversiTests: CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o
 ReversiTests: CMakeFiles/ReversiTests.dir/build.make
-ReversiTests: client/googletest-release-1.8.0/googlemock/gtest/libgtest.a
-ReversiTests: client/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a
-ReversiTests: client/googletest-release-1.8.0/googlemock/gtest/libgtest.a
+ReversiTests: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
+ReversiTests: lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a
+ReversiTests: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
 ReversiTests: CMakeFiles/ReversiTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ReversiTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ReversiTests.dir/link.txt --verbose=$(VERBOSE)

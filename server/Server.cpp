@@ -28,7 +28,7 @@ void Server::start() {
     }
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
-    // Define the client socket's structures
+    // Define the lib socket's structures
     struct sockaddr_in clientAddress;
     socklen_t clientAddressLen;
 
@@ -37,8 +37,8 @@ void Server::start() {
 
     int playersDivide = 1;
     while (true) {
-        cout << "Waiting for client connections..." << endl;
-        // Accept a new client connection
+        cout << "Waiting for lib connections..." << endl;
+        // Accept a new lib connection
         int clientSocket = accept(serverSocket, (struct
                 sockaddr *)&clientAddress, &clientAddressLen);
         cout << "Client connected" << endl;
@@ -64,12 +64,12 @@ void Server::start() {
 //            throw "Error writing arg1 to socket";
 //        }
         handleClient(clientSocket, client2Socket);
-        // Close communication with the client
+        // Close communication with the lib
         close(clientSocket);
         close (client2Socket);
     }
 }
-// Handle requests from a specific client
+// Handle requests from a specific lib
 void Server::handleClient(int clientSocket, int client2Socket) {
     int arg1, arg2;
     char op;
