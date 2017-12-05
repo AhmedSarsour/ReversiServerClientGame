@@ -1,0 +1,115 @@
+commit a10d225a30ffc76e540b9075f603141f30b34827
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Tue Nov 28 12:58:27 2017 +0200
+
+    After comments
+
+commit 96ebec0d7d468c11e0e8b7819f47391d4d96f7e6
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 22:31:27 2017 +0200
+
+    All working
+
+commit 79d259ffd3ec72cb40202e875b52967eed8a5754
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 21:26:02 2017 +0200
+
+    Merged between the tests
+
+commit f3c79fd6a4a62491e59ce0a7c6f9919bd96a747a
+Merge: 349c20e cd2f83c
+Author: AhmedSarsour <ahmed.afef.sar@gmail.com>
+Date:   Mon Nov 27 21:18:25 2017 +0200
+
+    Pulled
+
+commit 349c20e1d28271fc98f0fd0727cdc263b6ee1a5f
+Author: AhmedSarsour <ahmed.afef.sar@gmail.com>
+Date:   Mon Nov 27 21:15:04 2017 +0200
+
+    Ahmed's tests
+
+commit cd2f83ce396cc5b546c92e41bf7171d5e4284d18
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 19:36:04 2017 +0200
+
+    Added point test
+
+commit 845f81cd26db8337672370dde3e4c267fc8709cd
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 19:11:50 2017 +0200
+
+    Board tests
+
+commit ce357369cd9d711a73ada53e8d2d82b48883d4b2
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 18:04:08 2017 +0200
+
+    Test function example
+
+commit 2a4a18461d151785746fa9c87893a59cea6bd27d
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 16:35:53 2017 +0200
+
+    Test configurations
+
+commit a9c0ca1b9356ec54c33ea8084e890c755e41a60c
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 16:06:56 2017 +0200
+
+    Added files to test
+
+commit 34e440640d7408c8df57f7d513842f4dab655f18
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Mon Nov 27 15:26:35 2017 +0200
+
+    Start
+
+commit 4ad9c660a9094e27ec78003cfffc4341f5ac97ad
+Author: AhmedSarsour <ahmed.afef.sar@gmail.com>
+Date:   Mon Nov 27 15:20:43 2017 +0200
+
+    Added aa
+
+commit 8815ab9f4a62f24e05a07f36802c3686e0647532
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 16:22:00 2017 +0200
+
+    Added project files
+
+commit f86c2a9cc8cae7da47519d4b5a5f44c79a109f55
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 16:15:56 2017 +0200
+
+    Changed README
+
+commit 9a68d0cc5a1649dc5d379ad1e2a3fe790e4ce347
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 16:10:43 2017 +0200
+
+    Deleted README
+
+commit ba5a49687d96978146912a677f942c7874cf17dd
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 16:08:00 2017 +0200
+
+    Deleted README file
+
+commit 9f478da1440ee5dc71472dd7dcef59526026b698
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 15:16:21 2017 +0200
+
+    Added a README file
+
+commit c4c0967a24b5dce4a7056f91a152278e6ceabab4
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 15:12:20 2017 +0200
+
+    Removed a README file
+
+commit 603ad2f51f3af5519381d7d39865ea01c737a5ce
+Author: eliad1998 <eliad98@gmail.com>
+Date:   Sun Nov 26 15:00:46 2017 +0200
+
+    first commit
+
