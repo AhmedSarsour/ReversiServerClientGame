@@ -1,4 +1,0 @@
-netstat -anp | grep 8000 
-
-pkill -8000 httpd
-

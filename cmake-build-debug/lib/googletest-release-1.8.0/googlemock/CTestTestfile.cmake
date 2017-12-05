@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock
-# Build directory: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock
+# Source directory: /home/coraledge/Documents/ex4/lib/googletest-release-1.8.0/googlemock
+# Build directory: /home/coraledge/Documents/ex4/cmake-build-debug/lib/googletest-release-1.8.0/googlemock
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

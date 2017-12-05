@@ -49,22 +49,22 @@ void Client::connectToServer() {
         throw "Error connecting to server";
     }
     cout << "Connected to server" << endl;
-}
-// Send move to the server
-Point Client::sendMove(int x, int y) {
-// Write the exercise arguments to the socket
+    int x = 1;
     int n = write(clientSocket, &x, sizeof(x));
     if (n == -1) {
-        throw "Error writing arg1 to socket";
+        throw "Error writing to socket";
     }
-
-    n = write(clientSocket, &y, sizeof(y));
-    if (n == -1) {
-        throw "Error writing arg2 to socket";
-    }
-
-    return Point(x, y);
-
 }
-
-
+    //Send move to the server
+    Point Client::sendMove(int x, int y) {
+        // Write the point arguments to the socket
+        int n = write(clientSocket, &x, sizeof(x));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+        n = write(clientSocket, &y, sizeof(y));
+        if (n == -1) {
+            throw "Error writing arg2 to socket";
+        }
+        return Point(x, y);
+}

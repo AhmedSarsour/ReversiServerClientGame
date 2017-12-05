@@ -11,9 +11,9 @@ set(SOURCE_FILES src/BasicRules.cpp src/BasicRules.h src/Board.cpp src/Board.h s
 set(SERVER_FILES server/Server.cpp server/Server.h server/main.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpthread")
-add_subdirectory(lib/googletest-release-1.8.0)
-include_directories(lib/googletest-release-1.8.0/googletest/include)
-include_directories(lib/googletest-release-1.8.0/googlemock/include)
+add_subdirectory(client/googletest-release-1.8.0)
+include_directories(client/googletest-release-1.8.0/googletest/include)
+include_directories(client/googletest-release-1.8.0/googlemock/include)
 
 set(TEST_FILES test/TestBoard.h test/TestBoard.cpp
         test/TestPoint.cpp test/TestPoint.h test/TestPointList.cpp test/TestPointList.h

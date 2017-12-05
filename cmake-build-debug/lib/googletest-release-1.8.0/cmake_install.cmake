@@ -1,4 +1,4 @@
-# Install script for directory: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0
+# Install script for directory: /home/coraledge/Documents/ex4/lib/googletest-release-1.8.0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/cmake_install.cmake")
+  include("/home/coraledge/Documents/ex4/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/cmake_install.cmake")
 
 endif()
 
