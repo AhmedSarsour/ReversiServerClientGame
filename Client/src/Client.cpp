@@ -11,7 +11,7 @@
 #include<netdb.h>
 #include<string.h>
 #include<unistd.h>
-
+#include "Point.h"
 using namespace std;
 Client::Client(const char *serverIP, int serverPort):
         serverIP(serverIP), serverPort(serverPort),
@@ -50,31 +50,21 @@ void Client::connectToServer() {
     }
     cout << "Connected to server" << endl;
 }
-
-int Client::sendExercise(int arg1, char op, int arg2) {
+// Send move to the server
+Point Client::sendMove(int x, int y) {
 // Write the exercise arguments to the socket
-    int n = write(clientSocket, &arg1, sizeof(arg1));
+    int n = write(clientSocket, &x, sizeof(x));
     if (n == -1) {
         throw "Error writing arg1 to socket";
     }
-    n = write(clientSocket, &op, sizeof(op));
-    if (n == -1) {
-        throw "Error writing op to socket";
-    }
-    n = write(clientSocket, &arg2, sizeof(arg2));
+
+    n = write(clientSocket, &y, sizeof(y));
     if (n == -1) {
         throw "Error writing arg2 to socket";
     }
 
-// Read the result from the server
-    int result=0;
-    n = read(clientSocket, &result, sizeof(result));
+    return Point(x, y);
 
-
-    if (n == -1) {
-        throw "Error reading result from socket";
-    }
-    return result;
 }
 
 

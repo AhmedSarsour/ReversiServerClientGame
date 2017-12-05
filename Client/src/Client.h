@@ -6,11 +6,13 @@
 #define CLIENT_H
 
 
+#include "Point.h"
+
 class Client {
 public:
     Client(const char *serverIP, int serverPort);
     void connectToServer();
-    int sendExercise(int arg1, char op, int arg2);
+    Point sendMove(int x, int y);
 private:
     const char *serverIP;
     int serverPort;

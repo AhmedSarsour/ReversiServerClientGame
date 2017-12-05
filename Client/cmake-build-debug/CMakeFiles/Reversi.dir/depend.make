@@ -25,6 +25,7 @@ CMakeFiles/Reversi.dir/src/Board.cpp.o: ../src/Rules.h
 
 CMakeFiles/Reversi.dir/src/Client.cpp.o: ../src/Client.cpp
 CMakeFiles/Reversi.dir/src/Client.cpp.o: ../src/Client.h
+CMakeFiles/Reversi.dir/src/Client.cpp.o: ../src/Point.h
 
 CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o: ../src/AiPlayer.h
 CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o: ../src/BasicRules.h

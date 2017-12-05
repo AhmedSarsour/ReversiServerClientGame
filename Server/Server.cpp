@@ -7,7 +7,7 @@
 #include<stdio.h>
 
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 10
+#define MAX_CONNECTED_CLIENTS 2 //2 Players
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "Server" << endl;
 }
@@ -61,11 +61,11 @@ void Server::handleClient(int clientSocket) {
             cout << "Client disconnected" << endl;
             return;
         }
-        n = read(clientSocket, &op, sizeof(op));
-        if (n == -1) {
-            cout << "Error reading operator" << endl;
-            return;
-        }
+//        n = read(clientSocket, &op, sizeof(op));
+//        if (n == -1) {
+//            cout << "Error reading operator" << endl;
+//            return;
+//        }
 
         n = read(clientSocket, &arg2, sizeof(arg2));
         if (n == -1) {
@@ -73,33 +73,11 @@ void Server::handleClient(int clientSocket) {
             return;
         }
 
-            cout << "Got exercise: " << arg1 << op << arg2 <<
-                 endl;
-            int result = calc(arg1, op, arg2);
-// Write the result back to the client
-            n = write(clientSocket, &result, sizeof(result));
-            if (n == -1) {
-                cout << "Error writing to socket" << endl;
-                return;
-            }
+            cout << "Got move from the player (" << arg1 << "," << arg2 <<")"<<endl;
         }
 }
 
-int Server::calc(int arg1, const char op, int arg2) const {
-    switch (op) {
-        case '+':
-            return arg1 + arg2;
-        case '-':
-            return arg1 - arg2;
-        case '*':
-            return arg1 * arg2;
-        case '/':
-            return arg1 / arg2;
-        default:
-            cout << "Invalid operator" << endl;
-            return 0;
-    }
-}
+
 void Server::stop() {
     close(serverSocket);
 }

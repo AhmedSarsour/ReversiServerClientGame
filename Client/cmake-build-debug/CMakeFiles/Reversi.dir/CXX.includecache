@@ -73,8 +73,12 @@ string.h
 -
 unistd.h
 -
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Point.h
 
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Client.h
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Point.h
 
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/ConsoleBoard.cpp
 iostream

@@ -23,14 +23,12 @@ int main() {
     int num1, num2;
     char op;
     while (true) {
-        cout << "Enter an exercise (e.g., 15*19):";
-        cin >> num1 >> op >> num2;
-        cout << "Sending exercise: " << num1 << op
-             << num2 << endl;
+        cout << "Enter a move:";
+        cin >> num1;
+        cin >> num2;
         try {
-            int result = client.sendExercise(num1,
-                                             op, num2);
-            cout << "Result: " << result << endl;
+            Point result = client.sendMove(num1, num2);
+            cout << result << endl;
         } catch (const char *msg) {
             cout << "Failed to send exercise toserver. Reason: " << msg << endl;
         }
