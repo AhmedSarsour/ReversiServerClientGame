@@ -4,14 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/AiPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/AiPlayer.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/BasicRules.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/BasicRules.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Board.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/Board.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/ConsoleBoard.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/HumanPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Point.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/Point.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/PointsList.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/PointsList.cpp.o"
-  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/main.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/main.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/AiPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/AiPlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/BasicRules.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/BasicRules.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Board.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/Board.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Client.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/Client.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/ConsoleBoard.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/HumanPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/HumanPlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Point.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/Point.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/PointsList.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/PointsList.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/main.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/CMakeFiles/Reversi.dir/src/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

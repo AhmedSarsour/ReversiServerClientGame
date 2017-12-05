@@ -23,6 +23,9 @@ CMakeFiles/Reversi.dir/src/Board.cpp.o: ../src/Point.h
 CMakeFiles/Reversi.dir/src/Board.cpp.o: ../src/PointsList.h
 CMakeFiles/Reversi.dir/src/Board.cpp.o: ../src/Rules.h
 
+CMakeFiles/Reversi.dir/src/Client.cpp.o: ../src/Client.cpp
+CMakeFiles/Reversi.dir/src/Client.cpp.o: ../src/Client.h
+
 CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o: ../src/AiPlayer.h
 CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o: ../src/BasicRules.h
 CMakeFiles/Reversi.dir/src/ConsoleBoard.cpp.o: ../src/Board.h
@@ -50,6 +53,7 @@ CMakeFiles/Reversi.dir/src/PointsList.cpp.o: ../src/PointsList.h
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/AiPlayer.h
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/BasicRules.h
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/Board.h
+CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/Client.h
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/ConsoleBoard.h
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/HumanPlayer.h
 CMakeFiles/Reversi.dir/src/main.cpp.o: ../src/Player.h

@@ -8,64 +8,64 @@
 		<Option virtualFolders="CMake Files\;CMake Files\lib\;CMake Files\lib\googletest-release-1.8.0\;CMake Files\lib\googletest-release-1.8.0\googlemock\;CMake Files\lib\googletest-release-1.8.0\googletest\;CMake Files\lib\googletest-release-1.8.0\googletest\cmake\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/strip">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/strip"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install/local">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 install/local"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Reversi">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -76,21 +76,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Reversi/fast">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/Reversi" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -101,41 +101,41 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 Reversi/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="install">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 install"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="list_install_components">
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 list_install_components"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiTests">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/ReversiTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/ReversiTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -146,21 +146,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTests"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTests"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="ReversiTests/fast">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/ReversiTests" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/ReversiTests" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -171,23 +171,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTests/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 ReversiTests/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -198,23 +198,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock_main/fast">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -225,23 +225,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -252,23 +252,23 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gmock/fast">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -279,21 +279,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 gmock/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -304,21 +304,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest_main/fast">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -329,21 +329,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest_main/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -354,21 +354,21 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="gtest/fast">
-				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
+				<Option output="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/include"/>
-					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/include"/>
+					<Add directory="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest"/>
 					<Add directory="/usr/include/c++/5"/>
 					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
 					<Add directory="/usr/include/c++/5/backward"/>
@@ -379,168 +379,174 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
-					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 gtest/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/eliad1998/Documents/אוניברסיטה/תכנות\ מתקדם\ 1/תרגילי\ בית/תרגיל\ 4/ex4/Client/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/src/gmock-all.cc">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/src/gmock-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/src/gmock_main.cc">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/src/gmock_main.cc">
 			<Option target="gmock_main"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/src/gtest-all.cc">
 			<Option target="gmock_main"/>
 			<Option target="gmock"/>
 			<Option target="gtest"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/src/gtest_main.cc">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/AiPlayer.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/AiPlayer.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/AiPlayer.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/AiPlayer.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/BasicRules.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/BasicRules.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/BasicRules.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/BasicRules.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Board.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Board.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Board.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Board.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/ConsoleBoard.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Client.cpp">
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Client.h">
+			<Option target="Reversi"/>
+		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/ConsoleBoard.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/ConsoleBoard.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/ConsoleBoard.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/HumanPlayer.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/HumanPlayer.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/HumanPlayer.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/HumanPlayer.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Player.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Player.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Point.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Point.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Point.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Point.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/PointsList.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/PointsList.cpp">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/PointsList.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/PointsList.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/Rules.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/Rules.h">
 			<Option target="Reversi"/>
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/src/main.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/src/main.cpp">
 			<Option target="Reversi"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestBoard.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestBoard.cpp">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestBoard.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestBoard.h">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestPlayer.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestPlayer.cpp">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestPlayer.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestPlayer.h">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestPoint.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestPoint.cpp">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestPoint.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestPoint.h">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestPointList.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestPointList.cpp">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestPointList.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestPointList.h">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestRules.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestRules.cpp">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/TestRules.h">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/TestRules.h">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/test/gtest_main.cpp">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/test/gtest_main.cpp">
 			<Option target="ReversiTests"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googlemock/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googlemock/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googlemock\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\cmake\"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/Client/lib/googletest-release-1.8.0/googletest/cmake/internal_utils.cmake">
 			<Option virtualFolder="CMake Files\lib\googletest-release-1.8.0\googletest\cmake\"/>
 		</Unit>
 	</Project>

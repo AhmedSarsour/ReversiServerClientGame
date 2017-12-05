@@ -18,6 +18,6 @@ set(TEST_FILES test/TestBoard.h test/TestBoard.cpp
         test/TestPlayer.cpp test/TestPlayer.h test/TestRules.h test/TestRules.cpp)
 
 add_executable(ReversiTests ${SOURCE_FILES} ${TEST_FILES} test/gtest_main.cpp)
-add_executable(Reversi ${SOURCE_FILES} src/main.cpp)
+add_executable(Reversi ${SOURCE_FILES} src/main.cpp src/Client.cpp src/Client.h)
 target_link_libraries(ReversiTests gtest gtest_main pthread)
 add_test(ReversiTests ReversiTests)
