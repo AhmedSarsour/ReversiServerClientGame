@@ -49,12 +49,16 @@ void Client::connectToServer() {
         throw "Error connecting to server";
     }
     cout << "Connected to server" << endl;
-    int x = 1;
-    int n = write(clientSocket, &x, sizeof(x));
-    if (n == -1) {
-        throw "Error writing to socket";
-    }
 }
+    void Client::wait() {
+        cout << "Waiting for the other player" << endl;
+        int x;
+        // Waiting until reading the message from the server.
+        int n = read(clientSocket, &x, sizeof(x));
+        if (n == -1) {
+            cout << "Error reading it" << endl;
+        }
+    }
     //Send move to the server
     Point Client::sendMove(int x, int y) {
         // Write the point arguments to the socket

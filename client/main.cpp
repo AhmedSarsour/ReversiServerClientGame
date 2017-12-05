@@ -22,7 +22,10 @@ int main() {
     }
     int num1, num2;
     char op;
+    int index = 1;
     while (true) {
+        // Wait until connection or move of the other player.
+        client.wait();
         cout << "Enter a move:";
         cin >> num1;
         cin >> num2;

@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_0a936/fast"
-/usr/bin/make -f CMakeFiles/cmTC_0a936.dir/build.make CMakeFiles/cmTC_0a936.dir/build
-make[1]: Entering directory '/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_0a936.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_0a936.dir/CheckSymbolExists.c.o   -c /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_0a936
-/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0a936.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_0a936.dir/CheckSymbolExists.c.o  -o cmTC_0a936 
-CMakeFiles/cmTC_0a936.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_d6581/fast"
+/usr/bin/make -f CMakeFiles/cmTC_d6581.dir/build.make CMakeFiles/cmTC_d6581.dir/build
+make[1]: Entering directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d6581.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_d6581.dir/CheckSymbolExists.c.o   -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_d6581
+/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d6581.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_d6581.dir/CheckSymbolExists.c.o  -o cmTC_d6581 
+CMakeFiles/cmTC_d6581.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_0a936.dir/build.make:97: recipe for target 'cmTC_0a936' failed
-make[1]: *** [cmTC_0a936] Error 1
-make[1]: Leaving directory '/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_0a936/fast' failed
-make: *** [cmTC_0a936/fast] Error 2
+CMakeFiles/cmTC_d6581.dir/build.make:97: recipe for target 'cmTC_d6581' failed
+make[1]: *** [cmTC_d6581] Error 1
+make[1]: Leaving directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_d6581/fast' failed
+make: *** [cmTC_d6581/fast] Error 2
 
-File /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_98be9/fast"
-/usr/bin/make -f CMakeFiles/cmTC_98be9.dir/build.make CMakeFiles/cmTC_98be9.dir/build
-make[1]: Entering directory '/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_98be9.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_98be9.dir/CheckFunctionExists.c.o   -c /home/coraledge/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
-Linking C executable cmTC_98be9
-/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98be9.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_98be9.dir/CheckFunctionExists.c.o  -o cmTC_98be9 -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_a7065/fast"
+/usr/bin/make -f CMakeFiles/cmTC_a7065.dir/build.make CMakeFiles/cmTC_a7065.dir/build
+make[1]: Entering directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7065.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_a7065.dir/CheckFunctionExists.c.o   -c /home/eliad1998/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_a7065
+/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7065.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a7065.dir/CheckFunctionExists.c.o  -o cmTC_a7065 -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_98be9.dir/build.make:97: recipe for target 'cmTC_98be9' failed
-make[1]: *** [cmTC_98be9] Error 1
-make[1]: Leaving directory '/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_98be9/fast' failed
-make: *** [cmTC_98be9/fast] Error 2
+CMakeFiles/cmTC_a7065.dir/build.make:97: recipe for target 'cmTC_a7065' failed
+make[1]: *** [cmTC_a7065] Error 1
+make[1]: Leaving directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_a7065/fast' failed
+make: *** [cmTC_a7065/fast] Error 2
 
 

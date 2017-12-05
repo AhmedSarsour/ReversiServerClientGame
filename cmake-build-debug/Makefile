@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/coraledge/Documents/ex4
+CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/coraledge/Documents/ex4/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,31 +59,31 @@ CMAKE_BINARY_DIR = /home/coraledge/Documents/ex4/cmake-build-debug
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -94,7 +94,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -105,13 +105,13 @@ edit_cache/fast: edit_cache
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
+	/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target list_install_components
@@ -126,9 +126,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -247,6 +247,291 @@ gtest/fast:
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+client/AiPlayer.o: client/AiPlayer.cpp.o
+
+.PHONY : client/AiPlayer.o
+
+# target to build an object file
+client/AiPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/AiPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/AiPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o
+.PHONY : client/AiPlayer.cpp.o
+
+client/AiPlayer.i: client/AiPlayer.cpp.i
+
+.PHONY : client/AiPlayer.i
+
+# target to preprocess a source file
+client/AiPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/AiPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/AiPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.i
+.PHONY : client/AiPlayer.cpp.i
+
+client/AiPlayer.s: client/AiPlayer.cpp.s
+
+.PHONY : client/AiPlayer.s
+
+# target to generate assembly for a file
+client/AiPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/AiPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/AiPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.s
+.PHONY : client/AiPlayer.cpp.s
+
+client/BasicRules.o: client/BasicRules.cpp.o
+
+.PHONY : client/BasicRules.o
+
+# target to build an object file
+client/BasicRules.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/BasicRules.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/BasicRules.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o
+.PHONY : client/BasicRules.cpp.o
+
+client/BasicRules.i: client/BasicRules.cpp.i
+
+.PHONY : client/BasicRules.i
+
+# target to preprocess a source file
+client/BasicRules.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/BasicRules.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/BasicRules.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.i
+.PHONY : client/BasicRules.cpp.i
+
+client/BasicRules.s: client/BasicRules.cpp.s
+
+.PHONY : client/BasicRules.s
+
+# target to generate assembly for a file
+client/BasicRules.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/BasicRules.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/BasicRules.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.s
+.PHONY : client/BasicRules.cpp.s
+
+client/Board.o: client/Board.cpp.o
+
+.PHONY : client/Board.o
+
+# target to build an object file
+client/Board.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Board.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Board.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/Board.cpp.o
+.PHONY : client/Board.cpp.o
+
+client/Board.i: client/Board.cpp.i
+
+.PHONY : client/Board.i
+
+# target to preprocess a source file
+client/Board.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Board.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Board.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/Board.cpp.i
+.PHONY : client/Board.cpp.i
+
+client/Board.s: client/Board.cpp.s
+
+.PHONY : client/Board.s
+
+# target to generate assembly for a file
+client/Board.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Board.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Board.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/Board.cpp.s
+.PHONY : client/Board.cpp.s
+
+client/Client.o: client/Client.cpp.o
+
+.PHONY : client/Client.o
+
+# target to build an object file
+client/Client.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Client.cpp.o
+.PHONY : client/Client.cpp.o
+
+client/Client.i: client/Client.cpp.i
+
+.PHONY : client/Client.i
+
+# target to preprocess a source file
+client/Client.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Client.cpp.i
+.PHONY : client/Client.cpp.i
+
+client/Client.s: client/Client.cpp.s
+
+.PHONY : client/Client.s
+
+# target to generate assembly for a file
+client/Client.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Client.cpp.s
+.PHONY : client/Client.cpp.s
+
+client/ConsoleBoard.o: client/ConsoleBoard.cpp.o
+
+.PHONY : client/ConsoleBoard.o
+
+# target to build an object file
+client/ConsoleBoard.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/ConsoleBoard.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o
+.PHONY : client/ConsoleBoard.cpp.o
+
+client/ConsoleBoard.i: client/ConsoleBoard.cpp.i
+
+.PHONY : client/ConsoleBoard.i
+
+# target to preprocess a source file
+client/ConsoleBoard.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/ConsoleBoard.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/ConsoleBoard.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.i
+.PHONY : client/ConsoleBoard.cpp.i
+
+client/ConsoleBoard.s: client/ConsoleBoard.cpp.s
+
+.PHONY : client/ConsoleBoard.s
+
+# target to generate assembly for a file
+client/ConsoleBoard.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/ConsoleBoard.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/ConsoleBoard.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.s
+.PHONY : client/ConsoleBoard.cpp.s
+
+client/HumanPlayer.o: client/HumanPlayer.cpp.o
+
+.PHONY : client/HumanPlayer.o
+
+# target to build an object file
+client/HumanPlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/HumanPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/HumanPlayer.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o
+.PHONY : client/HumanPlayer.cpp.o
+
+client/HumanPlayer.i: client/HumanPlayer.cpp.i
+
+.PHONY : client/HumanPlayer.i
+
+# target to preprocess a source file
+client/HumanPlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/HumanPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/HumanPlayer.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.i
+.PHONY : client/HumanPlayer.cpp.i
+
+client/HumanPlayer.s: client/HumanPlayer.cpp.s
+
+.PHONY : client/HumanPlayer.s
+
+# target to generate assembly for a file
+client/HumanPlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/HumanPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/HumanPlayer.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.s
+.PHONY : client/HumanPlayer.cpp.s
+
+client/Point.o: client/Point.cpp.o
+
+.PHONY : client/Point.o
+
+# target to build an object file
+client/Point.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Point.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Point.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/Point.cpp.o
+.PHONY : client/Point.cpp.o
+
+client/Point.i: client/Point.cpp.i
+
+.PHONY : client/Point.i
+
+# target to preprocess a source file
+client/Point.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Point.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Point.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/Point.cpp.i
+.PHONY : client/Point.cpp.i
+
+client/Point.s: client/Point.cpp.s
+
+.PHONY : client/Point.s
+
+# target to generate assembly for a file
+client/Point.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Point.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/Point.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/Point.cpp.s
+.PHONY : client/Point.cpp.s
+
+client/PointsList.o: client/PointsList.cpp.o
+
+.PHONY : client/PointsList.o
+
+# target to build an object file
+client/PointsList.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/PointsList.cpp.o
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/PointsList.cpp.o
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o
+.PHONY : client/PointsList.cpp.o
+
+client/PointsList.i: client/PointsList.cpp.i
+
+.PHONY : client/PointsList.i
+
+# target to preprocess a source file
+client/PointsList.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/PointsList.cpp.i
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/PointsList.cpp.i
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/PointsList.cpp.i
+.PHONY : client/PointsList.cpp.i
+
+client/PointsList.s: client/PointsList.cpp.s
+
+.PHONY : client/PointsList.s
+
+# target to generate assembly for a file
+client/PointsList.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/PointsList.cpp.s
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/PointsList.cpp.s
+	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/PointsList.cpp.s
+.PHONY : client/PointsList.cpp.s
+
+client/main.o: client/main.cpp.o
+
+.PHONY : client/main.o
+
+# target to build an object file
+client/main.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/main.cpp.o
+.PHONY : client/main.cpp.o
+
+client/main.i: client/main.cpp.i
+
+.PHONY : client/main.i
+
+# target to preprocess a source file
+client/main.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/main.cpp.i
+.PHONY : client/main.cpp.i
+
+client/main.s: client/main.cpp.s
+
+.PHONY : client/main.s
+
+# target to generate assembly for a file
+client/main.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/main.cpp.s
+.PHONY : client/main.cpp.s
+
 server/Server.o: server/Server.cpp.o
 
 .PHONY : server/Server.o
@@ -300,291 +585,6 @@ server/main.s: server/main.cpp.s
 server/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/main.cpp.s
 .PHONY : server/main.cpp.s
-
-src/AiPlayer.o: src/AiPlayer.cpp.o
-
-.PHONY : src/AiPlayer.o
-
-# target to build an object file
-src/AiPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AiPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/AiPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/AiPlayer.cpp.o
-.PHONY : src/AiPlayer.cpp.o
-
-src/AiPlayer.i: src/AiPlayer.cpp.i
-
-.PHONY : src/AiPlayer.i
-
-# target to preprocess a source file
-src/AiPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AiPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/AiPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/AiPlayer.cpp.i
-.PHONY : src/AiPlayer.cpp.i
-
-src/AiPlayer.s: src/AiPlayer.cpp.s
-
-.PHONY : src/AiPlayer.s
-
-# target to generate assembly for a file
-src/AiPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AiPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/AiPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/AiPlayer.cpp.s
-.PHONY : src/AiPlayer.cpp.s
-
-src/BasicRules.o: src/BasicRules.cpp.o
-
-.PHONY : src/BasicRules.o
-
-# target to build an object file
-src/BasicRules.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/BasicRules.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/BasicRules.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/BasicRules.cpp.o
-.PHONY : src/BasicRules.cpp.o
-
-src/BasicRules.i: src/BasicRules.cpp.i
-
-.PHONY : src/BasicRules.i
-
-# target to preprocess a source file
-src/BasicRules.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/BasicRules.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/BasicRules.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/BasicRules.cpp.i
-.PHONY : src/BasicRules.cpp.i
-
-src/BasicRules.s: src/BasicRules.cpp.s
-
-.PHONY : src/BasicRules.s
-
-# target to generate assembly for a file
-src/BasicRules.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/BasicRules.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/BasicRules.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/BasicRules.cpp.s
-.PHONY : src/BasicRules.cpp.s
-
-src/Board.o: src/Board.cpp.o
-
-.PHONY : src/Board.o
-
-# target to build an object file
-src/Board.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Board.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Board.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/Board.cpp.o
-.PHONY : src/Board.cpp.o
-
-src/Board.i: src/Board.cpp.i
-
-.PHONY : src/Board.i
-
-# target to preprocess a source file
-src/Board.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Board.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Board.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/Board.cpp.i
-.PHONY : src/Board.cpp.i
-
-src/Board.s: src/Board.cpp.s
-
-.PHONY : src/Board.s
-
-# target to generate assembly for a file
-src/Board.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Board.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Board.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/Board.cpp.s
-.PHONY : src/Board.cpp.s
-
-src/Client.o: src/Client.cpp.o
-
-.PHONY : src/Client.o
-
-# target to build an object file
-src/Client.cpp.o:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client.cpp.o
-.PHONY : src/Client.cpp.o
-
-src/Client.i: src/Client.cpp.i
-
-.PHONY : src/Client.i
-
-# target to preprocess a source file
-src/Client.cpp.i:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client.cpp.i
-.PHONY : src/Client.cpp.i
-
-src/Client.s: src/Client.cpp.s
-
-.PHONY : src/Client.s
-
-# target to generate assembly for a file
-src/Client.cpp.s:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Client.cpp.s
-.PHONY : src/Client.cpp.s
-
-src/ConsoleBoard.o: src/ConsoleBoard.cpp.o
-
-.PHONY : src/ConsoleBoard.o
-
-# target to build an object file
-src/ConsoleBoard.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/ConsoleBoard.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/ConsoleBoard.cpp.o
-.PHONY : src/ConsoleBoard.cpp.o
-
-src/ConsoleBoard.i: src/ConsoleBoard.cpp.i
-
-.PHONY : src/ConsoleBoard.i
-
-# target to preprocess a source file
-src/ConsoleBoard.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ConsoleBoard.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/ConsoleBoard.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/ConsoleBoard.cpp.i
-.PHONY : src/ConsoleBoard.cpp.i
-
-src/ConsoleBoard.s: src/ConsoleBoard.cpp.s
-
-.PHONY : src/ConsoleBoard.s
-
-# target to generate assembly for a file
-src/ConsoleBoard.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ConsoleBoard.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/ConsoleBoard.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/ConsoleBoard.cpp.s
-.PHONY : src/ConsoleBoard.cpp.s
-
-src/HumanPlayer.o: src/HumanPlayer.cpp.o
-
-.PHONY : src/HumanPlayer.o
-
-# target to build an object file
-src/HumanPlayer.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/HumanPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/HumanPlayer.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/HumanPlayer.cpp.o
-.PHONY : src/HumanPlayer.cpp.o
-
-src/HumanPlayer.i: src/HumanPlayer.cpp.i
-
-.PHONY : src/HumanPlayer.i
-
-# target to preprocess a source file
-src/HumanPlayer.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/HumanPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/HumanPlayer.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/HumanPlayer.cpp.i
-.PHONY : src/HumanPlayer.cpp.i
-
-src/HumanPlayer.s: src/HumanPlayer.cpp.s
-
-.PHONY : src/HumanPlayer.s
-
-# target to generate assembly for a file
-src/HumanPlayer.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/HumanPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/HumanPlayer.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/HumanPlayer.cpp.s
-.PHONY : src/HumanPlayer.cpp.s
-
-src/Point.o: src/Point.cpp.o
-
-.PHONY : src/Point.o
-
-# target to build an object file
-src/Point.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Point.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Point.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/Point.cpp.o
-.PHONY : src/Point.cpp.o
-
-src/Point.i: src/Point.cpp.i
-
-.PHONY : src/Point.i
-
-# target to preprocess a source file
-src/Point.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Point.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Point.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/Point.cpp.i
-.PHONY : src/Point.cpp.i
-
-src/Point.s: src/Point.cpp.s
-
-.PHONY : src/Point.s
-
-# target to generate assembly for a file
-src/Point.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Point.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/Point.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/Point.cpp.s
-.PHONY : src/Point.cpp.s
-
-src/PointsList.o: src/PointsList.cpp.o
-
-.PHONY : src/PointsList.o
-
-# target to build an object file
-src/PointsList.cpp.o:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/PointsList.cpp.o
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/PointsList.cpp.o
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/PointsList.cpp.o
-.PHONY : src/PointsList.cpp.o
-
-src/PointsList.i: src/PointsList.cpp.i
-
-.PHONY : src/PointsList.i
-
-# target to preprocess a source file
-src/PointsList.cpp.i:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/PointsList.cpp.i
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/PointsList.cpp.i
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/PointsList.cpp.i
-.PHONY : src/PointsList.cpp.i
-
-src/PointsList.s: src/PointsList.cpp.s
-
-.PHONY : src/PointsList.s
-
-# target to generate assembly for a file
-src/PointsList.cpp.s:
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/PointsList.cpp.s
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/PointsList.cpp.s
-	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/src/PointsList.cpp.s
-.PHONY : src/PointsList.cpp.s
-
-src/main.o: src/main.cpp.o
-
-.PHONY : src/main.o
-
-# target to build an object file
-src/main.cpp.o:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
-
-src/main.i: src/main.cpp.i
-
-.PHONY : src/main.i
-
-# target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
-
-src/main.s: src/main.cpp.s
-
-.PHONY : src/main.s
-
-# target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
 
 test/TestBoard.o: test/TestBoard.cpp.o
 
@@ -767,39 +767,39 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... client/AiPlayer.o"
+	@echo "... client/AiPlayer.i"
+	@echo "... client/AiPlayer.s"
+	@echo "... client/BasicRules.o"
+	@echo "... client/BasicRules.i"
+	@echo "... client/BasicRules.s"
+	@echo "... client/Board.o"
+	@echo "... client/Board.i"
+	@echo "... client/Board.s"
+	@echo "... client/Client.o"
+	@echo "... client/Client.i"
+	@echo "... client/Client.s"
+	@echo "... client/ConsoleBoard.o"
+	@echo "... client/ConsoleBoard.i"
+	@echo "... client/ConsoleBoard.s"
+	@echo "... client/HumanPlayer.o"
+	@echo "... client/HumanPlayer.i"
+	@echo "... client/HumanPlayer.s"
+	@echo "... client/Point.o"
+	@echo "... client/Point.i"
+	@echo "... client/Point.s"
+	@echo "... client/PointsList.o"
+	@echo "... client/PointsList.i"
+	@echo "... client/PointsList.s"
+	@echo "... client/main.o"
+	@echo "... client/main.i"
+	@echo "... client/main.s"
 	@echo "... server/Server.o"
 	@echo "... server/Server.i"
 	@echo "... server/Server.s"
 	@echo "... server/main.o"
 	@echo "... server/main.i"
 	@echo "... server/main.s"
-	@echo "... src/AiPlayer.o"
-	@echo "... src/AiPlayer.i"
-	@echo "... src/AiPlayer.s"
-	@echo "... src/BasicRules.o"
-	@echo "... src/BasicRules.i"
-	@echo "... src/BasicRules.s"
-	@echo "... src/Board.o"
-	@echo "... src/Board.i"
-	@echo "... src/Board.s"
-	@echo "... src/Client.o"
-	@echo "... src/Client.i"
-	@echo "... src/Client.s"
-	@echo "... src/ConsoleBoard.o"
-	@echo "... src/ConsoleBoard.i"
-	@echo "... src/ConsoleBoard.s"
-	@echo "... src/HumanPlayer.o"
-	@echo "... src/HumanPlayer.i"
-	@echo "... src/HumanPlayer.s"
-	@echo "... src/Point.o"
-	@echo "... src/Point.i"
-	@echo "... src/Point.s"
-	@echo "... src/PointsList.o"
-	@echo "... src/PointsList.i"
-	@echo "... src/PointsList.s"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
 	@echo "... test/TestBoard.o"
 	@echo "... test/TestBoard.i"
 	@echo "... test/TestBoard.s"

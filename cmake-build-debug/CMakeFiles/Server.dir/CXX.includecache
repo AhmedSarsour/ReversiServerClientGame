@@ -6,9 +6,159 @@
 
 #IncludeRegexTransform: 
 
-/home/coraledge/Documents/ex4/server/Server.cpp
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.cpp
+iostream
+-
+AiPlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+string
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+BasicRules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.h
+string
+-
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.cpp
+BasicRules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.h
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.h
+list
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+Rules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.cpp
+Board.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.h
+Rules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.cpp
+iostream
+-
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+BasicRules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.h
+ConsoleBoard.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.h
+HumanPlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.h
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+Rules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
+AiPlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.h
+iostream
+-
+list
+-
+Board.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.h
+Rules.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+HumanPlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.h
+AiPlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.h
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.cpp
+iostream
+-
+HumanPlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+string
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.h
+string
+-
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+string
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.cpp
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+iostream
+-
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+iostream
+-
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+iostream
+-
+list
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+list
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
+iostream
+-
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.cpp
 Server.h
-/home/coraledge/Documents/ex4/server/Server.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.h
 sys/socket.h
 -
 netinet/in.h
@@ -22,163 +172,13 @@ iostream
 stdio.h
 -
 
-/home/coraledge/Documents/ex4/server/Server.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.h
 
-/home/coraledge/Documents/ex4/server/main.cpp
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/main.cpp
 Server.h
-/home/coraledge/Documents/ex4/server/Server.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.h
 iostream
 -
 stdlib.h
 -
-
-/home/coraledge/Documents/ex4/src/AiPlayer.cpp
-iostream
--
-AiPlayer.h
-/home/coraledge/Documents/ex4/src/AiPlayer.h
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-string
--
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-BasicRules.h
-/home/coraledge/Documents/ex4/src/BasicRules.h
-
-/home/coraledge/Documents/ex4/src/AiPlayer.h
-string
--
-Player.h
-/home/coraledge/Documents/ex4/src/Player.h
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-
-/home/coraledge/Documents/ex4/src/BasicRules.cpp
-BasicRules.h
-/home/coraledge/Documents/ex4/src/BasicRules.h
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-
-/home/coraledge/Documents/ex4/src/BasicRules.h
-list
--
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-Rules.h
-/home/coraledge/Documents/ex4/src/Rules.h
-
-/home/coraledge/Documents/ex4/src/Board.cpp
-Board.h
-/home/coraledge/Documents/ex4/src/Board.h
-
-/home/coraledge/Documents/ex4/src/Board.h
-Rules.h
-/home/coraledge/Documents/ex4/src/Rules.h
-Player.h
-/home/coraledge/Documents/ex4/src/Player.h
-
-/home/coraledge/Documents/ex4/src/ConsoleBoard.cpp
-iostream
--
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-BasicRules.h
-/home/coraledge/Documents/ex4/src/BasicRules.h
-ConsoleBoard.h
-/home/coraledge/Documents/ex4/src/ConsoleBoard.h
-HumanPlayer.h
-/home/coraledge/Documents/ex4/src/HumanPlayer.h
-Player.h
-/home/coraledge/Documents/ex4/src/Player.h
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-Rules.h
-/home/coraledge/Documents/ex4/src/Rules.h
-AiPlayer.h
-/home/coraledge/Documents/ex4/src/AiPlayer.h
-
-/home/coraledge/Documents/ex4/src/ConsoleBoard.h
-iostream
--
-list
--
-Board.h
-/home/coraledge/Documents/ex4/src/Board.h
-Rules.h
-/home/coraledge/Documents/ex4/src/Rules.h
-Player.h
-/home/coraledge/Documents/ex4/src/Player.h
-HumanPlayer.h
-/home/coraledge/Documents/ex4/src/HumanPlayer.h
-AiPlayer.h
-/home/coraledge/Documents/ex4/src/AiPlayer.h
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-
-/home/coraledge/Documents/ex4/src/HumanPlayer.cpp
-iostream
--
-HumanPlayer.h
-/home/coraledge/Documents/ex4/src/HumanPlayer.h
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-string
--
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-
-/home/coraledge/Documents/ex4/src/HumanPlayer.h
-string
--
-Player.h
-/home/coraledge/Documents/ex4/src/Player.h
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-
-/home/coraledge/Documents/ex4/src/Player.h
-string
--
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-
-/home/coraledge/Documents/ex4/src/Point.cpp
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-iostream
--
-
-/home/coraledge/Documents/ex4/src/Point.h
-iostream
--
-
-/home/coraledge/Documents/ex4/src/PointsList.cpp
-PointsList.h
-/home/coraledge/Documents/ex4/src/PointsList.h
-iostream
--
-list
--
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-
-/home/coraledge/Documents/ex4/src/PointsList.h
-list
--
-Point.h
-/home/coraledge/Documents/ex4/src/Point.h
-
-/home/coraledge/Documents/ex4/src/Rules.h
-iostream
--
-Player.h
-/home/coraledge/Documents/ex4/src/Player.h
 

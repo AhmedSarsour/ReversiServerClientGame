@@ -4,15 +4,15 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/coraledge/Documents/ex4/server/Server.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/server/Server.cpp.o"
-  "/home/coraledge/Documents/ex4/server/main.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/server/main.cpp.o"
-  "/home/coraledge/Documents/ex4/src/AiPlayer.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/AiPlayer.cpp.o"
-  "/home/coraledge/Documents/ex4/src/BasicRules.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/BasicRules.cpp.o"
-  "/home/coraledge/Documents/ex4/src/Board.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/Board.cpp.o"
-  "/home/coraledge/Documents/ex4/src/ConsoleBoard.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o"
-  "/home/coraledge/Documents/ex4/src/HumanPlayer.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/HumanPlayer.cpp.o"
-  "/home/coraledge/Documents/ex4/src/Point.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/Point.cpp.o"
-  "/home/coraledge/Documents/ex4/src/PointsList.cpp" "/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/src/PointsList.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/AiPlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/BasicRules.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/Board.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/HumanPlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/Point.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/client/PointsList.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/server/Server.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/main.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/server/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

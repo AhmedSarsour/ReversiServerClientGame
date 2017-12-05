@@ -23,6 +23,7 @@ void Server::start() {
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = INADDR_ANY;
     serverAddress.sin_port = htons(port);
+    // Checks if the binding is ok
     if (bind(serverSocket, (struct sockaddr *)&serverAddress, sizeof(serverAddress)) == -1) {
         throw "Error on binding";
     }
@@ -37,47 +38,47 @@ void Server::start() {
 
     int playersDivide = 1;
     while (true) {
-        cout << "Waiting for lib connections..." << endl;
-        // Accept a new lib connection
-        int clientSocket = accept(serverSocket, (struct
+        cout << "Waiting for the players connections..." << endl;
+        // Accept a new player connection
+        int clientSocket1 = accept(serverSocket, (struct
                 sockaddr *)&clientAddress, &clientAddressLen);
-        cout << "Client connected" << endl;
+        cout << "Player 1 connected" << endl;
 
-        if (clientSocket == -1) {
+        if (clientSocket1 == -1) {
             throw "Error on accept";
         }
         cout << "Waiting for another opponent..." << endl;
-        int client2Socket = accept(serverSocket, (struct
+        int clientSocket2 = accept(serverSocket, (struct
                 sockaddr *)&client2Address, &client2AddressLen);
-        cout << "Client2 connected" << endl;
-        if (client2Socket == -1) {
+        cout << "Player 2 connected" << endl;
+        if (clientSocket2 == -1) {
             throw "Error on accept";
         }
-//        int x = 1;
-//        int n = write(serverSocket, &x, sizeof(x));
-//        if (n == -1) {
-//            throw "Error writing arg1 to socket";
-//        }
+        //Sending activation for player 1 that waited for player 2 to connect.
+        sendActivation(clientSocket1);
+
 //        x = 2;
 //        n = write(serverSocket, &x, sizeof(x));
 //        if (n == -1) {
 //            throw "Error writing arg1 to socket";
 //        }
-        handleClient(clientSocket, client2Socket);
-        // Close communication with the lib
-        close(clientSocket);
-        close (client2Socket);
+        handleClients(clientSocket1, clientSocket2);
+        // Close communication with the players
+        close(clientSocket1);
+        close (clientSocket2);
     }
 }
 // Handle requests from a specific lib
-void Server::handleClient(int clientSocket, int client2Socket) {
+void Server::handleClients(int clientSocket1, int clientSocket2) {
     int arg1, arg2;
     char op;
     int playersDivide = 1;
     while (true) {
         // Read new exercise arguments
+        // The first Player.
         if (playersDivide % 2 == 1) {
-            int n = read(clientSocket, &arg1, sizeof(arg1));
+            // Not the first move.
+            int n = read(clientSocket1, &arg1, sizeof(arg1));
             if (n == -1) {
                 cout << "Error reading arg1" << endl;
                 return;
@@ -86,14 +87,17 @@ void Server::handleClient(int clientSocket, int client2Socket) {
                 cout << "Client disconnected" << endl;
                 return;
             }
-            n = read(clientSocket, &arg2, sizeof(arg2));
+            n = read(clientSocket1, &arg2, sizeof(arg2));
             if (n == -1) {
                 cout << "Error reading arg2" << endl;
                 return;
             }
             cout << "X played : (" << arg1 << "," << arg2 << ")" << endl;
+            // Send activation for player 2 that waited for player 1 to do a move.
+            sendActivation(clientSocket2);
+            // The second Player.
         } else {
-            int n = read(client2Socket, &arg1, sizeof(arg1));
+            int n = read(clientSocket2, &arg1, sizeof(arg1));
             if (n == -1) {
                 cout << "Error reading arg1" << endl;
                 return;
@@ -102,12 +106,14 @@ void Server::handleClient(int clientSocket, int client2Socket) {
                 cout << "Client disconnected" << endl;
                 return;
             }
-            n = read(client2Socket, &arg2, sizeof(arg2));
+            n = read(clientSocket2, &arg2, sizeof(arg2));
             if (n == -1) {
                 cout << "Error reading arg2" << endl;
                 return;
             }
             cout << "O played : (" << arg1 << "," << arg2 << ")" << endl;
+            sendActivation(clientSocket1);
+            // Send activation for player 1 that waited for player 2 to do a move.
         }
         playersDivide++;
     }
@@ -115,4 +121,12 @@ void Server::handleClient(int clientSocket, int client2Socket) {
 
 void Server::stop() {
     close(serverSocket);
+}
+
+void Server::sendActivation(int socket) {
+    int x = 1;
+    int n = write(socket, &x, sizeof(x));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
+    }
 }

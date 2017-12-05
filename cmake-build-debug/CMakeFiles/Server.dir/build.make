@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/coraledge/Documents/ex4
+CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/coraledge/Documents/ex4/cmake-build-debug
+CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Server.dir/depend.make
@@ -57,186 +57,186 @@ include CMakeFiles/Server.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Server.dir/flags.make
 
-CMakeFiles/Server.dir/src/BasicRules.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/BasicRules.cpp.o: ../src/BasicRules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/src/BasicRules.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/BasicRules.cpp.o -c /home/coraledge/Documents/ex4/src/BasicRules.cpp
+CMakeFiles/Server.dir/client/BasicRules.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/BasicRules.cpp.o: ../client/BasicRules.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Server.dir/client/BasicRules.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/BasicRules.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.cpp"
 
-CMakeFiles/Server.dir/src/BasicRules.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/BasicRules.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/BasicRules.cpp > CMakeFiles/Server.dir/src/BasicRules.cpp.i
+CMakeFiles/Server.dir/client/BasicRules.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/BasicRules.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.cpp" > CMakeFiles/Server.dir/client/BasicRules.cpp.i
 
-CMakeFiles/Server.dir/src/BasicRules.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/BasicRules.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/BasicRules.cpp -o CMakeFiles/Server.dir/src/BasicRules.cpp.s
+CMakeFiles/Server.dir/client/BasicRules.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/BasicRules.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.cpp" -o CMakeFiles/Server.dir/client/BasicRules.cpp.s
 
-CMakeFiles/Server.dir/src/BasicRules.cpp.o.requires:
+CMakeFiles/Server.dir/client/BasicRules.cpp.o.requires:
 
-.PHONY : CMakeFiles/Server.dir/src/BasicRules.cpp.o.requires
+.PHONY : CMakeFiles/Server.dir/client/BasicRules.cpp.o.requires
 
-CMakeFiles/Server.dir/src/BasicRules.cpp.o.provides: CMakeFiles/Server.dir/src/BasicRules.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/BasicRules.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/BasicRules.cpp.o.provides
+CMakeFiles/Server.dir/client/BasicRules.cpp.o.provides: CMakeFiles/Server.dir/client/BasicRules.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/BasicRules.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/BasicRules.cpp.o.provides
 
-CMakeFiles/Server.dir/src/BasicRules.cpp.o.provides.build: CMakeFiles/Server.dir/src/BasicRules.cpp.o
-
-
-CMakeFiles/Server.dir/src/Board.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/Board.cpp.o: ../src/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/src/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Board.cpp.o -c /home/coraledge/Documents/ex4/src/Board.cpp
-
-CMakeFiles/Server.dir/src/Board.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/Board.cpp > CMakeFiles/Server.dir/src/Board.cpp.i
-
-CMakeFiles/Server.dir/src/Board.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/Board.cpp -o CMakeFiles/Server.dir/src/Board.cpp.s
-
-CMakeFiles/Server.dir/src/Board.cpp.o.requires:
-
-.PHONY : CMakeFiles/Server.dir/src/Board.cpp.o.requires
-
-CMakeFiles/Server.dir/src/Board.cpp.o.provides: CMakeFiles/Server.dir/src/Board.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Board.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/Board.cpp.o.provides
-
-CMakeFiles/Server.dir/src/Board.cpp.o.provides.build: CMakeFiles/Server.dir/src/Board.cpp.o
+CMakeFiles/Server.dir/client/BasicRules.cpp.o.provides.build: CMakeFiles/Server.dir/client/BasicRules.cpp.o
 
 
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o: ../src/ConsoleBoard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o -c /home/coraledge/Documents/ex4/src/ConsoleBoard.cpp
+CMakeFiles/Server.dir/client/Board.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/Board.cpp.o: ../client/Board.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Server.dir/client/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/Board.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.cpp"
 
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/ConsoleBoard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/ConsoleBoard.cpp > CMakeFiles/Server.dir/src/ConsoleBoard.cpp.i
+CMakeFiles/Server.dir/client/Board.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/Board.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.cpp" > CMakeFiles/Server.dir/client/Board.cpp.i
 
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/ConsoleBoard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/ConsoleBoard.cpp -o CMakeFiles/Server.dir/src/ConsoleBoard.cpp.s
+CMakeFiles/Server.dir/client/Board.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/Board.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Board.cpp" -o CMakeFiles/Server.dir/client/Board.cpp.s
 
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.requires:
+CMakeFiles/Server.dir/client/Board.cpp.o.requires:
 
-.PHONY : CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.requires
+.PHONY : CMakeFiles/Server.dir/client/Board.cpp.o.requires
 
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.provides: CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.provides
+CMakeFiles/Server.dir/client/Board.cpp.o.provides: CMakeFiles/Server.dir/client/Board.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Board.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/Board.cpp.o.provides
 
-CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.provides.build: CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o
-
-
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.o: ../src/HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Server.dir/src/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/HumanPlayer.cpp.o -c /home/coraledge/Documents/ex4/src/HumanPlayer.cpp
-
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/HumanPlayer.cpp > CMakeFiles/Server.dir/src/HumanPlayer.cpp.i
-
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/HumanPlayer.cpp -o CMakeFiles/Server.dir/src/HumanPlayer.cpp.s
-
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.requires:
-
-.PHONY : CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.requires
-
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.provides: CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.provides
-
-CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.provides.build: CMakeFiles/Server.dir/src/HumanPlayer.cpp.o
+CMakeFiles/Server.dir/client/Board.cpp.o.provides.build: CMakeFiles/Server.dir/client/Board.cpp.o
 
 
-CMakeFiles/Server.dir/src/Point.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/Point.cpp.o: ../src/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Server.dir/src/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/Point.cpp.o -c /home/coraledge/Documents/ex4/src/Point.cpp
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o: ../client/ConsoleBoard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.cpp"
 
-CMakeFiles/Server.dir/src/Point.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/Point.cpp > CMakeFiles/Server.dir/src/Point.cpp.i
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/ConsoleBoard.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.cpp" > CMakeFiles/Server.dir/client/ConsoleBoard.cpp.i
 
-CMakeFiles/Server.dir/src/Point.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/Point.cpp -o CMakeFiles/Server.dir/src/Point.cpp.s
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/ConsoleBoard.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.cpp" -o CMakeFiles/Server.dir/client/ConsoleBoard.cpp.s
 
-CMakeFiles/Server.dir/src/Point.cpp.o.requires:
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.requires:
 
-.PHONY : CMakeFiles/Server.dir/src/Point.cpp.o.requires
+.PHONY : CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.requires
 
-CMakeFiles/Server.dir/src/Point.cpp.o.provides: CMakeFiles/Server.dir/src/Point.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/Point.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/Point.cpp.o.provides
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.provides: CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.provides
 
-CMakeFiles/Server.dir/src/Point.cpp.o.provides.build: CMakeFiles/Server.dir/src/Point.cpp.o
-
-
-CMakeFiles/Server.dir/src/PointsList.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/PointsList.cpp.o: ../src/PointsList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/src/PointsList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/PointsList.cpp.o -c /home/coraledge/Documents/ex4/src/PointsList.cpp
-
-CMakeFiles/Server.dir/src/PointsList.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/PointsList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/PointsList.cpp > CMakeFiles/Server.dir/src/PointsList.cpp.i
-
-CMakeFiles/Server.dir/src/PointsList.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/PointsList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/PointsList.cpp -o CMakeFiles/Server.dir/src/PointsList.cpp.s
-
-CMakeFiles/Server.dir/src/PointsList.cpp.o.requires:
-
-.PHONY : CMakeFiles/Server.dir/src/PointsList.cpp.o.requires
-
-CMakeFiles/Server.dir/src/PointsList.cpp.o.provides: CMakeFiles/Server.dir/src/PointsList.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/PointsList.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/PointsList.cpp.o.provides
-
-CMakeFiles/Server.dir/src/PointsList.cpp.o.provides.build: CMakeFiles/Server.dir/src/PointsList.cpp.o
+CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.provides.build: CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o
 
 
-CMakeFiles/Server.dir/src/AiPlayer.cpp.o: CMakeFiles/Server.dir/flags.make
-CMakeFiles/Server.dir/src/AiPlayer.cpp.o: ../src/AiPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/src/AiPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/src/AiPlayer.cpp.o -c /home/coraledge/Documents/ex4/src/AiPlayer.cpp
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.o: ../client/HumanPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Server.dir/client/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/HumanPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.cpp"
 
-CMakeFiles/Server.dir/src/AiPlayer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/src/AiPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/src/AiPlayer.cpp > CMakeFiles/Server.dir/src/AiPlayer.cpp.i
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/HumanPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.cpp" > CMakeFiles/Server.dir/client/HumanPlayer.cpp.i
 
-CMakeFiles/Server.dir/src/AiPlayer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/src/AiPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/src/AiPlayer.cpp -o CMakeFiles/Server.dir/src/AiPlayer.cpp.s
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/HumanPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.cpp" -o CMakeFiles/Server.dir/client/HumanPlayer.cpp.s
 
-CMakeFiles/Server.dir/src/AiPlayer.cpp.o.requires:
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.requires:
 
-.PHONY : CMakeFiles/Server.dir/src/AiPlayer.cpp.o.requires
+.PHONY : CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.requires
 
-CMakeFiles/Server.dir/src/AiPlayer.cpp.o.provides: CMakeFiles/Server.dir/src/AiPlayer.cpp.o.requires
-	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/src/AiPlayer.cpp.o.provides.build
-.PHONY : CMakeFiles/Server.dir/src/AiPlayer.cpp.o.provides
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.provides: CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.provides
 
-CMakeFiles/Server.dir/src/AiPlayer.cpp.o.provides.build: CMakeFiles/Server.dir/src/AiPlayer.cpp.o
+CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.provides.build: CMakeFiles/Server.dir/client/HumanPlayer.cpp.o
+
+
+CMakeFiles/Server.dir/client/Point.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/Point.cpp.o: ../client/Point.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Server.dir/client/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/Point.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.cpp"
+
+CMakeFiles/Server.dir/client/Point.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/Point.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.cpp" > CMakeFiles/Server.dir/client/Point.cpp.i
+
+CMakeFiles/Server.dir/client/Point.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/Point.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.cpp" -o CMakeFiles/Server.dir/client/Point.cpp.s
+
+CMakeFiles/Server.dir/client/Point.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/client/Point.cpp.o.requires
+
+CMakeFiles/Server.dir/client/Point.cpp.o.provides: CMakeFiles/Server.dir/client/Point.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/Point.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/Point.cpp.o.provides
+
+CMakeFiles/Server.dir/client/Point.cpp.o.provides.build: CMakeFiles/Server.dir/client/Point.cpp.o
+
+
+CMakeFiles/Server.dir/client/PointsList.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/PointsList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Server.dir/client/PointsList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/PointsList.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp"
+
+CMakeFiles/Server.dir/client/PointsList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/PointsList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp" > CMakeFiles/Server.dir/client/PointsList.cpp.i
+
+CMakeFiles/Server.dir/client/PointsList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/PointsList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp" -o CMakeFiles/Server.dir/client/PointsList.cpp.s
+
+CMakeFiles/Server.dir/client/PointsList.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/client/PointsList.cpp.o.requires
+
+CMakeFiles/Server.dir/client/PointsList.cpp.o.provides: CMakeFiles/Server.dir/client/PointsList.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/PointsList.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/PointsList.cpp.o.provides
+
+CMakeFiles/Server.dir/client/PointsList.cpp.o.provides.build: CMakeFiles/Server.dir/client/PointsList.cpp.o
+
+
+CMakeFiles/Server.dir/client/AiPlayer.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/client/AiPlayer.cpp.o: ../client/AiPlayer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Server.dir/client/AiPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/client/AiPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.cpp"
+
+CMakeFiles/Server.dir/client/AiPlayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/client/AiPlayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.cpp" > CMakeFiles/Server.dir/client/AiPlayer.cpp.i
+
+CMakeFiles/Server.dir/client/AiPlayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/client/AiPlayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.cpp" -o CMakeFiles/Server.dir/client/AiPlayer.cpp.s
+
+CMakeFiles/Server.dir/client/AiPlayer.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/client/AiPlayer.cpp.o.requires
+
+CMakeFiles/Server.dir/client/AiPlayer.cpp.o.provides: CMakeFiles/Server.dir/client/AiPlayer.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/client/AiPlayer.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/client/AiPlayer.cpp.o.provides
+
+CMakeFiles/Server.dir/client/AiPlayer.cpp.o.provides.build: CMakeFiles/Server.dir/client/AiPlayer.cpp.o
 
 
 CMakeFiles/Server.dir/server/Server.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Server.dir/server/Server.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/Server.cpp.o -c /home/coraledge/Documents/ex4/server/Server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Server.dir/server/Server.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/Server.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.cpp"
 
 CMakeFiles/Server.dir/server/Server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/server/Server.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/server/Server.cpp > CMakeFiles/Server.dir/server/Server.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.cpp" > CMakeFiles/Server.dir/server/Server.cpp.i
 
 CMakeFiles/Server.dir/server/Server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/server/Server.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/server/Server.cpp -o CMakeFiles/Server.dir/server/Server.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/Server.cpp" -o CMakeFiles/Server.dir/server/Server.cpp.s
 
 CMakeFiles/Server.dir/server/Server.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/Server.dir/server/Server.cpp.o.provides.build: CMakeFiles/Server.dir/
 
 CMakeFiles/Server.dir/server/main.cpp.o: CMakeFiles/Server.dir/flags.make
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Server.dir/server/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/main.cpp.o -c /home/coraledge/Documents/ex4/server/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Server.dir/server/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/main.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/main.cpp"
 
 CMakeFiles/Server.dir/server/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/server/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/coraledge/Documents/ex4/server/main.cpp > CMakeFiles/Server.dir/server/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/main.cpp" > CMakeFiles/Server.dir/server/main.cpp.i
 
 CMakeFiles/Server.dir/server/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/server/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/coraledge/Documents/ex4/server/main.cpp -o CMakeFiles/Server.dir/server/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/server/main.cpp" -o CMakeFiles/Server.dir/server/main.cpp.s
 
 CMakeFiles/Server.dir/server/main.cpp.o.requires:
 
@@ -275,31 +275,31 @@ CMakeFiles/Server.dir/server/main.cpp.o.provides.build: CMakeFiles/Server.dir/se
 
 # Object files for target Server
 Server_OBJECTS = \
-"CMakeFiles/Server.dir/src/BasicRules.cpp.o" \
-"CMakeFiles/Server.dir/src/Board.cpp.o" \
-"CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o" \
-"CMakeFiles/Server.dir/src/HumanPlayer.cpp.o" \
-"CMakeFiles/Server.dir/src/Point.cpp.o" \
-"CMakeFiles/Server.dir/src/PointsList.cpp.o" \
-"CMakeFiles/Server.dir/src/AiPlayer.cpp.o" \
+"CMakeFiles/Server.dir/client/BasicRules.cpp.o" \
+"CMakeFiles/Server.dir/client/Board.cpp.o" \
+"CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o" \
+"CMakeFiles/Server.dir/client/HumanPlayer.cpp.o" \
+"CMakeFiles/Server.dir/client/Point.cpp.o" \
+"CMakeFiles/Server.dir/client/PointsList.cpp.o" \
+"CMakeFiles/Server.dir/client/AiPlayer.cpp.o" \
 "CMakeFiles/Server.dir/server/Server.cpp.o" \
 "CMakeFiles/Server.dir/server/main.cpp.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
 
-Server: CMakeFiles/Server.dir/src/BasicRules.cpp.o
-Server: CMakeFiles/Server.dir/src/Board.cpp.o
-Server: CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o
-Server: CMakeFiles/Server.dir/src/HumanPlayer.cpp.o
-Server: CMakeFiles/Server.dir/src/Point.cpp.o
-Server: CMakeFiles/Server.dir/src/PointsList.cpp.o
-Server: CMakeFiles/Server.dir/src/AiPlayer.cpp.o
+Server: CMakeFiles/Server.dir/client/BasicRules.cpp.o
+Server: CMakeFiles/Server.dir/client/Board.cpp.o
+Server: CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o
+Server: CMakeFiles/Server.dir/client/HumanPlayer.cpp.o
+Server: CMakeFiles/Server.dir/client/Point.cpp.o
+Server: CMakeFiles/Server.dir/client/PointsList.cpp.o
+Server: CMakeFiles/Server.dir/client/AiPlayer.cpp.o
 Server: CMakeFiles/Server.dir/server/Server.cpp.o
 Server: CMakeFiles/Server.dir/server/main.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -307,13 +307,13 @@ CMakeFiles/Server.dir/build: Server
 
 .PHONY : CMakeFiles/Server.dir/build
 
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/BasicRules.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/Board.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/ConsoleBoard.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/HumanPlayer.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/Point.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/PointsList.cpp.o.requires
-CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/src/AiPlayer.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/BasicRules.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/Board.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/ConsoleBoard.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/HumanPlayer.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/Point.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/PointsList.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/client/AiPlayer.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/Server.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/main.cpp.o.requires
 
@@ -324,6 +324,6 @@ CMakeFiles/Server.dir/clean:
 .PHONY : CMakeFiles/Server.dir/clean
 
 CMakeFiles/Server.dir/depend:
-	cd /home/coraledge/Documents/ex4/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/coraledge/Documents/ex4 /home/coraledge/Documents/ex4 /home/coraledge/Documents/ex4/cmake-build-debug /home/coraledge/Documents/ex4/cmake-build-debug /home/coraledge/Documents/ex4/cmake-build-debug/CMakeFiles/Server.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Server.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Server.dir/depend
 
