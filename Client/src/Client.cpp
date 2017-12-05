@@ -65,9 +65,12 @@ int Client::sendExercise(int arg1, char op, int arg2) {
     if (n == -1) {
         throw "Error writing arg2 to socket";
     }
+
 // Read the result from the server
-    int result;
+    int result=0;
     n = read(clientSocket, &result, sizeof(result));
+
+
     if (n == -1) {
         throw "Error reading result from socket";
     }
