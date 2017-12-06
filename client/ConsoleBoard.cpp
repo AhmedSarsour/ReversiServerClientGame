@@ -250,6 +250,117 @@ void ConsoleBoard::playGame() {
 		playersDivide++;
 	}
 }
+
+void ConsoleBoard::playForOnePlayer(int player) {
+    int i = 0, j = 0;
+    //building the game's rules.
+    BasicRules playRules(this->row, this->col);
+    this->firstPlayer->setBoardRowNCol(this->row, this->col);
+    this->secondPlayer->setBoardRowNCol(this->row, this->col);
+    PointsList choices;
+    list<Point> emptyList;
+    list<Point> choicesList;
+    list<Point>::iterator iter;
+    bool gameOver = false;
+    bool p1EmptyChoices = false;
+    bool p2EmptyChoices = false;
+    //counter for the player's scores, to determine the winner.
+    int countOs = 0, countXs = 0;
+    bool listEmpty = false;
+    while (1) {
+        //getting a list of playable choices(points) for the players.
+        choicesList = playRules.checkPoints(this->reversi,
+                                            (player % 2) + 1);
+        cout << ConsoleBoard::getCurrentTurnPlayer(player)->getName()
+             << ": it's your move." << endl;
+        //printing the avaiable choices.
+        for (iter = choicesList.begin(); iter != choicesList.end(); iter++) {
+            if (choices.checkifContains(*iter) == false) {
+                choices.addPoint(*iter);
+            }
+        }
+        int choiceRow = 0, choiceCol = 0;
+        Point pick(0, 0);
+        //checking if list is empty or not and saving it in listEmpty var.
+        listEmpty = choices.getMyList().empty();
+        if (!listEmpty) {
+            if ((player % 2) + 1 == 1) {
+                p1EmptyChoices = false;
+            } else {
+                p2EmptyChoices = false;
+            }
+            // getting the choice(point) that the player pick.
+            pick = (ConsoleBoard::getCurrentTurnPlayer(player))->playTurn(ConsoleBoard::getReversi(), &choices,
+                                                                          player);
+            choiceRow = pick.getX();
+            choiceCol = pick.getY();
+            //converting the pieces.
+            playRules.convertPieces(this->reversi, (player % 2) + 1,
+                                    choiceRow, choiceCol);
+        } else {
+            cout << "No possible moves. Play passes back to the other player.";
+            if ((player % 2) + 1 == 1) {
+                p1EmptyChoices = true;
+            } else {
+                p2EmptyChoices = true;
+            }
+            do {
+                cout << "Press any key to continue." << endl;
+            } while (cin.get() != '\n');
+            cout << endl;
+        }
+        //printing the board.
+        this->printBoard();
+        if (!listEmpty) {
+            cout << ConsoleBoard::getCurrentTurnPlayer(player)->getName()
+                 << " played (" << choiceRow << "," << choiceCol << ")"
+                 << endl << endl;
+        }
+        gameOver = true;
+        countXs = 0;
+        countOs = 0;
+        //checking if there is more available spots to play.
+        for (i = 0; i < this->row; i++) {
+            for (j = 0; j < this->col; j++) {
+                if (this->reversi[i][j] == 0) {
+                    gameOver = false;
+                }
+                if (this->reversi[i][j] == 1) {
+                    countXs++;
+                }
+                if (this->reversi[i][j] == 2) {
+                    countOs++;
+                }
+            }
+        }
+        //if both players don't have any playable choices, game over.
+        if (p1EmptyChoices && p2EmptyChoices) {
+            gameOver = true;
+            cout << "No more available choices for both players!." << endl;
+        }
+        /*
+         in case gameOver = true, no more playable choices and
+         the board is full.
+         */
+        if (gameOver) {
+            if (countXs > countOs) {
+                cout << "Game over. The winner is: "
+                     << ConsoleBoard::getFirstPlayer()->getName();
+            } else if (countOs > countXs) {
+                cout << "Game over. The winner is: "
+                     << ConsoleBoard::getSecondPlayer()->getName();
+            } else {
+                cout << "Game over. Its a Draw!.";
+            }
+            cout << endl;
+            break;
+        }
+        //clearing the lists of the points we had.
+        choicesList.clear();
+        choices.clearList();
+    }
+}
+
 void ConsoleBoard::deleteBoard() {
 	int i;
 	// releasing the memory we used for the game's ConsoleBoard.

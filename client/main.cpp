@@ -3,7 +3,7 @@
  *      student 1: ahmed sarsour. 315397059
  *      student 2: Eliad Arzuan 206482622
  */
-#include<iostream>
+#include <iostream>
 #include "Player.h"
 #include "Board.h"
 #include "BasicRules.h"
@@ -16,15 +16,8 @@ int main() {
     int row,col;
 	row = 8;
 	col = 8;
-	Player* firstPlayer = new HumanPlayer("X");
-    Player* secondPlayer = new HumanPlayer("O");
-    Client client("127.0.0.1", 8000);
-    try {
-        client.connectToServer();
-    } catch (const char *msg) {
-        cout << "Failed to connect to server. Reason:" << msg << endl;
-        exit(-1);
-    }
+	Player* firstPlayer;
+    Player* secondPlayer;
     int num1, num2;
     char op;
     secondPlayer->setBoardRowNCol(row, col);
@@ -33,13 +26,26 @@ int main() {
     Board *theGameBoard = new ConsoleBoard(row, col, firstPlayer, secondPlayer);
     theGameBoard->buildTheBoard(rules);
     int index = 1;
-    int playerXorO = 1;
+    int playerXorO = 0;
     int looper = 0;
+    int option;//Option of the game type 1- against human 2 - against computer.
+    Client client("127.0.0.1", 8000);
+    try {
+        client.connectToServer();
+    } catch (const char *msg) {
+        cout << "Failed to connect to server. Reason:" << msg << endl;
+        exit(-1);
+    }
+    Point move(0, 0);
     while (true) {
+
         // Wait until connection or move of the other player.
         if (index != 2) {
             cout << "Waiting for the other player" << endl;
         }
+
+
+        // X will be 1 if the first player and 2 if the second player.
         int x = client.wait();
 
         if (x == 1) {
@@ -48,22 +54,21 @@ int main() {
         }
 
         if (x == 2){
-            playerXorO = 2;
             cout << "You are the second player player O" << endl;
             cout << "Waiting for the other player" << endl;
+            playerXorO = 2;
         }
-        if((index >= 3 && playerXorO == 1) || (index >= 2 && playerXorO == 2)) {
-            Point move = client.getMove();
-            if (playerxorO == 1) {
-                cout << "O played " << move;
-            } else {
-                cout << "X player " << move;
-            }
+        // Get a move after the other player did a move.
+        if ((index >= 3 && playerXorO == 1) || (index >= 2 && playerXorO == 2)) {
+                move = client.getMove();
+                cout << "The other player did the move " << move << endl;
+            // Update the board after the last player move.
             theGameBoard->getReversi()[move.getX() - 1][move.getY() - 1] = 3 - playerXorO;
             rules->convertPieces(theGameBoard->getReversi(), 3 - playerXorO, move.getX(), move.getY());
         }
 
         if (index != 1) {
+
             theGameBoard->printBoard();
             list<Point> moves = rules->checkPoints(theGameBoard->getReversi(), playerXorO);
             PointsList choicesList;
@@ -82,6 +87,7 @@ int main() {
                 cout << endl << endl;
                 cout << "Please enter your move row,col: ";
                 cin >> num1 >> num2;
+
                 looper = 0;
                 //in case the player entered something beside int.
                 if (cin.fail()) {
@@ -96,25 +102,21 @@ int main() {
                 }
                 cout << endl;
             }while (looper == 1);
+
             theGameBoard->getReversi()[num1 - 1][num2 - 1] = playerXorO;
             rules->convertPieces(theGameBoard->getReversi(), playerXorO, num1 , num2);
+
             try {
                 Point result = client.sendMove(num1, num2);
                 cout << result << endl;
             } catch (const char *msg) {
-                cout << "Failed to send exercise toserver. Reason: " << msg << endl;
+                cout << "Failed to send exercise to server. Reason: " << msg << endl;
             }
         }
 
+
         index++;
     }
-    //Deletes the memmory we just allocated.
-    theGameBoard->deleteBoard();
-    delete theGameBoard;
-    delete firstPlayer;
-    delete secondPlayer;
-    delete rules;
-
 }
 //
 //
