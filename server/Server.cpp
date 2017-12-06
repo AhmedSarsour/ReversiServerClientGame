@@ -55,6 +55,7 @@ void Server::start() {
             throw "Error on accept";
         }
         //Sending activation for player 1 that waited for player 2 to connect.
+        // The first player - his number is 1
         sendActivation(clientSocket1);
 
 //        x = 2;
@@ -77,6 +78,9 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
         // Read new exercise arguments
         // The first Player.
         if (playersDivide % 2 == 1) {
+            if (playersDivide == 1) {
+                sendActivation2(clientSocket1, 1);
+            }
             // Not the first move.
             int n = read(clientSocket1, &arg1, sizeof(arg1));
             if (n == -1) {
@@ -97,6 +101,9 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             sendActivation(clientSocket2);
             // The second Player.
         } else {
+            if (playersDivide == 2) {
+                sendActivation2(clientSocket2, 2);
+            }
             int n = read(clientSocket2, &arg1, sizeof(arg1));
             if (n == -1) {
                 cout << "Error reading arg1" << endl;
@@ -124,7 +131,16 @@ void Server::stop() {
 }
 
 void Server::sendActivation(int socket) {
-    int x = 1;
+    int x = -1;
+    int n = write(socket, &x, sizeof(x));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
+    }
+}
+
+
+void Server::sendActivation2(int socket, int msg) {
+    int x = msg;
     int n = write(socket, &x, sizeof(x));
     if (n == -1) {
         throw "Error writing arg1 to socket";

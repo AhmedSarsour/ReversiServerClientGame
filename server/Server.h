@@ -40,6 +40,9 @@ private:
      * @param socket the socket of the specific player.
      */
     void sendActivation(int socket);
+
+
+    void sendActivation2(int socket, int msg);
 };
 
 

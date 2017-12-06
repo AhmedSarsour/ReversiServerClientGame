@@ -50,14 +50,15 @@ void Client::connectToServer() {
     }
     cout << "Connected to server" << endl;
 }
-    void Client::wait() {
-        cout << "Waiting for the other player" << endl;
+    int Client::wait() {
         int x;
         // Waiting until reading the message from the server.
         int n = read(clientSocket, &x, sizeof(x));
         if (n == -1) {
             cout << "Error reading it" << endl;
         }
+
+        return x;
     }
     //Send move to the server
     Point Client::sendMove(int x, int y) {

@@ -24,17 +24,32 @@ int main() {
     char op;
     int index = 1;
     while (true) {
+
         // Wait until connection or move of the other player.
-        client.wait();
-        cout << "Enter a move:";
-        cin >> num1;
-        cin >> num2;
-        try {
-            Point result = client.sendMove(num1, num2);
-            cout << result << endl;
-        } catch (const char *msg) {
-            cout << "Failed to send exercise toserver. Reason: " << msg << endl;
+        if (index != 2)
+        cout << "Waiting for the other player" << endl;
+        int x = client.wait();
+
+        if (x == 1) {
+            cout << "You are the first player X" << endl;
         }
+
+        if (x == 2){
+            cout << "You are the second player player O" << endl;
+        }
+        if (index != 1) {
+            cout << "Enter a move:";
+            cin >> num1;
+            cin >> num2;
+            try {
+                Point result = client.sendMove(num1, num2);
+                cout << result << endl;
+            } catch (const char *msg) {
+                cout << "Failed to send exercise toserver. Reason: " << msg << endl;
+            }
+        }
+
+        index++;
     }
 }
 //

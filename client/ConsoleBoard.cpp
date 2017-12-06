@@ -179,9 +179,7 @@ void ConsoleBoard::playGame() {
 				p2EmptyChoices = false;
 			}
 			// getting the choice(point) that the player pick.
-			pick =
-					(ConsoleBoard::getCurrentTurnPlayer(playersDivide))->playTurn(
-							ConsoleBoard::getReversi(), &choices,
+			pick = (ConsoleBoard::getCurrentTurnPlayer(playersDivide))->playTurn(ConsoleBoard::getReversi(), &choices,
 							playersDivide);
 			choiceRow = pick.getX();
 			choiceCol = pick.getY();

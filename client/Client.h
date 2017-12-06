@@ -34,7 +34,7 @@ public:
      * Wait.
      * The player waiting to get activation message from the server. The process won't stop until he got the message.
      */
-    void wait();
+    int wait();
 private:
     const char *serverIP;
     int serverPort;
