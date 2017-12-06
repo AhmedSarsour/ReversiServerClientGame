@@ -42,7 +42,7 @@ private:
     void sendActivation(int socket);
 
 
-    void sendActivation2(int socket, int msg);
+    void sendInt(int socket, int msg);
 };
 
 

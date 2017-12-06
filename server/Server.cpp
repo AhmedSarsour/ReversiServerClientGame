@@ -79,7 +79,7 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
         // The first Player.
         if (playersDivide % 2 == 1) {
             if (playersDivide == 1) {
-                sendActivation2(clientSocket1, 1);
+                sendInt(clientSocket1, 1);
             }
             // Not the first move.
             int n = read(clientSocket1, &arg1, sizeof(arg1));
@@ -102,7 +102,7 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             // The second Player.
         } else {
             if (playersDivide == 2) {
-                sendActivation2(clientSocket2, 2);
+                sendInt(clientSocket2, 2);
             }
             int n = read(clientSocket2, &arg1, sizeof(arg1));
             if (n == -1) {
@@ -139,7 +139,7 @@ void Server::sendActivation(int socket) {
 }
 
 
-void Server::sendActivation2(int socket, int msg) {
+void Server::sendInt(int socket, int msg) {
     int x = msg;
     int n = write(socket, &x, sizeof(x));
     if (n == -1) {
