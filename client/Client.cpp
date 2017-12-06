@@ -60,25 +60,6 @@ void Client::connectToServer() {
 
         return x;
     }
-
-    Point Client::getMove() {
-        int arg1, arg2;
-        int n = read(clientSocket, &arg1, sizeof(arg1));
-        if (n == -1) {
-            cout << "Error reading arg1" << endl;
-            return Point(-1, -1);
-        }
-        if (n == 0) {
-            throw "Client disconnected";
-        }
-        n = read(clientSocket, &arg2, sizeof(arg2));
-        if (n == -1) {
-            throw "Error reading arg2";
-        }
-        // Return point from the both arguments.
-        return Point(arg1, arg2);
-
-    }
     //Send move to the server
     Point Client::sendMove(int x, int y) {
         // Write the point arguments to the socket
@@ -91,4 +72,4 @@ void Client::connectToServer() {
             throw "Error writing arg2 to socket";
         }
         return Point(x, y);
-    }
+}
