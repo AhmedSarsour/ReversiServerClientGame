@@ -26,8 +26,9 @@ int main() {
     while (true) {
 
         // Wait until connection or move of the other player.
-        if (index != 2)
-        cout << "Waiting for the other player" << endl;
+        if (index != 2) {
+            cout << "Waiting for the other player" << endl;
+        }
         int x = client.wait();
 
         if (x == 1) {
@@ -36,6 +37,7 @@ int main() {
 
         if (x == 2){
             cout << "You are the second player player O" << endl;
+            cout << "Waiting for the other player" << endl;
         }
         if (index != 1) {
             cout << "Enter a move:";
