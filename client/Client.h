@@ -30,6 +30,12 @@ public:
      * @return the move the player sent.
      */
     Point sendMove(int x, int y);
+
+    /**
+     * getMove.
+     * @return the move from the other player.
+     */
+    Point getMove();
     /**
      * Wait.
      * The player waiting to get activation message from the server. The process won't stop until he got the message.

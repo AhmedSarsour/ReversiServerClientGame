@@ -82,7 +82,6 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
                 sendInt(clientSocket1, 1);
                 sendInt(clientSocket2, 2);
             }
-            // Not the first move.
             int n = read(clientSocket1, &arg1, sizeof(arg1));
             if (n == -1) {
                 cout << "Error reading arg1" << endl;
@@ -99,7 +98,10 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             }
             cout << "X played : (" << arg1 << "," << arg2 << ")" << endl;
             // Send activation for player 2 that waited for player 1 to do a move.
+            // Sending activation just for waiting.
             sendActivation(clientSocket2);
+            // Sending the point arguments to the other player.
+            sendMove(clientSocket2, arg1, arg2);
             // The second Player.
         } else {
             int n = read(clientSocket2, &arg1, sizeof(arg1));
@@ -117,7 +119,10 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
                 return;
             }
             cout << "O played : (" << arg1 << "," << arg2 << ")" << endl;
+            // Sending the point arguments to the other player.
             sendActivation(clientSocket1);
+            sendMove(clientSocket1, arg1, arg2);
+            // Sending activation just for waiting.
             // Send activation for player 1 that waited for player 2 to do a move.
         }
         playersDivide++;
@@ -142,5 +147,19 @@ void Server::sendInt(int socket, int msg) {
     int n = write(socket, &x, sizeof(x));
     if (n == -1) {
         throw "Error writing arg1 to socket";
+    }
+}
+
+
+//Send move to the server
+void Server::sendMove(int socket, int x, int y) {
+    // Write the point arguments to the socket
+    int n = write(socket, &x, sizeof(x));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
+    }
+    n = write(socket, &y, sizeof(y));
+    if (n == -1) {
+        throw "Error writing arg2 to socket";
     }
 }

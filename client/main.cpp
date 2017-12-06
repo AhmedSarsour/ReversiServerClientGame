@@ -23,21 +23,33 @@ int main() {
     int num1, num2;
     char op;
     int index = 1;
+    int player = 0;
+    Point move(0, 0);
     while (true) {
 
         // Wait until connection or move of the other player.
         if (index != 2) {
             cout << "Waiting for the other player" << endl;
         }
+
+
+        // X will be 1 if the first player and 2 if the second player.
         int x = client.wait();
 
         if (x == 1) {
             cout << "You are the first player X" << endl;
+            player = 1;
         }
 
         if (x == 2){
             cout << "You are the second player player O" << endl;
             cout << "Waiting for the other player" << endl;
+            player = 2;
+        }
+        // Get a move after the other player did a move.
+        if ((index >= 3 && player == 1) || (index >= 2 && player == 2)) {
+                move = client.getMove();
+                cout << "The other player did the move " << move << endl;
         }
         if (index != 1) {
             cout << "Enter a move:";

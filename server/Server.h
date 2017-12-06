@@ -43,6 +43,8 @@ private:
 
 
     void sendInt(int socket, int msg);
+
+    void sendMove(int socket, int x, int y);
 };
 
 
