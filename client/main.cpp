@@ -9,11 +9,17 @@
 #include "BasicRules.h"
 #include "ConsoleBoard.h"
 #include "RemotePlayer.h"
-#include <stdlib.h>
+#include <cstdlib>
+#include <fstream>
+#include <cstdlib>
+
 #include "Client.h"
 using namespace std;
 
+
 int main() {
+
+
     int row,col;
 	row = 8;
 	col = 8;
@@ -44,8 +50,41 @@ int main() {
     }
     // Remote player
     if (option == 3) {
+        // Reading the file
+        string line;
+        int numberLine = 0;
+        string ip;
+        int port;
+        ifstream myfile ("../client/settings.txt");
+        // The first line is the ip.
+        // The second line is the port.
+        if (myfile.is_open())
+        {
+            while (getline(myfile,line) )
+            {
+                if (numberLine == 0) {
+                    ip = line;
+                }
+
+                if (numberLine == 1) {
+                    // Converting the port to number.
+                    port = atoi(line.c_str());
+                }
+                //cout << line << '\n';
+                numberLine++;
+            }
+            // Closing the file.
+            myfile.close();
+        }
+
+        else {
+            cout << "Unable to open file";
+        }
+
+
         // Creating new cliient.
-        Client client("127.0.0.1", 8000);
+
+        Client client(ip.c_str(), port);
         try {
             //Connecting the client to the server.
             client.connectToServer();

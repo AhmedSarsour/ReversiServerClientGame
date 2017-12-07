@@ -137,7 +137,7 @@ void Server::sendActivation(int socket) {
     int x = -1;
     int n = write(socket, &x, sizeof(x));
     if (n == -1) {
-        throw "Error writing arg1 to socket";
+        throw "Error sending activation";
     }
 }
 

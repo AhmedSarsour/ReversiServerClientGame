@@ -211,7 +211,11 @@ ConsoleBoard.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.h
 RemotePlayer.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h
-stdlib.h
+cstdlib
+-
+fstream
+-
+cstdlib
 -
 Client.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Client.h
