@@ -30,11 +30,11 @@ void Server::start() {
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
     // Define the lib socket's structures
-    struct sockaddr_in clientAddress;
-    socklen_t clientAddressLen;
+    struct sockaddr_in clientAddress; //Fixing error on accept.
+    socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
 
-    struct sockaddr_in client2Address;
-    socklen_t client2AddressLen;
+    struct sockaddr_in client2Address;//Fixing error on accept.
+    socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
 
     int playersDivide = 1;
     while (true) {

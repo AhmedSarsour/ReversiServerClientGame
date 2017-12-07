@@ -40,6 +40,14 @@ string HumanPlayer::getName() const {
  * pick choice, and then returns the choice he pick.
  */
 Point HumanPlayer::playTurn(int** reversi, PointsList* choices, int playersDivide)  {
+    int player = playersDivide % 2 + 1;
+    if (player == 1) {
+		cout << "X: it's your move." << endl;
+	}
+
+	if (player == 2) {
+		cout << "O: it's your move." << endl;
+	}
 	int choiceRow, choiceCol;
 	int looper = 1;
 	do {

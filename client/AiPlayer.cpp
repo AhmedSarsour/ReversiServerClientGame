@@ -44,6 +44,7 @@ void AiPlayer::setBoardRowNCol(int rowsSize, int colsSize) {
  */
 Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 		int playersDivide) {
+    // Here we don't print its your move because the computer knows it his move.
 	int computer = 2;
 	//checkHuman.. == scores when computer played(Each move)
 	//counter = the spot of the score with minimum points for the enemy.

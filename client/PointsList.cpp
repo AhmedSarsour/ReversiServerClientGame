@@ -78,3 +78,37 @@ void PointsList::setMyList(const list<Point>& myList) {
 void PointsList::clearList(){
 	this->myList.clear();
 }
+/**
+ * sortList function.
+ * function: it sorts the list according the x value of points.
+ */
+void PointsList::sortList() {
+	//creating empty list.
+	list<Point> sortedList;
+	list<Point>::iterator it;
+	int i = 0, j = 0;
+	//temp point for sorting.
+	Point temp(0,0);
+	//making an array of points.
+	Point sortItems[this->getMyList().size()];
+	//adding the contents of the list into the points array.
+	for(i = 0, it = this->myList.begin(); it != this->myList.end(); it++, i++){
+		sortItems[i] = *it;
+	}
+	//sorting the array using the bubble-sort method.
+	for(i = 0; i < this->getMyList().size(); i++){
+		for ( j = 0; j < this->getMyList().size() - 1 - i; j++) {
+			if (sortItems[j].getX() > sortItems[j + 1].getX()) {
+				temp = sortItems[j];
+				sortItems[j] = sortItems[j + 1];
+				sortItems[j + 1] = temp;
+			}
+		}
+	}
+	///adding the sorted points into the empty list.
+	for (i = 0; i < this->getMyList().size(); i++) {
+		sortedList.push_back(sortItems[i]);
+	}
+	//replacing the main list with the sorted list.
+	this->getMyList() = sortedList;
+}

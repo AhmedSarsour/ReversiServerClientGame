@@ -17,6 +17,13 @@ public:
  */
 	Point(int x1,int y1);
 /**
+ * default Constructor.
+ */
+	Point(){
+		x = 0;
+		y = 0;
+	}
+/**
  * equals function.
  * @param other.
  * @return bool.

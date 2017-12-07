@@ -39,9 +39,17 @@ string RemotePlayer::getName() const {
 Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivide)  {
     int choiceRow, choiceCol;
     //This client is this player.
-    cout << "The player is " << playersDivide << endl;
     int player = playersDivide % 2 + 1;
     if (player == this->playerXorY) {
+        if (player == 1) {
+            cout << "X: it's your move." << endl;
+        }
+
+        if (player == 2) {
+            cout << "O: it's your move." << endl;
+        }
+
+        choices->sortList();
         int looper = 1;
         do {
             cout << "your choices are: ";
@@ -49,7 +57,13 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
             choices->runOnElms();
             cout << endl << endl;
             cout << "Please enter your move row,col: ";
-            cin >> choiceRow >> choiceCol;
+            char comma;
+            cin >> choiceRow>> comma >> choiceCol;
+
+            if (comma != ',') {
+                cout << "You forgot to put comma" << endl;
+                looper = 1;
+            }
             looper = 0;
             //in case the player entered something beside int.
             if (cin.fail()) {
@@ -73,7 +87,6 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
 
         //Sending the move to the other client.
         try {
-            cout << "sending: " << Point(choiceRow, choiceCol) << endl;
             Point result = client.sendMove(choiceRow, choiceCol);
         } catch (const char *msg) {
             cout << "Failed to send exercise toserver. Reason: " << msg << endl;
@@ -85,8 +98,6 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
             Point move = client.getMove();
             choiceRow = move.getX();
             choiceCol = move.getY();
-
-            cout << "move is " << move << endl;
             //converting the piece according to the player choice.
             if ((playersDivide % 2) + 1 == 1) {
                 reversi[choiceRow - 1][choiceCol - 1] = 1;

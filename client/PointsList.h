@@ -55,6 +55,7 @@ public:
  * function: clears the points list.
  */
     void clearList();
+	void sortList();
 
 private:
 	list<Point> myList;

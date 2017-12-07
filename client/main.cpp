@@ -20,15 +20,14 @@ int main() {
 	Player* firstPlayer;
     Player* secondPlayer;
     int option;//Option of the game type 1- against human 2 - against computer.
-//    cout << "Hi Welcome to Reversi please select your kind of game to play:" << endl;
-//    cout << endl;
-//    cout << "Press 1 to play against other player." << endl;
-//    cout << endl;
-//    cout << "Press 2 to play against the computer." << endl;
-//    cout << endl;
-//    cout << "Press 3 to play against remote player." << endl;
-    option = 3;
-    //cin >>option;
+    cout << "Hi Welcome to Reversi please select your kind of game to play:" << endl;
+    cout << endl;
+    cout << "Press 1 to play against other player." << endl;
+    cout << endl;
+    cout << "Press 2 to play against the computer." << endl;
+    cout << endl;
+    cout << "Press 3 to play against remote player." << endl;
+    cin >>option;
     //Human player.
     if (option == 1) {
         cout << "You selected to play against other player" << endl;
@@ -43,11 +42,12 @@ int main() {
 
         secondPlayer = new AiPlayer("O");
     }
-
+    // Remote player
     if (option == 3) {
-
+        // Creating new cliient.
         Client client("127.0.0.1", 8000);
         try {
+            //Connecting the client to the server.
             client.connectToServer();
         } catch (const char *msg) {
             cout << "Failed to connect to server. Reason:" << msg << endl;
@@ -84,8 +84,6 @@ int main() {
 
             index++;
         }
-
-        cout << "player " << player << endl;
 
         firstPlayer = new RemotePlayer("X", player, client);
         secondPlayer = new RemotePlayer("O", player, client);

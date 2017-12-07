@@ -160,8 +160,8 @@ void ConsoleBoard::playGame() {
 		//getting a list of playable choices(points) for the players.
 		choicesList = playRules.checkPoints(this->reversi,
 				(playersDivide % 2) + 1);
-		cout << ConsoleBoard::getCurrentTurnPlayer(playersDivide)->getName()
-				<< ": it's your move." << endl;
+//		cout << ConsoleBoard::getCurrentTurnPlayer(playersDivide)->getName()
+//				<< ": it's your move." << endl;
 		//printing the avaiable choices.
 		for (iter = choicesList.begin(); iter != choicesList.end(); iter++) {
 			if (choices.checkifContains(*iter) == false) {
