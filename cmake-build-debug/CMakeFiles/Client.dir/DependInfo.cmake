@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/HumanPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Client.dir/client/HumanPlayer.cpp.o"
   "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Client.dir/client/Point.cpp.o"
   "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Client.dir/client/PointsList.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Client.dir/client/RemotePlayer.cpp.o"
   "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/main.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/Client.dir/client/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")

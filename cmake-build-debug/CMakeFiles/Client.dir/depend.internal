@@ -51,6 +51,13 @@ CMakeFiles/Client.dir/client/PointsList.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Client.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.cpp
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h
 CMakeFiles/Client.dir/client/main.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/AiPlayer.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.h
@@ -61,5 +68,6 @@ CMakeFiles/Client.dir/client/main.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/main.cpp

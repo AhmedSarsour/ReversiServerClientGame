@@ -8,6 +8,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Client.dir/client/AiPlayer.cpp.o"
   "CMakeFiles/Client.dir/client/main.cpp.o"
   "CMakeFiles/Client.dir/client/Client.cpp.o"
+  "CMakeFiles/Client.dir/client/RemotePlayer.cpp.o"
   "Client.pdb"
   "Client"
 )

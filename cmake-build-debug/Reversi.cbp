@@ -517,6 +517,12 @@
 			<Option target="Client"/>
 			<Option target="ReversiTests"/>
 		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.cpp">
+			<Option target="Client"/>
+		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h">
+			<Option target="Client"/>
+		</Unit>
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h">
 			<Option target="Server"/>
 			<Option target="Client"/>

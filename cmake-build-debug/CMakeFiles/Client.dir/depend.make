@@ -51,6 +51,13 @@ CMakeFiles/Client.dir/client/PointsList.cpp.o: ../client/Point.h
 CMakeFiles/Client.dir/client/PointsList.cpp.o: ../client/PointsList.cpp
 CMakeFiles/Client.dir/client/PointsList.cpp.o: ../client/PointsList.h
 
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o: ../client/Client.h
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o: ../client/Player.h
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o: ../client/Point.h
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o: ../client/PointsList.h
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o: ../client/RemotePlayer.cpp
+CMakeFiles/Client.dir/client/RemotePlayer.cpp.o: ../client/RemotePlayer.h
+
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/AiPlayer.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/BasicRules.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/Board.h
@@ -60,6 +67,7 @@ CMakeFiles/Client.dir/client/main.cpp.o: ../client/HumanPlayer.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/Player.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/Point.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/PointsList.h
+CMakeFiles/Client.dir/client/main.cpp.o: ../client/RemotePlayer.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/Rules.h
 CMakeFiles/Client.dir/client/main.cpp.o: ../client/main.cpp
 

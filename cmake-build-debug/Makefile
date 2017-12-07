@@ -505,6 +505,33 @@ client/PointsList.cpp.s:
 	$(MAKE) -f CMakeFiles/ReversiTests.dir/build.make CMakeFiles/ReversiTests.dir/client/PointsList.cpp.s
 .PHONY : client/PointsList.cpp.s
 
+client/RemotePlayer.o: client/RemotePlayer.cpp.o
+
+.PHONY : client/RemotePlayer.o
+
+# target to build an object file
+client/RemotePlayer.cpp.o:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/RemotePlayer.cpp.o
+.PHONY : client/RemotePlayer.cpp.o
+
+client/RemotePlayer.i: client/RemotePlayer.cpp.i
+
+.PHONY : client/RemotePlayer.i
+
+# target to preprocess a source file
+client/RemotePlayer.cpp.i:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/RemotePlayer.cpp.i
+.PHONY : client/RemotePlayer.cpp.i
+
+client/RemotePlayer.s: client/RemotePlayer.cpp.s
+
+.PHONY : client/RemotePlayer.s
+
+# target to generate assembly for a file
+client/RemotePlayer.cpp.s:
+	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/RemotePlayer.cpp.s
+.PHONY : client/RemotePlayer.cpp.s
+
 client/main.o: client/main.cpp.o
 
 .PHONY : client/main.o
@@ -791,6 +818,9 @@ help:
 	@echo "... client/PointsList.o"
 	@echo "... client/PointsList.i"
 	@echo "... client/PointsList.s"
+	@echo "... client/RemotePlayer.o"
+	@echo "... client/RemotePlayer.i"
+	@echo "... client/RemotePlayer.s"
 	@echo "... client/main.o"
 	@echo "... client/main.i"
 	@echo "... client/main.s"

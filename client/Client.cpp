@@ -65,8 +65,7 @@ void Client::connectToServer() {
         int arg1, arg2;
         int n = read(clientSocket, &arg1, sizeof(arg1));
         if (n == -1) {
-            cout << "Error reading arg1" << endl;
-            return Point(-1, -1);
+            throw "Error reading arg1";
         }
         if (n == 0) {
             throw "Client disconnected";

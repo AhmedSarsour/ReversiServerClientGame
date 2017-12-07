@@ -99,7 +99,7 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             cout << "X played : (" << arg1 << "," << arg2 << ")" << endl;
             // Send activation for player 2 that waited for player 1 to do a move.
             // Sending activation just for waiting.
-            sendActivation(clientSocket2);
+            //sendActivation(clientSocket2);
             // Sending the point arguments to the other player.
             sendMove(clientSocket2, arg1, arg2);
             // The second Player.
@@ -120,7 +120,7 @@ void Server::handleClients(int clientSocket1, int clientSocket2) {
             }
             cout << "O played : (" << arg1 << "," << arg2 << ")" << endl;
             // Sending the point arguments to the other player.
-            sendActivation(clientSocket1);
+           // sendActivation(clientSocket1);
             sendMove(clientSocket1, arg1, arg2);
             // Sending activation just for waiting.
             // Send activation for player 1 that waited for player 2 to do a move.

@@ -174,6 +174,24 @@ list
 Point.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
 
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.cpp
+iostream
+-
+RemotePlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h
+PointsList.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/PointsList.h
+string
+-
+Point.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Point.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h
+Player.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Player.h
+Client.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Client.h
+
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/Rules.h
 iostream
 -
@@ -191,6 +209,8 @@ BasicRules.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/BasicRules.h
 ConsoleBoard.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/ConsoleBoard.h
+RemotePlayer.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/client/RemotePlayer.h
 stdlib.h
 -
 Client.h

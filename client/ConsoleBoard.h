@@ -66,7 +66,6 @@ public:
 	 */
 	void playGame();
 
-    void playForOnePlayer(int player);
 	/**
 	 * getReversi function.
 	 * @return int**.
