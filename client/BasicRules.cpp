@@ -219,7 +219,7 @@ void BasicRules::convertPieces(int** reversi, int playerXorO, int choiceRow,
         do {
             theRow++;
             //Stop condition.
-            if (reversi[theRow][theCol] == playerXorO && theRow != choiceRow + 2) {
+            if (reversi[theRow][theCol] == playerXorO && theRow != choiceRow ) {
                 goforit = true;
                 break;
             }
@@ -270,7 +270,7 @@ void BasicRules::convertPieces(int** reversi, int playerXorO, int choiceRow,
     if (choiceCol != this->col) {
         do {
             theCol++;
-            if (reversi[theRow][theCol] == playerXorO && theCol != choiceCol + 2) {
+            if (reversi[theRow][theCol] == playerXorO && theCol != choiceCol) {
                 goforit = true;
                 break;
             }
@@ -325,7 +325,7 @@ void BasicRules::convertPieces(int** reversi, int playerXorO, int choiceRow,
         do {
             theRow++;
             theCol++;
-            if (reversi[theRow][theCol] == playerXorO && theRow != choiceRow + 2) {
+            if (reversi[theRow][theCol] == playerXorO && theRow != choiceRow) {
                 goforit = true;
                 break;
             }
@@ -353,7 +353,7 @@ void BasicRules::convertPieces(int** reversi, int playerXorO, int choiceRow,
         do {
             theRow++;
             theCol--;
-            if (reversi[theRow][theCol] == playerXorO && theRow != choiceRow + 2) {
+            if (reversi[theRow][theCol] == playerXorO && theRow != choiceRow) {
                 goforit = true;
                 break;
             }

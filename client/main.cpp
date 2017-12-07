@@ -59,12 +59,12 @@ int main() {
         int player = 0;
         Point move(0, 0);
         // Until getting the player information.
-        while (!((index >= 3 && player == 1) || (index >= 2 && player == 2))) {
+        while (player == 0) {
 
             // Wait until connection or move of the other player.
             if (index != 2) {
                 cout << "Waiting for the other player" << endl;
-                cout << "maa" << endl;
+                // Here it staks
             }
 
 
