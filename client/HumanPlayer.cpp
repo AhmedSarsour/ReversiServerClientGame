@@ -56,7 +56,12 @@ Point HumanPlayer::playTurn(int** reversi, PointsList* choices, int playersDivid
 		choices->runOnElms();
 		cout << endl << endl;
 		cout << "Please enter your move row,col: ";
-		cin >> choiceRow >> choiceCol;
+		char comma;
+		cin >> choiceRow>> comma >> choiceCol;
+
+		if (comma != ',') {
+			cout << "You forgot to put comma" << endl;
+		}
 		looper = 0;
 		//in case the player entered something beside int.
 		if(cin.fail()) {
