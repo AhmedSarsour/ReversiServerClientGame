@@ -20,6 +20,9 @@ public:
 			int playersDivide) ;
     void copyValues(int** cpy, int** mainReversi);
 	void deleteCopyBoard(int** board);
+	bool playerKind(){
+		return false;
+	}
 	~AiPlayer() {
 	}
 private:

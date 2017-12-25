@@ -44,8 +44,10 @@ public:
  */
     Point playTurn(int** reversi, PointsList* choicesList,
                    int playersDivide) ;
+    bool playerKind(){
+        return true;
+    }
     ~RemotePlayer(){
-
     }
 private:
     string name;//The name of the player (for example x on console board).

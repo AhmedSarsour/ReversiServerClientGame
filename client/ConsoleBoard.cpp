@@ -144,6 +144,8 @@ void ConsoleBoard::playGame() {
 	int playersDivide = 0, i = 0, j = 0;
 	//building the game's rules.
 	BasicRules playRules(this->row, this->col);
+	//playerOnline is a boolean for checking if the players are online players.
+	bool playerOnline = this->firstPlayer->playerKind();
 	this->firstPlayer->setBoardRowNCol(this->row, this->col);
 	this->secondPlayer->setBoardRowNCol(this->row, this->col);
 		PointsList choices;
@@ -172,8 +174,8 @@ void ConsoleBoard::playGame() {
 		Point pick(0, 0);
 		//checking if list is empty or not and saving it in listEmpty var.
 		listEmpty = choices.getMyList().empty();
-		if (!listEmpty) {
-			if ((playersDivide % 2) + 1 == 1) {
+		if (!listEmpty || playerOnline) {
+            if ((playersDivide % 2) + 1 == 1) {
 				p1EmptyChoices = false;
 			} else {
 				p2EmptyChoices = false;
@@ -184,9 +186,13 @@ void ConsoleBoard::playGame() {
 			choiceRow = pick.getX();
 			choiceCol = pick.getY();
 			//converting the pieces.
-			playRules.convertPieces(this->reversi, (playersDivide % 2) + 1,
-					choiceRow, choiceCol);
-		} else {
+			if(!playerOnline || !listEmpty) {
+				playRules.convertPieces(this->reversi, (playersDivide % 2) + 1,
+										choiceRow, choiceCol);
+			}
+		}
+		//in case there is no possible moves.
+		if(listEmpty){
 			cout << "No possible moves. Play passes back to the other player.";
 			if ((playersDivide % 2) + 1 == 1) {
 				p1EmptyChoices = true;

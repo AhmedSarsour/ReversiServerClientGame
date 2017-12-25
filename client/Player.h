@@ -27,6 +27,11 @@ public:
 	void setName(const string& name) {
 		this->name = name;
 	}
+	/**
+	 *playerKind function.
+	 *function: it returns true if the playerKind is online Player(remotePlayer), false otherwise.
+	 */		
+	virtual bool playerKind() = 0;
 	virtual ~Player(){}
 
 private:

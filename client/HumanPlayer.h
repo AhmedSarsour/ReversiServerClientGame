@@ -47,6 +47,9 @@ public:
  */
 	Point playTurn(int** reversi, PointsList* choicesList,
 			int playersDivide) ;
+	bool playerKind(){
+		return false;
+	}
 	~HumanPlayer() {
 	}
 private:

@@ -40,51 +40,57 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
     int choiceRow, choiceCol;
     //This client is this player.
     int player = playersDivide % 2 + 1;
+    bool listEmpty = choices->getMyList().empty();
     if (player == this->playerXorY) {
-        if (player == 1) {
-            cout << "X: it's your move." << endl;
-        }
-
-        if (player == 2) {
-            cout << "O: it's your move." << endl;
-        }
-
-        choices->sortList();
-        int looper = 1;
-        do {
-            cout << "your choices are: ";
-            //printing the list of availabe choices.
-            choices->runOnElms();
-            cout << endl << endl;
-            cout << "Please enter your move row,col: ";
-            char comma;
-            cin >> choiceRow>> comma >> choiceCol;
-
-            if (comma != ',') {
-                cout << "You forgot to put comma" << endl;
-                looper = 1;
+        if(!listEmpty) {
+            if (player == 1) {
+                cout << "X: it's your move." << endl;
             }
-            looper = 0;
-            //in case the player entered something beside int.
-            if (cin.fail()) {
-                cin.clear();
-                cin.ignore(100, '\n');
-                looper = 1;
+
+            if (player == 2) {
+                cout << "O: it's your move." << endl;
             }
-            //in case the player didn't pick an available choice.
-            if (!choices->checkifContains(Point(choiceRow, choiceCol))) {
-                cout << "invalid input, choose again.";
-                looper = 1;
+
+            choices->sortList();
+            int looper = 1;
+            do {
+                cout << "your choices are: ";
+                //printing the list of availabe choices.
+                choices->runOnElms();
+                cout << endl << endl;
+                cout << "Please enter your move row,col: ";
+                char comma;
+                cin >> choiceRow >> comma >> choiceCol;
+                looper = 0;
+
+                if (comma != ',') {
+                    cout << "You forgot to put comma" << endl;
+                    looper = 1;
+                }
+                //in case the player entered something beside int.
+                if (cin.fail()) {
+                    cin.clear();
+                    cin.ignore(100, '\n');
+                    looper = 1;
+                }
+                //in case the player didn't pick an available choice.
+                if (!choices->checkifContains(Point(choiceRow, choiceCol))) {
+                    cout << "invalid input, choose again.";
+                    looper = 1;
+                }
+                cout << endl;
+            } while (looper == 1);
+            //converting the piece according to the player choice.
+            if ((playersDivide % 2) + 1 == 1) {
+                reversi[choiceRow - 1][choiceCol - 1] = 1;
+            } else {
+                reversi[choiceRow - 1][choiceCol - 1] = 2;
             }
-            cout << endl;
-        } while (looper == 1);
-        //converting the piece according to the player choice.
-        if ((playersDivide % 2) + 1 == 1) {
-            reversi[choiceRow - 1][choiceCol - 1] = 1;
+        //in case no choices for player. we send to server a move = point(0,0).
         } else {
-            reversi[choiceRow - 1][choiceCol - 1] = 2;
+            choiceRow = 0;
+            choiceCol = 0;
         }
-
         //Sending the move to the other client.
         try {
             Point result = client.sendMove(choiceRow, choiceCol);
@@ -98,11 +104,14 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
             Point move = client.getMove();
             choiceRow = move.getX();
             choiceCol = move.getY();
-            //converting the piece according to the player choice.
-            if ((playersDivide % 2) + 1 == 1) {
-                reversi[choiceRow - 1][choiceCol - 1] = 1;
-            } else {
-                reversi[choiceRow - 1][choiceCol - 1] = 2;
+            //in case the player had no choices, we dont change anything.
+            if (choiceRow != 0) {
+                //converting the piece according to the player choice.
+                if ((playersDivide % 2) + 1 == 1) {
+                    reversi[choiceRow - 1][choiceCol - 1] = 1;
+                } else {
+                    reversi[choiceRow - 1][choiceCol - 1] = 2;
+                }
             }
         } catch (const char *msg) {
             cout << "Failed to get exercise to server. Reason: " << msg << endl;
