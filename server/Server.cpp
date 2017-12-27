@@ -36,6 +36,7 @@ void Server::start() {
 
     while (true) {
         int index = -1;
+        cout << index << endl;
         int clientSocket1 = accept(serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
         // The arguments to clientHandle;
@@ -52,9 +53,10 @@ void Server::start() {
             cout << "Error unable to create thread, " << rc << endl;
             exit(-1);
         }
-        pthread_exit(NULL);
+      //  pthread_exit(NULL);
 
     }
+    pthread_exit(NULL);
 //
 //    int clientSocket2 = accept(serverSocket, (struct
 //            sockaddr *) &client2Address, &client2AddressLen);
