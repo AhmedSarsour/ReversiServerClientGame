@@ -48,10 +48,10 @@ RM = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4"
+CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 4/ex4/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -559,6 +559,87 @@ client/main.cpp.s:
 	$(MAKE) -f CMakeFiles/Client.dir/build.make CMakeFiles/Client.dir/client/main.cpp.s
 .PHONY : client/main.cpp.s
 
+server/CommandsManager.o: server/CommandsManager.cpp.o
+
+.PHONY : server/CommandsManager.o
+
+# target to build an object file
+server/CommandsManager.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/CommandsManager.cpp.o
+.PHONY : server/CommandsManager.cpp.o
+
+server/CommandsManager.i: server/CommandsManager.cpp.i
+
+.PHONY : server/CommandsManager.i
+
+# target to preprocess a source file
+server/CommandsManager.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/CommandsManager.cpp.i
+.PHONY : server/CommandsManager.cpp.i
+
+server/CommandsManager.s: server/CommandsManager.cpp.s
+
+.PHONY : server/CommandsManager.s
+
+# target to generate assembly for a file
+server/CommandsManager.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/CommandsManager.cpp.s
+.PHONY : server/CommandsManager.cpp.s
+
+server/GameCollection.o: server/GameCollection.cpp.o
+
+.PHONY : server/GameCollection.o
+
+# target to build an object file
+server/GameCollection.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameCollection.cpp.o
+.PHONY : server/GameCollection.cpp.o
+
+server/GameCollection.i: server/GameCollection.cpp.i
+
+.PHONY : server/GameCollection.i
+
+# target to preprocess a source file
+server/GameCollection.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameCollection.cpp.i
+.PHONY : server/GameCollection.cpp.i
+
+server/GameCollection.s: server/GameCollection.cpp.s
+
+.PHONY : server/GameCollection.s
+
+# target to generate assembly for a file
+server/GameCollection.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameCollection.cpp.s
+.PHONY : server/GameCollection.cpp.s
+
+server/JoinCommand.o: server/JoinCommand.cpp.o
+
+.PHONY : server/JoinCommand.o
+
+# target to build an object file
+server/JoinCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/JoinCommand.cpp.o
+.PHONY : server/JoinCommand.cpp.o
+
+server/JoinCommand.i: server/JoinCommand.cpp.i
+
+.PHONY : server/JoinCommand.i
+
+# target to preprocess a source file
+server/JoinCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/JoinCommand.cpp.i
+.PHONY : server/JoinCommand.cpp.i
+
+server/JoinCommand.s: server/JoinCommand.cpp.s
+
+.PHONY : server/JoinCommand.s
+
+# target to generate assembly for a file
+server/JoinCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/JoinCommand.cpp.s
+.PHONY : server/JoinCommand.cpp.s
+
 server/Server.o: server/Server.cpp.o
 
 .PHONY : server/Server.o
@@ -824,6 +905,15 @@ help:
 	@echo "... client/main.o"
 	@echo "... client/main.i"
 	@echo "... client/main.s"
+	@echo "... server/CommandsManager.o"
+	@echo "... server/CommandsManager.i"
+	@echo "... server/CommandsManager.s"
+	@echo "... server/GameCollection.o"
+	@echo "... server/GameCollection.i"
+	@echo "... server/GameCollection.s"
+	@echo "... server/JoinCommand.o"
+	@echo "... server/JoinCommand.i"
+	@echo "... server/JoinCommand.s"
 	@echo "... server/Server.o"
 	@echo "... server/Server.i"
 	@echo "... server/Server.s"

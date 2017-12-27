@@ -1,26 +1,28 @@
 /*      student 1: Ahmed Sarsour. 315397059
  *      student 2: Eliad Arzuan.  206482622
  */
-
 #include "CommandsManager.h"
-#include "StartCommand.h"
-#include "ListCommand.h"
-#include "JoinCommand.h"
-#include "PlayCommand.h"
-#include "CloseCommand.h"
+//Constructor
 CommandsManager::CommandsManager() {
+    // Initializing the map.
     commandsMap["start"] = new StartCommand();
     commandsMap["list_games"] = new ListCommand();
     commandsMap["join"] = new JoinCommand();
-    commandsMap["play"] = new PlayCommand();
     commandsMap["close"] = new CloseCommand();
+    // Initializing the game collection.
+    this->gameCollection = GameCollection();
+
 }
-void CommandsManager::executeCommand(string
-                                     command, vector<string> args) {
+// Excecutes a command.
+void CommandsManager::executeCommand(string command, vector<string> args) {
+    // Get a command from the map.
     Command *commandObj = commandsMap[command];
-    commandObj->execute(args);
+    //Doing the command
+    commandObj->execute(args, this->gameCollection);
 }
+//Destructor.
 CommandsManager::~CommandsManager() {
+    // Deleting the map.
     map<string, Command *>::iterator it;
     for (it = commandsMap.begin(); it != commandsMap.end(); it++) {
         delete it->second;

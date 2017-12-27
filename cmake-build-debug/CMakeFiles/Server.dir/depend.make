@@ -47,9 +47,51 @@ CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/Point.h
 CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/PointsList.cpp
 CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/PointsList.h
 
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/CloseCommand.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/Command.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/CommandsManager.cpp
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/CommandsManager.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/GameInfo.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/JoinCommand.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/ListCommand.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/Server.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/StartCommand.h
+
+CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameCollection.cpp
+CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameInfo.h
+
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/CloseCommand.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Command.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/CommandsManager.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/GameInfo.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/JoinCommand.cpp
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/JoinCommand.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/ListCommand.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Server.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/StartCommand.h
+
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/CloseCommand.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Command.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/CommandsManager.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/GameInfo.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/JoinCommand.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.cpp
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/StartCommand.h
 
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/CloseCommand.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/Command.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/CommandsManager.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/GameInfo.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/JoinCommand.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/Server.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/StartCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/main.cpp
 

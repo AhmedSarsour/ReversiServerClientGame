@@ -91,3 +91,26 @@ void Client::connectToServer() {
         }
         return Point(x, y);
     }
+
+/**
+* writeToSocket: it gets a string, writes it into the client's socket.
+* @param command
+*/
+void Client::writeToSocket(string command) {
+    //getting the size of the input string.
+    int size = command.size();
+    //writing the size of the command at the beginning of the socket.
+    int n = write(clientSocket, &size, sizeof(size));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
+    }
+    //writing the command "char by char" in the socket.
+    char c;
+    for(int i = 0; i < command.size(); i++) {
+        c = command.at(i);
+        n = write(clientSocket, &c, sizeof(c));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+    }
+}

@@ -8,6 +8,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Server.dir/client/AiPlayer.cpp.o"
   "CMakeFiles/Server.dir/server/Server.cpp.o"
   "CMakeFiles/Server.dir/server/main.cpp.o"
+  "CMakeFiles/Server.dir/server/GameCollection.cpp.o"
+  "CMakeFiles/Server.dir/server/CommandsManager.cpp.o"
+  "CMakeFiles/Server.dir/server/JoinCommand.cpp.o"
   "Server.pdb"
   "Server"
 )

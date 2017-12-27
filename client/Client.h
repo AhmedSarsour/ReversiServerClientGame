@@ -41,6 +41,11 @@ public:
      * The player waiting to get activation message from the server. The process won't stop until he got the message.
      */
     int wait();
+    /**
+    * writeToSocket:it writes the given string in the client's socket.
+    * @param command the command we write to the socket.
+    */
+    void writeToSocket(string command);
 private:
     const char *serverIP;
     int serverPort;

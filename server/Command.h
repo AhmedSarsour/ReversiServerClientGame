@@ -1,15 +1,33 @@
-/*      student 1: Ahmed Sarsour. 315397059
- *      student 2: Eliad Arzuan.  206482622
+/*
+ * student 1: Ahmed Sarsour. 315397059
+ * student 2: Eliad Arzuan.  206482622
  */
 
-#ifndef REVERSI_COMMAND_H
-#define REVERSI_COMMAND_H
+#ifndef COMMAND_H
+#define COMMAND_H
 #include<vector>
 #include <string>
+#include "GameCollection.h"
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include<unistd.h>
+
 using namespace std;
+/**
+ *  Command.
+ *  The command interface.
+ */
 class Command {
 public:
-    virtual void execute(vector<string> args) = 0;
+    /**
+     * Excecute.
+     * @param args the arguments to the function to do.
+     * @param gameCollection a games collection.
+     */
+    virtual void execute(vector<string> args, GameCollection &gameCollection) = 0;
+    /**
+     * The destructor of our class.
+     */
     virtual~Command() {}
 };
-#endif //REVERSI_COMMAND_H
+#endif //COMMAND_H

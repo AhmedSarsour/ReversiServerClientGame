@@ -12,7 +12,7 @@
 #include <cstdlib>
 #include <fstream>
 #include <cstdlib>
-
+#include <cstring>
 #include "Client.h"
 using namespace std;
 
@@ -92,6 +92,57 @@ int main() {
             cout << "Failed to connect to server. Reason:" << msg << endl;
             exit(-1);
         }
+        /***************************************************************************************/
+        // Getting commands from the client.
+        /**************************************************************************/
+        //this dummy is needed because the user enters number 3 then presses "ENTER".
+        char dummy;
+        int append = 0;
+        while(1) {
+            cout << "please choose a command: " << endl;
+            cout << "start <name>, list_games, join <name>, play <X> <Y>, close <name>" << endl;
+            string input = "";
+            char firstChar[1];
+            if(append == 0) {
+                cin >> dummy;
+            }
+            getline(cin,input);
+            //firstChar[0] = '\0';
+            if (append == 0) {
+                firstChar[0] = dummy;
+            }
+            string fullInput;
+            if(append == 0) {
+                fullInput.append(firstChar);
+                fullInput.append(input);
+                append = 1;
+            }else {
+                fullInput = input;
+            }
+            //writing the given input string(command) into the socket of the client in order to let the server read it.
+            client.writeToSocket(fullInput);
+            string s2 = "";
+            // A character to move the string.
+            char ch[1];
+            // Index
+            int i = 0;
+            ch[0] = fullInput.at(i);
+            while (ch[0] != ' ') {
+                ch[0] = fullInput.at(i);
+                if (ch[0] != ' ') {
+                    s2.append(ch);
+                }
+                i++;
+            }
+            cout << "your command :::  " << s2 << endl;
+            // In case the player presses join or start we go to connecting for an existing game.
+            if (strcmp(s2.c_str(), "join") == 0 || strcmp(s2.c_str(), "start") == 0 ) {
+                break;
+            }
+        }
+        /**********************************************************/
+        // Managing the game.
+        /***********************************************************/
         int num1, num2;
         char op;
         int index = 1;

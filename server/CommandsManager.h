@@ -2,17 +2,46 @@
  *      student 2: Eliad Arzuan.  206482622
  */
 
-#ifndef REVERSI_COMMANDSMANAGER_H
-#define REVERSI_COMMANDSMANAGER_H
+#ifndef COMMANDSMANAGER_H
+#define COMMANDSMANAGER_H
+
 #include <map>
 #include "Command.h"
+#include "GameCollection.h"
+#include "StartCommand.h"
+#include "ListCommand.h"
+#include "JoinCommand.h"
+#include "CloseCommand.h"
+/**
+ * CommandsManager.
+ * We are using it command design pattern-  Encapsulate a command as an object, thereby
+letting you parameterize clients with different
+requests, queue or log requests, and support
+undoable operations.
+ */
 class CommandsManager {
 public:
+    /**
+    * CommandsManager.
+    * The constructor of our class.
+    * Initialize a commands map and a Game Collection.
+     */
     CommandsManager();
+    /**
+     * The desturcotr of our class.
+     */
     ~CommandsManager();
-    void executeCommand(string command,
-                        vector<string> args);
+    /**
+     * executeCommand.
+     * Excecutes a command.
+     * @param command the command we want to excecute (start, join,..).
+     * @param args arguments to the command (don't know how so pass it in vector).
+     * @param clientAddresses the addresses of the clients want to join to the game.
+     * @param serverSocket the socket of the server.
+     */
+    void executeCommand(string command, vector<string> args);
 private:
-    map<string, Command *> commandsMap;
+    map<string, Command *> commandsMap; //Map of commands
+    GameCollection gameCollection;      // The collection of the games.
 };
 #endif //REVERSI_COMMANDSMANAGER_H

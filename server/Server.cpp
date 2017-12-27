@@ -1,10 +1,5 @@
 #include "Server.h"
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include<unistd.h>
-#include<string.h>
-#include<iostream>
-#include<stdio.h>
+
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 2 //2 Players
@@ -36,130 +31,68 @@ void Server::start() {
     struct sockaddr_in client2Address;//Fixing error on accept.
     socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
 
-    int playersDivide = 1;
+    // The game itself
+    int clientSocket1 = accept(serverSocket, (struct
+            sockaddr *) &clientAddress, &clientAddressLen);
+    cout << "Socket is :"<< clientSocket1<<endl;
+
+    clientHandle(clientSocket1);
+   // close(clientSocket1);
     while (true) {
         cout << "Waiting for the players connections..." << endl;
-        // Accept a new player connection
-        int clientSocket1 = accept(serverSocket, (struct
-                sockaddr *)&clientAddress, &clientAddressLen);
-        cout << "Player 1 connected" << endl;
-
-        if (clientSocket1 == -1) {
-            throw "Error on accept";
-        }
-        cout << "Waiting for another opponent..." << endl;
-        int clientSocket2 = accept(serverSocket, (struct
-                sockaddr *)&client2Address, &client2AddressLen);
-        cout << "Player 2 connected" << endl;
-        if (clientSocket2 == -1) {
-            throw "Error on accept";
-        }
-        //Sending activation for player 1 that waited for player 2 to connect.
-        // The first player - his number is 1
-        sendActivation(clientSocket1);
-
-//        x = 2;
-//        n = write(serverSocket, &x, sizeof(x));
-//        if (n == -1) {
-//            throw "Error writing arg1 to socket";
-//        }
-        handleClients(clientSocket1, clientSocket2);
-        // Close communication with the players
-        close(clientSocket1);
-        close (clientSocket2);
+        CommandsManager cm = CommandsManager();
+        struct sockaddr_in clientAddresses[] = {clientAddress, client2Address}; //Fixing error on accept.
+        //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
+        vector <string> args;
+        args.push_back("a");
+        args.push_back(clientSocket1 + "");
+        cm.executeCommand("start", args);
+        cm.executeCommand("list_games", args);
+        break;
+     //   cm.executeCommand("join", args);
     }
 }
-// Handle requests from a specific lib
-void Server::handleClients(int clientSocket1, int clientSocket2) {
-    int arg1, arg2;
-    char op;
-    int playersDivide = 1;
+
+void Server::clientHandle(int clientSocket1) {
+    //this vector is just for checking...
+    vector <string> canPlay;
+    canPlay.push_back("noob");
+    canPlay.push_back("noober");
+    canPlay.push_back("noobie");
+    canPlay.push_back("noobieTazz");
     while (true) {
-        // Read new exercise arguments
-        // The first Player.
-        if (playersDivide % 2 == 1) {
-            if (playersDivide == 1) {
-                sendInt(clientSocket1, 1);
-                sendInt(clientSocket2, 2);
-            }
-            int n = read(clientSocket1, &arg1, sizeof(arg1));
-            if (n == -1) {
-                cout << "Error reading arg1" << endl;
-                return;
-            }
-            if (n == 0) {
-                cout << "Client disconnected" << endl;
-                return;
-            }
-            n = read(clientSocket1, &arg2, sizeof(arg2));
-            if (n == -1) {
-                cout << "Error reading arg2" << endl;
-                return;
-            }
-            cout << "X played : (" << arg1 << "," << arg2 << ")" << endl;
-            // Send activation for player 2 that waited for player 1 to do a move.
-            // Sending activation just for waiting.
-            //sendActivation(clientSocket2);
-            // Sending the point arguments to the other player.
-            sendMove(clientSocket2, arg1, arg2);
-            // The second Player.
-        } else {
-            int n = read(clientSocket2, &arg1, sizeof(arg1));
-            if (n == -1) {
-                cout << "Error reading arg1" << endl;
-                return;
-            }
-            if (n == 0) {
-                cout << "Client disconnected" << endl;
-                return;
-            }
-            n = read(clientSocket2, &arg2, sizeof(arg2));
-            if (n == -1) {
-                cout << "Error reading arg2" << endl;
-                return;
-            }
-            cout << "O played : (" << arg1 << "," << arg2 << ")" << endl;
-            // Sending the point arguments to the other player.
-           // sendActivation(clientSocket1);
-            sendMove(clientSocket1, arg1, arg2);
-            // Sending activation just for waiting.
-            // Send activation for player 1 that waited for player 2 to do a move.
+        int size;
+        int n;
+        //we read the size of the given string in the socket.
+        n = read(clientSocket1, &size, sizeof(size));
+        if (n == -1) {
+            throw "Error reading a char from socket";
         }
-        playersDivide++;
-    }
-}
-
-void Server::stop() {
-    close(serverSocket);
-}
-
-void Server::sendActivation(int socket) {
-    int x = -1;
-    int n = write(socket, &x, sizeof(x));
-    if (n == -1) {
-        throw "Error sending activation";
-    }
-}
-
-
-void Server::sendInt(int socket, int msg) {
-    int x = msg;
-    int n = write(socket, &x, sizeof(x));
-    if (n == -1) {
-        throw "Error writing arg1 to socket";
-    }
-}
-
-
-//Send move to the server
-void Server::sendMove(int socket, int x, int y) {
-    // Write the point arguments to the socket
-    int n = write(socket, &x, sizeof(x));
-    if (n == -1) {
-        throw "Error writing arg1 to socket";
-    }
-    n = write(socket, &y, sizeof(y));
-    if (n == -1) {
-        throw "Error writing arg2 to socket";
+        cout << "size is : " << size << endl;
+        char c2;
+        char c[1];
+        //com is the string that holds the command.
+        string com = "";
+        //in this do-while, we read the command
+        do {
+            if(size > 0) {
+                //reading the characters. saving them in c2.
+                n = read(clientSocket1, &c2, sizeof(c2));
+                size--;
+                if (n == -1) {
+                    throw "Error reading a char from socket";
+                }
+                //saving the char in c[0] in order to do append(append doesn't accept char, but char*).
+                c[0] = c2;
+                if (c[0] != ' ') {
+                    com.append(c);
+                }
+            }
+            //i did here && size > 0 because it is needed for the "list_games" command.
+        }while(c[0] != ' ' && size > 0);
+        cout << "command is : " << com << endl;
+        break;
+        //now checking the commands.
+//
     }
 }

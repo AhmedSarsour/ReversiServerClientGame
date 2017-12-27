@@ -4,6 +4,15 @@
 
 #ifndef SERVER_H
 #define SERVER_H
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include<unistd.h>
+#include<string.h>
+#include<iostream>
+#include<stdio.h>
+#include <cstdlib>
+#include "GameCollection.h"
+#include "CommandsManager.h"
 
 class Server {
 public:
@@ -22,29 +31,10 @@ public:
      * Stops the server.
      */
     void stop();
+    void clientHandle(int clientSocket1);
 private:
-    int port;
+    int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
-    /**
-     * HandleClients.
-     * Handle with the both clients.
-     * @param clientSocket1 The socket of the first player.
-     * @param clientSocket2 The socket of the second player.
-     */
-    void handleClients(int client1Socket, int clientSocket2);
-    // Send a message just for the client waiting for it.
-    /**
-     * SendActivation
-     * Sends a message to the player by the socket of the player. The player on the client side will wait untill
-     * he got a message (by the function read).
-     * @param socket the socket of the specific player.
-     */
-    void sendActivation(int socket);
-
-
-    void sendInt(int socket, int msg);
-
-    void sendMove(int socket, int x, int y);
 };
 
 

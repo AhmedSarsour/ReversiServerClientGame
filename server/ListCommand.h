@@ -2,21 +2,32 @@
  *      student 2: Eliad Arzuan.  206482622
  */
 
-#ifndef REVERSI_LISTCOMMAND_H
-#define REVERSI_LISTCOMMAND_H
+#ifndef LISTCOMMAND_H
+#define LISTCOMMAND_H
 #include "Command.h"
 #include <iostream>
-//i think there is no need to create this class, we just make a function in the server,
-//that sends the vector of available games into the client(the client needs another function).
+/**
+ * ListCommand.
+ * This command send to the client list of avaliable games that he can join.
+ */
 class ListCommand: public Command {
 public:
-    //gets an empty vector string. we need to return a list of available games
-    void execute(vector<string> args) {
-        for (int i = 0; i < args.size(); i++) {
-            cout << args[i] << " ";
+    /**
+     * Excecute.
+     * @param args the arguments to the function to do.
+     * @param gameCollection a games collection.
+     * @param clientAddresses array of 2 clients addresses (first on 0 second on 1)
+     * @param clientAddressLens array of 2 clients lens (first on 0 second on 1)
+     * @param serverSocket the socket to the server
+     */
+    void execute(vector<string> args, GameCollection &gameCollection){
+        //  Getting the available games.
+        vector<string> available = gameCollection.getAvailableGames();
+        for (int i = 0; i < available.size(); i++) {
+            cout << "GameInfo: " << available[i] << endl;
         }
-        cout << endl;
+
     }
 };
 
-#endif //REVERSI_LISTCOMMAND_H
+#endif //LISTCOMMAND_H

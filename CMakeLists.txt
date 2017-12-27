@@ -8,7 +8,9 @@ set(SOURCE_FILES client/BasicRules.cpp client/BasicRules.h client/Board.cpp clie
         client/Point.cpp client/Point.h client/Rules.h client/PointsList.cpp
         client/PointsList.h client/AiPlayer.cpp client/AiPlayer.h)
 
-set(SERVER_FILES server/Server.cpp server/Server.h server/main.cpp)
+set(SERVER_FILES server/Server.cpp server/Server.h server/main.cpp server/GameCollection.cpp server/GameCollection.h
+        server/Command.h server/CloseCommand.h server/CommandsManager.cpp server/CommandsManager.h
+        server/JoinCommand.h server/ListCommand.h server/StartCommand.h server/GameInfo.h server/JoinCommand.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpthread")
 add_subdirectory(lib/googletest-release-1.8.0)

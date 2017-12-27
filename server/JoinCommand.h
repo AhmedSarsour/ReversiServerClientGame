@@ -1,18 +1,60 @@
-/*      student 1: Ahmed Sarsour. 315397059
+/*
+ *      student 1: Ahmed Sarsour. 315397059
  *      student 2: Eliad Arzuan.  206482622
  */
 
-#ifndef REVERSI_JOINCOMMAND_H
-#define REVERSI_JOINCOMMAND_H
+#ifndef JOINCOMMAND_H
+#define JOINCOMMAND_H
 #include "Command.h"
 #include <iostream>
+#include "Server.h"
+/**
+ * JoinCommand.
+ * A command to join a player to exists game.
+ */
 class JoinCommand: public Command {
 public:
-    //we get a vector of the name of the game we wanna get. (so maybe we need to make a function that
-    //gives us the available list of commands ( a string vector of names might do the job).
-    void execute(vector<string> args) {
-        //we need to do something like  handleClients(client1, client2);
-    }
+    /**
+     * Excecute.
+     * @param args the arguments to the function to do.
+     * @param gameCollection a games collection.
+     * This args[0] - gameName args[1] - socket
+     */
+    void execute(vector<string> args, GameCollection &gameCollection);
+
+private:
+    /**
+    * HandleClients.
+    * Handle with the both clients.
+    * @param clientSocket1 The socket of the first player.
+    * @param clientSocket2 The socket of the second player.
+    */
+    void handleClients(int client1Socket, int clientSocket2);
+    // Send a message just for the client waiting for it.
+    /**
+     * SendActivation
+     * Sends a message to the player by the socket of the player. The player on the client side will wait untill
+     * he got a message (by the function read).
+     * @param socket the socket of the specific player.
+     */
+    void sendActivation(int socket);
+    /**
+     * sendInt.
+     * Sending int through the socket.
+     * @param socket the socket we want to send to.
+     * @param msg the message we want to send.
+     */
+    void sendInt(int socket, int msg);
+    /**
+     * sendMove.
+     * Sending a move through the socket.
+     * @param socket the socket of the other client.
+     * @param x the x cordinate.
+     * @param y the y cordinate.
+     */
+    void sendMove(int socket, int x, int y);
 };
 
-#endif //REVERSI_JOINCOMMAND_H
+
+
+#endif //JOINCOMMAND_H

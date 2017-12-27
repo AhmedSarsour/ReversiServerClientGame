@@ -239,13 +239,13 @@ void ConsoleBoard::playGame() {
 		 */
 		if (gameOver) {
 			if (countXs > countOs) {
-				cout << "Game over. The winner is: "
+				cout << "GameInfo over. The winner is: "
 						<< ConsoleBoard::getFirstPlayer()->getName();
 			} else if (countOs > countXs) {
-				cout << "Game over. The winner is: "
+				cout << "GameInfo over. The winner is: "
 						<< ConsoleBoard::getSecondPlayer()->getName();
 			} else {
-				cout << "Game over. Its a Draw!.";
+				cout << "GameInfo over. Its a Draw!.";
 			}
 			cout << endl;
 			break;
