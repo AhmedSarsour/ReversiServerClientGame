@@ -38,61 +38,112 @@ void Server::start() {
 
     clientHandle(clientSocket1);
    // close(clientSocket1);
-    while (true) {
-        cout << "Waiting for the players connections..." << endl;
-        CommandsManager cm = CommandsManager();
-        struct sockaddr_in clientAddresses[] = {clientAddress, client2Address}; //Fixing error on accept.
-        //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
-        vector <string> args;
-        args.push_back("a");
-        args.push_back(clientSocket1 + "");
-        cm.executeCommand("start", args);
-        cm.executeCommand("list_games", args);
-        break;
-     //   cm.executeCommand("join", args);
-    }
+//    while (true) {
+//        cout << "Waiting for the players connections..." << endl;
+//        CommandsManager cm = CommandsManager();
+//        struct sockaddr_in clientAddresses[] = {clientAddress, client2Address}; //Fixing error on accept.
+//        //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
+//        vector <string> args;
+//        args.push_back("a");
+//        args.push_back(clientSocket1 + "");
+//        cm.executeCommand("start", args);
+//        cm.executeCommand("list_games", args);
+//        break;
+//     //   cm.executeCommand("join", args);
+//    }
 }
 
 void Server::clientHandle(int clientSocket1) {
     //this vector is just for checking...
-    vector <string> canPlay;
+    vector<string> canPlay;
     canPlay.push_back("noob");
     canPlay.push_back("noober");
     canPlay.push_back("noobie");
     canPlay.push_back("noobieTazz");
-    while (true) {
-        int size;
-        int n;
-        //we read the size of the given string in the socket.
-        n = read(clientSocket1, &size, sizeof(size));
-        if (n == -1) {
-            throw "Error reading a char from socket";
-        }
-        cout << "size is : " << size << endl;
-        char c2;
-        char c[1];
-        //com is the string that holds the command.
-        string com = "";
-        //in this do-while, we read the command
-        do {
-            if(size > 0) {
-                //reading the characters. saving them in c2.
-                n = read(clientSocket1, &c2, sizeof(c2));
-                size--;
-                if (n == -1) {
-                    throw "Error reading a char from socket";
-                }
-                //saving the char in c[0] in order to do append(append doesn't accept char, but char*).
-                c[0] = c2;
-                if (c[0] != ' ') {
-                    com.append(c);
-                }
-            }
-            //i did here && size > 0 because it is needed for the "list_games" command.
-        }while(c[0] != ' ' && size > 0);
-        cout << "command is : " << com << endl;
-        break;
-        //now checking the commands.
-//
+   // while (true) {
+    int size;
+    int n;
+    //we read the size of the given string in the socket.
+    n = read(clientSocket1, &size, sizeof(size));
+    if (n == -1) {
+        throw "Error reading a char from socket";
     }
+    cout << "size is : " << size << endl;
+        readString(clientSocket1, &size);
+        readString(clientSocket1, &size);
+        /***************************************/
+        //Getting the argument after the command:
+        /****************************************/
+        string name = "";
+
+        cout << "Waiting for the players connections..." << endl;
+        CommandsManager cm = CommandsManager();
+        //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
+        vector <string> args;
+    while(true) {
+        args.push_back("a");
+        args.push_back(clientSocket1 + "");
+        args.push_back(serverSocket + "");
+        cm.executeCommand("start", args);
+        cm.executeCommand("list_games", args);
+        break;
+     //   cm.executeCommand("close", args);
+//        struct sockaddr_in client2Address;//Fixing error on accept.
+//        socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
+//
+//        // Works only if i accept it
+//        int clientSocket2 = accept(serverSocket, (struct
+//                sockaddr *) &client2Address, &client2AddressLen);
+//        cout << "Socket is :"<< clientSocket1<<endl;
+
+    }
+        //reading the gameName.
+//        while (size > 0) {
+//            n = read(clientSocket1, &c2, sizeof(c2));
+//            size--;
+//            if (n == -1) {
+//                throw "Error reading a char from socket";
+//            }
+//            c[0] = c2;
+//            //in case the user enter <> , Anyway the command: "join/start gameName" also works fine, i GUESS XD.
+//            if (c[0] != '<' && c[0] != '>' && c[0] != ' ') {
+//                name.append(c);
+//            }
+
+//
+        }
+  //  }
+
+string Server::readString(int socket, int* sizeOf) {
+    int size = *sizeOf;
+    int clientSocket1= socket;
+int n;
+    char c2;
+    char c[1];
+    //com is the string that holds the command.
+    string com = "";
+    //in this do-while, we read the command
+    do {
+        if(size > 0) {
+            //reading the characters. saving them in c2.
+            n = read(clientSocket1, &c2, sizeof(c2));
+            size--;
+            if (n == -1) {
+                throw "Error reading a char from socket";
+            }
+            //saving the char in c[0] in order to do append(append doesn't accept char, but char*).
+            c[0] = c2;
+            if (c[0] != ' ') {
+                com.append(c);
+            }
+        }
+        //i did here && size > 0 because it is needed for the "list_games" command.
+    }while(c[0] != ' ' && size > 0);
+    cout << "command is : " << com << endl;
+    *sizeOf = size;
+    return com;
+
+
 }
+
+

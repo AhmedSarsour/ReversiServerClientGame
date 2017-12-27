@@ -38,6 +38,7 @@ public:
             gameCollection.addGame(gameName);
             cout << "Waiting for another opponent..." << endl;
             gameCollection.joinGame(gameName, clientSocket1);
+
         } else { // Send -1 to socket
             int x = -1;
             int n = write(clientSocket1, &x, sizeof(x));
@@ -45,6 +46,11 @@ public:
                 throw "Error writing arg1 to socket";
             }
         }
+
+
+
+
+
     }
 };
 

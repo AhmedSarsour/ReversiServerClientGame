@@ -35,6 +35,12 @@ public:
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
+    /**
+     * readString.
+     * Reading a string from socket until space.
+     * @return the string it read.
+     */
+    string readString(int socket, int *size);
 };
 
 
