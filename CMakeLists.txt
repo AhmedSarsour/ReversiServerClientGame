@@ -12,7 +12,7 @@ set(SERVER_FILES server/Server.cpp server/Server.h server/main.cpp server/GameCo
         server/Command.h server/CloseCommand.h server/CommandsManager.cpp server/CommandsManager.h
         server/JoinCommand.h server/ListCommand.h server/StartCommand.h server/GameInfo.h server/JoinCommand.cpp)
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpthread")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")
 add_subdirectory(lib/googletest-release-1.8.0)
 include_directories(lib/googletest-release-1.8.0/googletest/include)
 include_directories(lib/googletest-release-1.8.0/googlemock/include)

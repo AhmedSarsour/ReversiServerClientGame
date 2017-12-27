@@ -28,38 +28,45 @@ void Server::start() {
     struct sockaddr_in clientAddress; //Fixing error on accept.
     socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
 
-    struct sockaddr_in client2Address;//Fixing error on accept.
-    socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
+//    struct sockaddr_in client2Address;//Fixing error on accept.
+//    socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
 
     // The game itself
-    int clientSocket1 = accept(serverSocket, (struct
-            sockaddr *) &clientAddress, &clientAddressLen);
-    cout << "Socket is :"<< clientSocket1<<endl;
+    vector<pthread_t> threads;
 
-    clientHandle(clientSocket1);
-   // close(clientSocket1);
-//    while (true) {
-//        cout << "Waiting for the players connections..." << endl;
-//        CommandsManager cm = CommandsManager();
-//        struct sockaddr_in clientAddresses[] = {clientAddress, client2Address}; //Fixing error on accept.
-//        //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
-//        vector <string> args;
-//        args.push_back("a");
-//        args.push_back(clientSocket1 + "");
-//        cm.executeCommand("start", args);
-//        cm.executeCommand("list_games", args);
-//        break;
-//     //   cm.executeCommand("join", args);
-//    }
+    while (true) {
+        int index = -1;
+        int clientSocket1 = accept(serverSocket, (struct
+                sockaddr *) &clientAddress, &clientAddressLen);
+        // The arguments to clientHandle;
+        ThreadArgs threadArgs;
+
+        threadArgs.server = this;
+        threadArgs.socket = clientSocket1;
+        cout << "Socket is :" << clientSocket1 << endl;
+        threads.push_back(NULL);
+        index++;
+        int rc = pthread_create(&threads[index], NULL, clientHandle, &threadArgs);
+
+        if (rc) {
+            cout << "Error unable to create thread, " << rc << endl;
+            exit(-1);
+        }
+        pthread_exit(NULL);
+
+    }
+//
+//    int clientSocket2 = accept(serverSocket, (struct
+//            sockaddr *) &client2Address, &client2AddressLen);
+//    cout << "Socket is :"<< clientSocket2<<endl;
+//    clientHandle(clientSocket2);
+
 }
 
-void Server::clientHandle(int clientSocket1) {
-    //this vector is just for checking...
-    vector<string> canPlay;
-    canPlay.push_back("noob");
-    canPlay.push_back("noober");
-    canPlay.push_back("noobie");
-    canPlay.push_back("noobieTazz");
+void* Server::clientHandle(void * arguments) {
+     ThreadArgs threadArgs = *((ThreadArgs*) arguments);
+     int clientSocket1 = threadArgs.socket;
+     Server s= *threadArgs.server;
    // while (true) {
     int size;
     int n;
@@ -69,8 +76,8 @@ void Server::clientHandle(int clientSocket1) {
         throw "Error reading a char from socket";
     }
     cout << "size is : " << size << endl;
-        readString(clientSocket1, &size);
-        readString(clientSocket1, &size);
+    string command = s.readString(clientSocket1, &size);
+     string typeCommand = s.readString(clientSocket1, &size);
         /***************************************/
         //Getting the argument after the command:
         /****************************************/
@@ -80,36 +87,10 @@ void Server::clientHandle(int clientSocket1) {
         CommandsManager cm = CommandsManager();
         //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
         vector <string> args;
-    while(true) {
         args.push_back("a");
         args.push_back(clientSocket1 + "");
-        args.push_back(serverSocket + "");
-        cm.executeCommand("start", args);
-        cm.executeCommand("list_games", args);
-        break;
-     //   cm.executeCommand("close", args);
-//        struct sockaddr_in client2Address;//Fixing error on accept.
-//        socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
-//
-//        // Works only if i accept it
-//        int clientSocket2 = accept(serverSocket, (struct
-//                sockaddr *) &client2Address, &client2AddressLen);
-//        cout << "Socket is :"<< clientSocket1<<endl;
 
-    }
-        //reading the gameName.
-//        while (size > 0) {
-//            n = read(clientSocket1, &c2, sizeof(c2));
-//            size--;
-//            if (n == -1) {
-//                throw "Error reading a char from socket";
-//            }
-//            c[0] = c2;
-//            //in case the user enter <> , Anyway the command: "join/start gameName" also works fine, i GUESS XD.
-//            if (c[0] != '<' && c[0] != '>' && c[0] != ' ') {
-//                name.append(c);
-//            }
-
+        cm.executeCommand(command, args);
 //
         }
   //  }

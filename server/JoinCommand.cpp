@@ -6,8 +6,13 @@
 void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
     // Getting the name of the game.
     string gameName = args[0];
+    int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
+
     int clientSocket2 = atoi(args[1].c_str());
-    cout << "Player 2 connected" << endl;
+    // Maybe to fix the bag
+     sendActivation(clientSocket1);
+
+    cout << "Player 2 connected"<< endl;
     if (clientSocket2 == -1) {
         throw "Error on accept";
     }
@@ -22,7 +27,6 @@ void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
         }
     }
 
-    int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
     cout << "socket 1:" << clientSocket1 << endl;
 
     cout << "socket 2: " << clientSocket2 << endl;

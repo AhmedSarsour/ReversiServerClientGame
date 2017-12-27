@@ -13,9 +13,13 @@
 #include <cstdlib>
 #include "GameCollection.h"
 #include "CommandsManager.h"
-
+#include <pthread.h>
 class Server {
 public:
+    typedef struct  {
+        int socket;
+        Server* server;
+    }ThreadArgs;
     /**
      * The constructor of our class
      * @param port
@@ -31,7 +35,7 @@ public:
      * Stops the server.
      */
     void stop();
-    void clientHandle(int clientSocket1);
+    static void* clientHandle(void * arguments);
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
