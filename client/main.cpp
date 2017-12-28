@@ -173,6 +173,11 @@ int main() {
             }
 
             index++;
+
+            if (index > 6) {
+                cout << "Problemm" << endl;
+                break;
+            }
         }
 
         firstPlayer = new RemotePlayer("X", player, client);

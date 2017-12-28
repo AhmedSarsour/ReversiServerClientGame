@@ -9,8 +9,9 @@ void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
     int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
 
     int clientSocket2 = atoi(args[1].c_str());
-    // Maybe to fix the bag
-     sendActivation(clientSocket1);
+    cout << "socket 1:" << clientSocket1 << endl;
+
+    cout << "socket 2: " << args[1] << endl;
 
     cout << "Player 2 connected"<< endl;
     if (clientSocket2 == -1) {
@@ -27,9 +28,7 @@ void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
         }
     }
 
-    cout << "socket 1:" << clientSocket1 << endl;
 
-    cout << "socket 2: " << clientSocket2 << endl;
     //Sending activation for player 1 that waited for player 2 to connect.
     // The first player - his number is 1
     sendActivation(clientSocket1);

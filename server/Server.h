@@ -45,6 +45,30 @@ private:
      * @return the string it read.
      */
     string readString(int socket, int *size);
+    // Converting int to string - static because we want to use them in static functions.
+    /**
+     * intToStringHelper
+     * @param x a number.
+     * @param str an empty string
+     * @return the int converted to string.
+     */
+    static string intToStringHelper(int x, string str) {
+        if (x == 0) {
+            return str;
+        }
+        char ch = (char) ((x%10 + '0'));
+        // Put the char in the end because moves by the digits.
+        return intToStringHelper(x / 10, str) + ch;
+    }
+    /**
+     * intToString.
+     * @param num a number.
+     * Here we put empty string and prevent put it all the time.
+     * @return the int converted to string.
+     */
+    static string intToString(int num) {
+        return intToStringHelper(num ,"");
+    }
 };
 
 

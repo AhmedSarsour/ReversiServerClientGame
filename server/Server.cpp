@@ -6,6 +6,8 @@ using namespace std;
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "server" << endl;
 }
+
+CommandsManager cm = CommandsManager();
 void Server::start() {
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
@@ -25,26 +27,26 @@ void Server::start() {
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
     // Define the lib socket's structures
-    struct sockaddr_in clientAddress; //Fixing error on accept.
-    socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
+
+
+    //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
 
 //    struct sockaddr_in client2Address;//Fixing error on accept.
 //    socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
 
     // The game itself
+    struct sockaddr_in clientAddress; //Fixing error on accept.
+    socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
     vector<pthread_t> threads;
-
+    int index = -1;
     while (true) {
-        int index = -1;
-        cout << index << endl;
+        cout << "Index is " << index << endl;
         int clientSocket1 = accept(serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
         // The arguments to clientHandle;
         ThreadArgs threadArgs;
-
         threadArgs.server = this;
         threadArgs.socket = clientSocket1;
-        cout << "Socket is :" << clientSocket1 << endl;
         threads.push_back(NULL);
         index++;
         int rc = pthread_create(&threads[index], NULL, clientHandle, &threadArgs);
@@ -53,9 +55,14 @@ void Server::start() {
             cout << "Error unable to create thread, " << rc << endl;
             exit(-1);
         }
+
       //  pthread_exit(NULL);
 
+       // close(clientSocket1);
+
     }
+
+
     pthread_exit(NULL);
 //
 //    int clientSocket2 = accept(serverSocket, (struct
@@ -68,6 +75,9 @@ void Server::start() {
 void* Server::clientHandle(void * arguments) {
      ThreadArgs threadArgs = *((ThreadArgs*) arguments);
      int clientSocket1 = threadArgs.socket;
+    vector <string> args;
+    args.push_back("a");
+    args.push_back(intToString(clientSocket1));
      Server s= *threadArgs.server;
    // while (true) {
     int size;
@@ -79,20 +89,20 @@ void* Server::clientHandle(void * arguments) {
     }
     cout << "size is : " << size << endl;
     string command = s.readString(clientSocket1, &size);
-     string typeCommand = s.readString(clientSocket1, &size);
+    string typeCommand = s.readString(clientSocket1, &size);
         /***************************************/
         //Getting the argument after the command:
         /****************************************/
-        string name = "";
+    string name = "";
 
         cout << "Waiting for the players connections..." << endl;
-        CommandsManager cm = CommandsManager();
-        //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
-        vector <string> args;
-        args.push_back("a");
-        args.push_back(clientSocket1 + "");
-
+    cout << " I pass the vector " << args[1] << endl;
         cm.executeCommand(command, args);
+
+
+
+        // Clearing the vector after the command to the next one.
+
 //
         }
   //  }
