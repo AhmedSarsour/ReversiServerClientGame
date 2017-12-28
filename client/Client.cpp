@@ -57,7 +57,6 @@ void Client::connectToServer() {
         if (n == -1) {
             cout << "Error reading it" << endl;
         }
-
         return x;
     }
 
@@ -113,4 +112,36 @@ void Client::writeToSocket(string command) {
             throw "Error writing arg1 to socket";
         }
     }
+}
+
+int Client::readOperation() {
+    char c;
+    int n;
+    int i = 0;
+    do {
+        n = read(clientSocket, &c, sizeof(c));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+        //WE JUST NEED to fix the PROBLEM IN SERVER in clientHandle function.
+        //because when the player enters "join" to a game that is not there,
+        //in the server he gets out of the while(1) loop. in our case he must NOT!.
+        //the same goes for when the client enters a game with a name that is already
+        //there, WE JUST NEED TO FIX IT that he doesn't get out from the while-loop in clientHandle.!.
+        if (c == '-') {
+            cout << "there is an already existing game with such name!" << endl;
+            cout << "please pick another one.";
+            return -1;
+        } else if (c == '+') {
+            cout << "there is no existing game with the name you entered!" << endl;
+            return -1;
+        }
+        //# means the end of the message-string.
+        if (c != '#') {
+            cout << c;
+        }
+        i++;
+    }while(c != '#');
+    cout << endl;
+    return 1;
 }

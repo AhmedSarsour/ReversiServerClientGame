@@ -27,29 +27,46 @@ public:
         string gameName = args[0];
         int clientSocket1 = atoi(args[1].c_str());
         cout << "Player 1 connected" << endl;
-
         if (clientSocket1 == -1) {
             throw "Error on accept";
         }
-
         // Search if there is already game in this name
         // There is no already game in this name
         if (gameCollection.searchGame(gameName) == -1) {
             gameCollection.addGame(gameName);
             cout << "Waiting for another opponent..." << endl;
             gameCollection.joinGame(gameName, clientSocket1);
-        } else { // Send -1 to socket
-            int x = -1;
+            /*
+             * writing # to the socket means the client successfully started a game.
+             */
+            char x = '#';
             int n = write(clientSocket1, &x, sizeof(x));
             if (n == -1) {
                 throw "Error writing arg1 to socket";
             }
+                            /*
+                            x = '#';
+                            n = write(clientSocket1, &x, sizeof(x));
+                            if (n == -1) {
+                                throw "Error writing arg1 to socket";
+                            }
+                            */
+
+        } else { // Send -1 to socket
+            char x = '-';
+            int n = write(clientSocket1, &x, sizeof(x));
+            if (n == -1) {
+                throw "Error writing arg1 to socket";
+            }
+                                /*
+                                x = '-';
+                                n = write(clientSocket1, &x, sizeof(x));
+                                if (n == -1) {
+                                    throw "Error writing arg1 to socket";
+                                }
+                                */
+
         }
-
-
-
-
-
     }
 };
 

@@ -99,8 +99,8 @@ int main() {
         char dummy;
         int append = 0;
         while(1) {
-            cout << "please choose a command: " << endl;
-            cout << "start <name>, list_games, join <name>, play <X> <Y>, close <name>" << endl;
+            cout << "please choose a command: ";
+            cout << "start <name>, list_games, join <name>, close <name>" << endl;
             string input = "";
             char firstChar[1];
             if(append == 0) {
@@ -120,24 +120,33 @@ int main() {
                 fullInput = input;
             }
             //writing the given input string(command) into the socket of the client in order to let the server read it.
-            client.writeToSocket(fullInput);
             string s2 = "";
             // A character to move the string.
             char ch[1];
             // Index
             int i = 0;
             ch[0] = fullInput.at(i);
-            while (ch[0] != ' ') {
+            while (ch[0] != ' ' && i < fullInput.size()) {
                 ch[0] = fullInput.at(i);
                 if (ch[0] != ' ') {
                     s2.append(ch);
                 }
                 i++;
             }
-            cout << "your command :::  " << s2 << endl;
-            // In case the player presses join or start we go to connecting for an existing game.
-            if (strcmp(s2.c_str(), "join") == 0 || strcmp(s2.c_str(), "start") == 0 ) {
-                break;
+
+            if (!(strcmp(s2.c_str(), "list_games") == 0 || strcmp(s2.c_str(), "start") == 0
+                     || strcmp(s2.c_str(), "join") == 0 || strcmp(s2.c_str(), "close") == 0)) {
+                cout << "no such command!." << endl;
+            } else {
+                client.writeToSocket(fullInput);
+                cout << "you picked : " << s2 << " command" << endl;
+                int checkVal = client.readOperation();
+                // In case the player presses join or start we go to connecting for an existing game.
+                if (checkVal != -1) {
+                    if (strcmp(s2.c_str(), "join") == 0 || strcmp(s2.c_str(), "start") == 0) {
+                        break;
+                    }
+                }
             }
         }
         /**********************************************************/
@@ -150,7 +159,6 @@ int main() {
         Point move(0, 0);
         // Until getting the player information.
         while (player == 0) {
-
             // Wait until connection or move of the other player.
             if (index != 2) {
                 cout << "Waiting for the other player" << endl;
@@ -183,7 +191,6 @@ int main() {
         firstPlayer = new RemotePlayer("X", player, client);
         secondPlayer = new RemotePlayer("O", player, client);
     }
-
         //We selected option from the menu.
     if (option == 1 || option ==2 || option == 3) {
         secondPlayer->setBoardRowNCol(row, col);

@@ -6,59 +6,59 @@
 
 #IncludeRegexTransform: 
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.cpp
+/home/coraledge/CLionProjects/ex5/client/AiPlayer.cpp
 iostream
 -
 AiPlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.h
+/home/coraledge/CLionProjects/ex5/client/AiPlayer.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 string
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 BasicRules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.h
+/home/coraledge/CLionProjects/ex5/client/BasicRules.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.h
+/home/coraledge/CLionProjects/ex5/client/AiPlayer.h
 string
 -
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.cpp
+/home/coraledge/CLionProjects/ex5/client/BasicRules.cpp
 BasicRules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.h
+/home/coraledge/CLionProjects/ex5/client/BasicRules.h
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.h
+/home/coraledge/CLionProjects/ex5/client/BasicRules.h
 list
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 Rules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Rules.h
+/home/coraledge/CLionProjects/ex5/client/Rules.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.cpp
+/home/coraledge/CLionProjects/ex5/client/Board.cpp
 Board.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.h
+/home/coraledge/CLionProjects/ex5/client/Board.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.h
+/home/coraledge/CLionProjects/ex5/client/Board.h
 Rules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Rules.h
+/home/coraledge/CLionProjects/ex5/client/Rules.h
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Client.cpp
+/home/coraledge/CLionProjects/ex5/client/Client.cpp
 Client.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Client.h
+/home/coraledge/CLionProjects/ex5/client/Client.h
 iostream
 -
 sys/socket.h
@@ -74,143 +74,143 @@ string.h
 unistd.h
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Client.h
+/home/coraledge/CLionProjects/ex5/client/Client.h
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.cpp
+/home/coraledge/CLionProjects/ex5/client/ConsoleBoard.cpp
 iostream
 -
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 BasicRules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.h
+/home/coraledge/CLionProjects/ex5/client/BasicRules.h
 ConsoleBoard.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.h
+/home/coraledge/CLionProjects/ex5/client/ConsoleBoard.h
 HumanPlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.h
+/home/coraledge/CLionProjects/ex5/client/HumanPlayer.h
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 Rules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Rules.h
+/home/coraledge/CLionProjects/ex5/client/Rules.h
 AiPlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.h
+/home/coraledge/CLionProjects/ex5/client/AiPlayer.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.h
+/home/coraledge/CLionProjects/ex5/client/ConsoleBoard.h
 iostream
 -
 list
 -
 Board.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.h
+/home/coraledge/CLionProjects/ex5/client/Board.h
 Rules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Rules.h
+/home/coraledge/CLionProjects/ex5/client/Rules.h
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 HumanPlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.h
+/home/coraledge/CLionProjects/ex5/client/HumanPlayer.h
 AiPlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.h
+/home/coraledge/CLionProjects/ex5/client/AiPlayer.h
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.cpp
+/home/coraledge/CLionProjects/ex5/client/HumanPlayer.cpp
 iostream
 -
 HumanPlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.h
+/home/coraledge/CLionProjects/ex5/client/HumanPlayer.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 string
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.h
+/home/coraledge/CLionProjects/ex5/client/HumanPlayer.h
 string
 -
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 string
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.cpp
+/home/coraledge/CLionProjects/ex5/client/Point.cpp
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 iostream
 -
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 iostream
 -
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.cpp
+/home/coraledge/CLionProjects/ex5/client/PointsList.cpp
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 iostream
 -
 list
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 list
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/RemotePlayer.cpp
+/home/coraledge/CLionProjects/ex5/client/RemotePlayer.cpp
 iostream
 -
 RemotePlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/RemotePlayer.h
+/home/coraledge/CLionProjects/ex5/client/RemotePlayer.h
 PointsList.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
+/home/coraledge/CLionProjects/ex5/client/PointsList.h
 string
 -
 Point.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.h
+/home/coraledge/CLionProjects/ex5/client/Point.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/RemotePlayer.h
+/home/coraledge/CLionProjects/ex5/client/RemotePlayer.h
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 Client.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Client.h
+/home/coraledge/CLionProjects/ex5/client/Client.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Rules.h
+/home/coraledge/CLionProjects/ex5/client/Rules.h
 iostream
 -
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/main.cpp
+/home/coraledge/CLionProjects/ex5/client/main.cpp
 iostream
 -
 Player.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
+/home/coraledge/CLionProjects/ex5/client/Player.h
 Board.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.h
+/home/coraledge/CLionProjects/ex5/client/Board.h
 BasicRules.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.h
+/home/coraledge/CLionProjects/ex5/client/BasicRules.h
 ConsoleBoard.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.h
+/home/coraledge/CLionProjects/ex5/client/ConsoleBoard.h
 RemotePlayer.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/RemotePlayer.h
+/home/coraledge/CLionProjects/ex5/client/RemotePlayer.h
 cstdlib
 -
 fstream
@@ -220,5 +220,5 @@ cstdlib
 cstring
 -
 Client.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Client.h
+/home/coraledge/CLionProjects/ex5/client/Client.h
 

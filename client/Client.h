@@ -46,6 +46,7 @@ public:
     * @param command the command we write to the socket.
     */
     void writeToSocket(string command);
+    int readOperation();
 private:
     const char *serverIP;
     int serverPort;

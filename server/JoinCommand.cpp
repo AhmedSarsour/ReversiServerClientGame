@@ -7,25 +7,44 @@ void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
     // Getting the name of the game.
     string gameName = args[0];
     int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
-
+    //NOTE: clientSocket2 is the socket for the guy who did join-command!.
     int clientSocket2 = atoi(args[1].c_str());
     cout << "socket 1:" << clientSocket1 << endl;
-
     cout << "socket 2: " << args[1] << endl;
-
     cout << "Player 2 connected"<< endl;
     if (clientSocket2 == -1) {
         throw "Error on accept";
     }
-    // Search if there is already game in this name
+    // Search if there is already game in this name.
     if (gameCollection.searchGame(gameName) != -1) {
         gameCollection.joinGame(gameName, clientSocket2);
-    } else { // Send -1 to socket
-        int x = -1;
+        //writing # to the client means he succesfully joined the game.
+        char x = '#';
         int n = write(clientSocket2, &x, sizeof(x));
         if (n == -1) {
             throw "Error writing arg1 to socket";
         }
+        /*
+        x = '#';
+        n = write(clientSocket2, &x, sizeof(x));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+        */
+    } else { // Send '+' (as a signal) to the player's socket telling him "no such game".
+        char x = '+';
+        int n = write(clientSocket2, &x, sizeof(x));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+        /*
+        //writing '+' 2 times, 1 time we read in server, 1 time in client.
+        x = '+';
+        n = write(clientSocket1, &x, sizeof(x));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+        */
     }
 
 

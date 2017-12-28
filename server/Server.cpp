@@ -6,7 +6,6 @@ using namespace std;
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "server" << endl;
 }
-
 CommandsManager cm = CommandsManager();
 void Server::start() {
     // Create a socket point
@@ -50,7 +49,6 @@ void Server::start() {
         threads.push_back(NULL);
         index++;
         int rc = pthread_create(&threads[index], NULL, clientHandle, &threadArgs);
-
         if (rc) {
             cout << "Error unable to create thread, " << rc << endl;
             exit(-1);
@@ -73,39 +71,63 @@ void Server::start() {
 }
 
 void* Server::clientHandle(void * arguments) {
-     ThreadArgs threadArgs = *((ThreadArgs*) arguments);
-     int clientSocket1 = threadArgs.socket;
-    vector <string> args;
-    args.push_back("a");
-    args.push_back(intToString(clientSocket1));
-     Server s= *threadArgs.server;
-   // while (true) {
-    int size;
-    int n;
-    //we read the size of the given string in the socket.
-    n = read(clientSocket1, &size, sizeof(size));
-    if (n == -1) {
-        throw "Error reading a char from socket";
-    }
-    cout << "size is : " << size << endl;
-    string command = s.readString(clientSocket1, &size);
-    string typeCommand = s.readString(clientSocket1, &size);
+    while(1) {
+        ThreadArgs threadArgs = *((ThreadArgs *) arguments);
+        int clientSocket1 = threadArgs.socket;
+        vector<string> args;
+        Server s = *threadArgs.server;
+        // while (true) {
+        int size;
+        int n;
+        //we read the size of the given string in the socket.
+        n = read(clientSocket1, &size, sizeof(size));
+        if (n == -1) {
+            throw "Error reading a char from socket";
+        }
+        cout << "size is : " << size << endl;
+        string command = s.readString(clientSocket1, &size);
+        string typeCommand = s.readString(clientSocket1, &size);
+        args.push_back(typeCommand);
+        args.push_back(intToString(clientSocket1));
+
         /***************************************/
         //Getting the argument after the command:
         /****************************************/
-    string name = "";
-
+        string name = "";
         cout << "Waiting for the players connections..." << endl;
-    cout << " I pass the vector " << args[1] << endl;
+        cout << "I pass the vector " << args[1] << endl;
         cm.executeCommand(command, args);
 
-
-
-        // Clearing the vector after the command to the next one.
-
-//
+        if (strcmp(command.c_str(),"join") == 0
+                || strcmp(command.c_str(),"start") == 0) {
+            break;
         }
-  //  }
+                /*
+                    if (strcmp(command.c_str(),"join") == 0) {
+                        char c;
+                        n = read(clientSocket1, &c, sizeof(c));
+                        if (n == -1) {
+                            throw "Error reading a char from socket";
+                        }
+                        //in case, a valid join, we get '#', if not valid join we get '+'.
+                        if (c != '+') {
+                            break;
+                        }
+                    } else if (strcmp(command.c_str(), "start") == 0){
+                        char c;
+                        n = read(clientSocket1, &c, sizeof(c));
+                        if (n == -1) {
+                            throw "Error reading a char from socket";
+                        }
+                        //in case, a valid start, we get '#', if not valid we get '-'.
+                        if (c != '-') {
+                            break;
+                        }
+
+                    }
+                    */
+    }
+}
 
 string Server::readString(int socket, int* sizeOf) {
     int size = *sizeOf;
