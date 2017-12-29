@@ -21,8 +21,9 @@ public:
      * Excecute.
      * @param args the arguments to the function to do.
      * @param gameCollection a games collection.
+     * @return 0 - something wrong otherwise - ok
      */
-    void execute(vector<string> args, GameCollection &gameCollection){
+    int execute(vector<string> args, GameCollection &gameCollection){
         string gameName = args[0];
         //  Getting the sockets from the gameCollection.
         int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
@@ -32,6 +33,7 @@ public:
         close (clientSocket2);
         // Remove the game from list of games
         gameCollection.removeGame(gameName);
+        return 1;
     }
 };
 #endif //CLOSECOMMAND_H

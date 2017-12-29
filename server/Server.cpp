@@ -2,7 +2,7 @@
 
 
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 2 //2 Players
+#define MAX_CONNECTED_CLIENTS 500 //2 Players
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "server" << endl;
 }
@@ -26,14 +26,6 @@ void Server::start() {
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
     // Define the lib socket's structures
-
-
-    //socklen_t clientAddressLens[] =  {clientAddressLen, client2AddressLen};
-
-//    struct sockaddr_in client2Address;//Fixing error on accept.
-//    socklen_t client2AddressLen = sizeof((struct sockaddr*) &client2Address);
-
-    // The game itself
     struct sockaddr_in clientAddress; //Fixing error on accept.
     socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
     vector<pthread_t> threads;
@@ -62,16 +54,10 @@ void Server::start() {
 
 
     pthread_exit(NULL);
-//
-//    int clientSocket2 = accept(serverSocket, (struct
-//            sockaddr *) &client2Address, &client2AddressLen);
-//    cout << "Socket is :"<< clientSocket2<<endl;
-//    clientHandle(clientSocket2);
-
 }
 
 void* Server::clientHandle(void * arguments) {
-    while(1) {
+   while (true) {
         ThreadArgs threadArgs = *((ThreadArgs *) arguments);
         int clientSocket1 = threadArgs.socket;
         vector<string> args;
@@ -96,38 +82,15 @@ void* Server::clientHandle(void * arguments) {
         string name = "";
         cout << "Waiting for the players connections..." << endl;
         cout << "I pass the vector " << args[1] << endl;
-        cm.executeCommand(command, args);
-
-        if (strcmp(command.c_str(),"join") == 0
-                || strcmp(command.c_str(),"start") == 0) {
+        // 0 - chose list_games wrong with the command so we will continue.
+        // Any other value is ok so we break.
+        if(cm.executeCommand(command, args) != 0){
             break;
         }
-                /*
-                    if (strcmp(command.c_str(),"join") == 0) {
-                        char c;
-                        n = read(clientSocket1, &c, sizeof(c));
-                        if (n == -1) {
-                            throw "Error reading a char from socket";
-                        }
-                        //in case, a valid join, we get '#', if not valid join we get '+'.
-                        if (c != '+') {
-                            break;
-                        }
-                    } else if (strcmp(command.c_str(), "start") == 0){
-                        char c;
-                        n = read(clientSocket1, &c, sizeof(c));
-                        if (n == -1) {
-                            throw "Error reading a char from socket";
-                        }
-                        //in case, a valid start, we get '#', if not valid we get '-'.
-                        if (c != '-') {
-                            break;
-                        }
 
-                    }
-                    */
+       }
+
     }
-}
 
 string Server::readString(int socket, int* sizeOf) {
     int size = *sizeOf;

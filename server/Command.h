@@ -24,7 +24,7 @@ public:
      * @param args the arguments to the function to do.
      * @param gameCollection a games collection.
      */
-    virtual void execute(vector<string> args, GameCollection &gameCollection) = 0;
+    virtual int execute(vector<string> args, GameCollection &gameCollection) {}
     /**
      * The destructor of our class.
      */

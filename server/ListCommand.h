@@ -19,46 +19,58 @@ public:
      * @param clientAddresses array of 2 clients addresses (first on 0 second on 1)
      * @param clientAddressLens array of 2 clients lens (first on 0 second on 1)
      * @param serverSocket the socket to the server
+     * @return 0 in our case because we want to continue after it getting commands.
      */
-    void execute(vector<string> args, GameCollection &gameCollection){
+    int execute(vector<string> args, GameCollection &gameCollection){
         //  Getting the available games.
         vector<string> available = gameCollection.getAvailableGames();
         int n;
         int clientSocket1 = atoi(args[1].c_str());
-        cout << "The socket is :" << clientSocket1;
-        cout << endl;
-        if (!available.empty()) {
-            for (int i = 0; i < available.size(); i++) {
-                char comma = ',';
-                string s = available[i];
-                //i think we need to specify the size of the string, sizeof doesn't know..........
-                char nameChar;
-                for (int j = 0; j < s.size(); j++) {
-                    nameChar = s.at(j);
-                    n = write(clientSocket1, &nameChar, sizeof(nameChar));
-                    if (n == -1) {
-                        throw "Error writing a game's name into socket";
-                    }
-                }
-                if (i != available.size() - 1) {
-                    n = write(clientSocket1, &comma, sizeof(comma));
-                    if (n == -1) {
-                        throw "Error writing a comma into socket";
-                    }
-                }
-            }
-            for (int i = 0; i < available.size(); i++) {
-                cout << "GameInfo: " << available[i] << endl;
-            }
-        } else {
-            cout << "no games" << endl;
-        }
-        //we determine the end of the string by reading until reaching # in socket.
-        char end = '#';
+        //first read e than the game names.
+        //e - symbolized we are going to read more strings.
+        char end = 'e';
         n = write(clientSocket1, &end, sizeof(end));
         if (n == -1) {
             throw "Error reading a char from socket";
         }
+        int size; // Size of string to read.
+        //First sending the size of the list_games
+        string send = "";
+        if (available.empty()) {
+            cout << "no games" << endl;
+            send = "No games";
+        }
+        else {
+            send.append("The games are: \n");
+            for (int i = 0; i < available.size(); i++) {
+                char comma = ',';
+                string s = available[i];
+                cout << "GameInfo:" << available[i] << endl;
+                //i think we need to specify the size of the string, sizeof doesn't know..........
+                send.append("Game: " + available[i]);
+                if (i != available.size() - 1) {
+                    send.append("\n");// "\n";
+                    }
+            }
+        }
+        size = (int)send.size();
+
+        //writing the size of the command at the beginning of the socket.
+        n = write(clientSocket1, &size, sizeof(size));
+        if (n == -1) {
+            throw "Error writing arg1 to socket";
+        }
+        //writing the command "char by char" in the socket.
+        char c;
+        for(int i = 0; i < size; i++) {
+            c = send.at(i);
+            n = write(clientSocket1, &c, sizeof(c));
+            if (n == -1) {
+                throw "Error writing arg1 to socket";
+            }
+        }
+
+        return 0;
 
     }
 };

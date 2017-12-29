@@ -4,16 +4,16 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/coraledge/CLionProjects/ex5/client/AiPlayer.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/AiPlayer.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/BasicRules.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/BasicRules.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/Board.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/Board.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/Client.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/Client.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/ConsoleBoard.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/ConsoleBoard.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/HumanPlayer.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/HumanPlayer.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/Point.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/Point.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/PointsList.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/PointsList.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/RemotePlayer.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/RemotePlayer.cpp.o"
-  "/home/coraledge/CLionProjects/ex5/client/main.cpp" "/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/main.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/AiPlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/BasicRules.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/Board.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Client.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/Client.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/ConsoleBoard.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/HumanPlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/Point.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/PointsList.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/RemotePlayer.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/RemotePlayer.cpp.o"
+  "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/main.cpp" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir/client/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

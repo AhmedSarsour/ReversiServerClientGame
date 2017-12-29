@@ -51,6 +51,7 @@ private:
     const char *serverIP;
     int serverPort;
     int clientSocket; //The socket of this client.
+    void readListGames();
 };
 
 #endif //CLIENT_H

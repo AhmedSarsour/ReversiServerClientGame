@@ -14,11 +14,11 @@ CommandsManager::CommandsManager() {
 
 }
 // Excecutes a command.
-void CommandsManager::executeCommand(string command, vector<string> args) {
+int CommandsManager::executeCommand(string command, vector<string> args) {
     // Get a command from the map.
     Command *commandObj = commandsMap[command];
     //Doing the command
-    commandObj->execute(args, this->gameCollection);
+    return commandObj->execute(args, this->gameCollection);
 }
 //Destructor.
 CommandsManager::~CommandsManager() {

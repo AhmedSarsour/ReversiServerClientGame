@@ -21,8 +21,9 @@ public:
      * @param args the arguments to the function to do.
      * @param gameCollection a games collection.
      * This args - args[0] - gameName args[1] - socket
+     * @return 0 - something wrong otherwise - ok
      */
-    void execute(vector<string> args, GameCollection &gameCollection){
+    int execute(vector<string> args, GameCollection &gameCollection){
         //  The name of the game we want to start.
         string gameName = args[0];
         int clientSocket1 = atoi(args[1].c_str());
@@ -44,27 +45,14 @@ public:
             if (n == -1) {
                 throw "Error writing arg1 to socket";
             }
-                            /*
-                            x = '#';
-                            n = write(clientSocket1, &x, sizeof(x));
-                            if (n == -1) {
-                                throw "Error writing arg1 to socket";
-                            }
-                            */
-
+            return 1; //OK
         } else { // Send -1 to socket
             char x = '-';
             int n = write(clientSocket1, &x, sizeof(x));
             if (n == -1) {
                 throw "Error writing arg1 to socket";
             }
-                                /*
-                                x = '-';
-                                n = write(clientSocket1, &x, sizeof(x));
-                                if (n == -1) {
-                                    throw "Error writing arg1 to socket";
-                                }
-                                */
+            return 0; //Didn't start.
 
         }
     }

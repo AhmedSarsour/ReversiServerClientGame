@@ -1,24 +1,24 @@
 Determining if the pthread_create exist failed with the following output:
-Change Dir: /home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_bd0a1/fast"
-/usr/bin/make -f CMakeFiles/cmTC_bd0a1.dir/build.make CMakeFiles/cmTC_bd0a1.dir/build
-make[1]: Entering directory '/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o
-/usr/bin/cc    -o CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o   -c /home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
-Linking C executable cmTC_bd0a1
-/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bd0a1.dir/link.txt --verbose=1
-/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o  -o cmTC_bd0a1 
-CMakeFiles/cmTC_bd0a1.dir/CheckSymbolExists.c.o: In function `main':
+Run Build Command:"/usr/bin/make" "cmTC_bf8a3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_bf8a3.dir/build.make CMakeFiles/cmTC_bf8a3.dir/build
+make[1]: Entering directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_bf8a3.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_bf8a3.dir/CheckSymbolExists.c.o   -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c"
+Linking C executable cmTC_bf8a3
+/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_bf8a3.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_bf8a3.dir/CheckSymbolExists.c.o  -o cmTC_bf8a3 
+CMakeFiles/cmTC_bf8a3.dir/CheckSymbolExists.c.o: In function `main':
 CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_bd0a1.dir/build.make:97: recipe for target 'cmTC_bd0a1' failed
-make[1]: *** [cmTC_bd0a1] Error 1
-make[1]: Leaving directory '/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_bd0a1/fast' failed
-make: *** [cmTC_bd0a1/fast] Error 2
+CMakeFiles/cmTC_bf8a3.dir/build.make:97: recipe for target 'cmTC_bf8a3' failed
+make[1]: *** [cmTC_bf8a3] Error 1
+make[1]: Leaving directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_bf8a3/fast' failed
+make: *** [cmTC_bf8a3/fast] Error 2
 
-File /home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+File /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
 /* */
 #include <pthread.h>
 
@@ -34,22 +34,22 @@ int main(int argc, char** argv)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp
+Change Dir: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command:"/usr/bin/make" "cmTC_7ba9c/fast"
-/usr/bin/make -f CMakeFiles/cmTC_7ba9c.dir/build.make CMakeFiles/cmTC_7ba9c.dir/build
-make[1]: Entering directory '/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_7ba9c.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_7ba9c.dir/CheckFunctionExists.c.o   -c /home/coraledge/Downloads/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
-Linking C executable cmTC_7ba9c
-/home/coraledge/Downloads/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7ba9c.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_7ba9c.dir/CheckFunctionExists.c.o  -o cmTC_7ba9c -lpthreads 
+Run Build Command:"/usr/bin/make" "cmTC_92c8f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_92c8f.dir/build.make CMakeFiles/cmTC_92c8f.dir/build
+make[1]: Entering directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92c8f.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_92c8f.dir/CheckFunctionExists.c.o   -c /home/eliad1998/clion-2017.2.3/bin/cmake/share/cmake-3.8/Modules/CheckFunctionExists.c
+Linking C executable cmTC_92c8f
+/home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92c8f.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_92c8f.dir/CheckFunctionExists.c.o  -o cmTC_92c8f -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-CMakeFiles/cmTC_7ba9c.dir/build.make:97: recipe for target 'cmTC_7ba9c' failed
-make[1]: *** [cmTC_7ba9c] Error 1
-make[1]: Leaving directory '/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
-Makefile:126: recipe for target 'cmTC_7ba9c/fast' failed
-make: *** [cmTC_7ba9c/fast] Error 2
+CMakeFiles/cmTC_92c8f.dir/build.make:97: recipe for target 'cmTC_92c8f' failed
+make[1]: *** [cmTC_92c8f] Error 1
+make[1]: Leaving directory '/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_92c8f/fast' failed
+make: *** [cmTC_92c8f/fast] Error 2
 
 

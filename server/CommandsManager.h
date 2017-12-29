@@ -36,10 +36,10 @@ public:
      * Excecutes a command.
      * @param command the command we want to excecute (start, join,..).
      * @param args arguments to the command (don't know how so pass it in vector).
-     * @param clientAddresses the addresses of the clients want to join to the game.
-     * @param serverSocket the socket of the server.
+     * @return 0 - something wrong otherwise - ok
+     *
      */
-    void executeCommand(string command, vector<string> args);
+    int executeCommand(string command, vector<string> args);
 private:
     map<string, Command *> commandsMap; //Map of commands
     GameCollection gameCollection;      // The collection of the games.

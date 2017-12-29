@@ -117,31 +117,52 @@ void Client::writeToSocket(string command) {
 int Client::readOperation() {
     char c;
     int n;
-    int i = 0;
-    do {
-        n = read(clientSocket, &c, sizeof(c));
-        if (n == -1) {
-            throw "Error writing arg1 to socket";
-        }
-        //WE JUST NEED to fix the PROBLEM IN SERVER in clientHandle function.
-        //because when the player enters "join" to a game that is not there,
-        //in the server he gets out of the while(1) loop. in our case he must NOT!.
-        //the same goes for when the client enters a game with a name that is already
-        //there, WE JUST NEED TO FIX IT that he doesn't get out from the while-loop in clientHandle.!.
-        if (c == '-') {
-            cout << "there is an already existing game with such name!" << endl;
-            cout << "please pick another one.";
-            return -1;
-        } else if (c == '+') {
-            cout << "there is no existing game with the name you entered!" << endl;
-            return -1;
-        }
-        //# means the end of the message-string.
-        if (c != '#') {
-            cout << c;
-        }
-        i++;
-    }while(c != '#');
-    cout << endl;
+    n = read(clientSocket, &c, sizeof(c));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
+    }
+    cout << "I just read " << c << endl;
+    if (c == '-') {
+        cout << "there is an already existing game with such name!" << endl;
+        cout << "please pick another one." << endl;
+        return -1;
+    } else if (c == '+') {
+        cout << "there is no existing game with the name you entered!" << endl;
+        return -1;
+        // List games- we are going to read more strings.
+    } else if(c == 'e') {
+        readListGames();
+        return 2;
+    }
+
     return 1;
+}
+
+void Client::readListGames()  {
+    int n;
+    int size;
+    //we read the size of the given string in the socket.
+    n = read(clientSocket, &size, sizeof(size));
+    char c2;
+    char c[1];
+    //com is the string that holds the command.
+    string com = "";
+    //in this do-while, we read the command
+    do {
+        if(size > 0) {
+            //reading the characters. saving them in c2.
+            n = read(clientSocket, &c2, sizeof(c2));
+            size--;
+            if (n == -1) {
+                throw "Error reading a char from socket";
+            }
+            //saving the char in c[0] in order to do append(append doesn't accept char, but char*).
+            c[0] = c2;
+            com.append(c);
+
+        }
+        //i did here && size > 0 because it is needed for the "list_games" command.
+    }while(size > 0);
+    cout << "Games : " << com << endl;
+
 }

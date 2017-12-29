@@ -3,20 +3,22 @@
  */
 #include "JoinCommand.h"
 //  Excecutes the commend.
-void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
+int JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
     // Getting the name of the game.
     string gameName = args[0];
-    int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
     //NOTE: clientSocket2 is the socket for the guy who did join-command!.
     int clientSocket2 = atoi(args[1].c_str());
-    cout << "socket 1:" << clientSocket1 << endl;
-    cout << "socket 2: " << args[1] << endl;
-    cout << "Player 2 connected"<< endl;
     if (clientSocket2 == -1) {
         throw "Error on accept";
     }
     // Search if there is already game in this name.
     if (gameCollection.searchGame(gameName) != -1) {
+        // There is this game.
+        // Now we can get the first socket
+        int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
+        cout << "socket 1:" << clientSocket1 << endl;
+        cout << "socket 2: " << args[1] << endl;
+        cout << "Player 2 connected"<< endl;
         gameCollection.joinGame(gameName, clientSocket2);
         //writing # to the client means he succesfully joined the game.
         char x = '#';
@@ -24,35 +26,24 @@ void JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
         if (n == -1) {
             throw "Error writing arg1 to socket";
         }
-        /*
-        x = '#';
-        n = write(clientSocket2, &x, sizeof(x));
-        if (n == -1) {
-            throw "Error writing arg1 to socket";
-        }
-        */
+        //Sending activation for player 1 that waited for player 2 to connect.
+        // The first player - his number is 1
+        sendActivation(clientSocket1);
+
+        handleClients(clientSocket1, clientSocket2);
+        return 1;
     } else { // Send '+' (as a signal) to the player's socket telling him "no such game".
         char x = '+';
         int n = write(clientSocket2, &x, sizeof(x));
         if (n == -1) {
             throw "Error writing arg1 to socket";
         }
-        /*
-        //writing '+' 2 times, 1 time we read in server, 1 time in client.
-        x = '+';
-        n = write(clientSocket1, &x, sizeof(x));
-        if (n == -1) {
-            throw "Error writing arg1 to socket";
-        }
-        */
+        return 0;
+
     }
 
 
-    //Sending activation for player 1 that waited for player 2 to connect.
-    // The first player - his number is 1
-    sendActivation(clientSocket1);
 
-    handleClients(clientSocket1, clientSocket2);
 
 }
 //  Sending int through the socket.

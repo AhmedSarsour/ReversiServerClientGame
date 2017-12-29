@@ -19,8 +19,9 @@ public:
      * @param args the arguments to the function to do.
      * @param gameCollection a games collection.
      * This args[0] - gameName args[1] - socket
+     * @return 0 - something wrong otherwise - ok
      */
-    void execute(vector<string> args, GameCollection &gameCollection);
+    int execute(vector<string> args, GameCollection &gameCollection);
 
 private:
     /**

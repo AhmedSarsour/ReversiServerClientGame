@@ -81,9 +81,7 @@ int main() {
             cout << "Unable to open file";
         }
 
-
         // Creating new cliient.
-
         Client client(ip.c_str(), port);
         try {
             //Connecting the client to the server.
