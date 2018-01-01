@@ -121,7 +121,6 @@ int Client::readOperation() {
     if (n == -1) {
         throw "Error writing arg1 to socket";
     }
-    cout << "I just read " << c << endl;
     if (c == '-') {
         cout << "there is an already existing game with such name!" << endl;
         cout << "please pick another one." << endl;

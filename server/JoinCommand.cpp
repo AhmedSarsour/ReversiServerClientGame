@@ -3,7 +3,15 @@
  */
 #include "JoinCommand.h"
 //  Excecutes the commend.
+static typedef struct  {
+    int clientSocket2;
+    string gameName;
+    GameCollection * gameCollection;
+    // We save pointer to j because we wanna use the join command static functions.
+    JoinCommand *joinCommand;
+}ThreadArgs;
 int JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
+
     // Getting the name of the game.
     string gameName = args[0];
     //NOTE: clientSocket2 is the socket for the guy who did join-command!.
@@ -11,28 +19,28 @@ int JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
     if (clientSocket2 == -1) {
         throw "Error on accept";
     }
+   // vector<pthread_t> threads;
     // Search if there is already game in this name.
     if (gameCollection.searchGame(gameName) != -1) {
-        // There is this game.
-        // Now we can get the first socket
-        int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
-        cout << "socket 1:" << clientSocket1 << endl;
-        cout << "socket 2: " << args[1] << endl;
-        cout << "Player 2 connected"<< endl;
-        gameCollection.joinGame(gameName, clientSocket2);
-        //writing # to the client means he succesfully joined the game.
-        char x = '#';
-        int n = write(clientSocket2, &x, sizeof(x));
-        if (n == -1) {
-            throw "Error writing arg1 to socket";
+        // Here we will open the thread
+        ThreadArgs threadArgs;
+        threadArgs.clientSocket2 = atoi(args[1].c_str());
+        threadArgs.gameName = args[0];
+        threadArgs.gameCollection = &gameCollection;
+        threadArgs.joinCommand = this;
+        //threads.push_back(NULL);
+     //   index++;
+       // cout << "Now Index is " << index << endl;
+        //pthread_t  t;
+        pthread_t  threadId =  gameCollection.getGame(gameName).getThread();
+        int rc = pthread_create(&threadId, NULL, clientHandle, &threadArgs);
+        if (rc) {
+            cout << "Error unable to create thread, " << rc << endl;
+            exit(-1);
         }
-        //Sending activation for player 1 that waited for player 2 to connect.
-        // The first player - his number is 1
-        sendActivation(clientSocket1);
-
-        handleClients(clientSocket1, clientSocket2);
         return 1;
-    } else { // Send '+' (as a signal) to the player's socket telling him "no such game".
+    }
+    else { // Send '+' (as a signal) to the player's socket telling him "no such game".
         char x = '+';
         int n = write(clientSocket2, &x, sizeof(x));
         if (n == -1) {
@@ -41,10 +49,37 @@ int JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
         return 0;
 
     }
+}
+void *JoinCommand::clientHandle(void *arguments) {
+    ThreadArgs threadArgs = *((ThreadArgs *) arguments);    //Here we will do the thread
+    // Stack after it probably by getting threadargs
+    JoinCommand j = *threadArgs.joinCommand;
+    // Getting the name of the game.
+    string gameName = threadArgs.gameName;
 
+    GameCollection gameCollection = *threadArgs.gameCollection;
+    // There is this game.
+    // Now we can get the first socket
+    int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
+    int clientSocket2 = threadArgs.clientSocket2;
+    if (clientSocket2 == -1) {
+        throw "Error on accept";
+    }
+    cout << "socket 1:" << clientSocket1 << endl;
+    cout << "socket 2: " << threadArgs.clientSocket2 << endl;
+    cout << "Player 2 connected" << endl;
+    gameCollection.joinGame(gameName, clientSocket2);
+    //writing # to the client means he succesfully joined the game.
+    char x = '#';
+    int n = write(clientSocket2, &x, sizeof(x));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
+    }
+    //Sending activation for player 1 that waited for player 2 to connect.
+    // The first player - his number is 1
+    sendActivation(clientSocket1);
 
-
-
+    j.handleClients(clientSocket1, clientSocket2);
 }
 //  Sending int through the socket.
 void JoinCommand::sendInt(int socket, int msg) {
@@ -129,10 +164,10 @@ void JoinCommand::handleClients(int clientSocket1, int clientSocket2) {
     }
 }
 //  Sending activation to the other player.
-void JoinCommand::sendActivation(int socket) {
-    int x = -1;
-    int n = write(socket, &x, sizeof(x));
-    if (n == -1) {
-        throw "Error sending activation";
+    void JoinCommand::sendActivation(int socket) {
+        int x = -1;
+        int n = write(socket, &x, sizeof(x));
+        if (n == -1) {
+            throw "Error sending activation";
+        }
     }
-}

@@ -16,10 +16,6 @@
 #include <pthread.h>
 class Server {
 public:
-    typedef struct  {
-        int socket;
-        Server* server;
-    }ThreadArgs;
     /**
      * The constructor of our class
      * @param port
@@ -35,7 +31,7 @@ public:
      * Stops the server.
      */
     void stop();
-    static void* clientHandle(void * arguments);
+    void clientHandle(int clientSocket1);
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
@@ -52,7 +48,7 @@ private:
      * @param str an empty string
      * @return the int converted to string.
      */
-    static string intToStringHelper(int x, string str) {
+    string intToStringHelper(int x, string str) {
         if (x == 0) {
             return str;
         }
@@ -66,7 +62,7 @@ private:
      * Here we put empty string and prevent put it all the time.
      * @return the int converted to string.
      */
-    static string intToString(int num) {
+     string intToString(int num) {
         return intToStringHelper(num ,"");
     }
 };
