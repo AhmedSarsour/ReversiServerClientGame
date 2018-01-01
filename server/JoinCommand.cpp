@@ -14,18 +14,18 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
     // Search if there is already game in this name.
     if (gameCollection->searchGame(gameName) != -1) {
 
-        ThreadArgs *  threadArgs = new ThreadArgs;
+        ThreadArgs * threadArgs = new ThreadArgs;
         threadArgs->clientSocket2 = clientSocket2;
         threadArgs->gameCollection = gameCollection;
         threadArgs->gameName = gameName;
         cout << "The game name is " << threadArgs->gameName << endl;
         pthread_t threadId;
-        int rc = pthread_create(&threadId, NULL, clientHandle, (void*)threadArgs);
+        int rc = pthread_create(&threadId, NULL, clientHandle,
+                                (void*) threadArgs);
         if (rc) {
             cout << "Error unable to create thread, " << rc << endl;
             exit(-1);
         }
-
         return 1;
     } else { // Send '+' (as a signal) to the player's socket telling him "no such game".
         char x = '+';
@@ -34,30 +34,22 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
             throw "Error writing arg1 to socket";
         }
         return 0;
-
     }
-
-
-
-
 }
-
-
-
 void* JoinCommand::clientHandle(void * arguments) {
-    ThreadArgs * threadArgs =(ThreadArgs*) arguments;
-   // string gameName = threadArgs->gameName;
+    ThreadArgs * threadArgs = (ThreadArgs*) arguments;
+    // string gameName = threadArgs->gameName;
     int clientSocket2 = threadArgs->clientSocket2;
     string gameName = threadArgs->gameName;
-    GameCollection  gameCollection = *threadArgs->gameCollection;
+    GameCollection gameCollection = *threadArgs->gameCollection;
 
     // There is this game.
     // Now we can get the first socket
     int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
 
     cout << "socket 1:" << clientSocket1 << endl;
-    cout << "socket 2: " <<clientSocket2 << endl;
-    cout << "Player 2 connected"<< endl;
+    cout << "socket 2: " << clientSocket2 << endl;
+    cout << "Player 2 connected" << endl;
     gameCollection.joinGame(gameName, clientSocket2);
     //writing # to the client means he succesfully joined the game.
     char x = '#';
@@ -68,8 +60,8 @@ void* JoinCommand::clientHandle(void * arguments) {
     //Sending activation for player 1 that waited for player 2 to connect.
     // The first player - his number is 1
     JoinCommand::sendActivation(clientSocket1);
-
     JoinCommand::handleClients(clientSocket1, clientSocket2);
+    gameCollection.removeGame(gameName);
 }
 //  Sending int through the socket.
 void JoinCommand::sendInt(int socket, int msg) {
@@ -79,7 +71,6 @@ void JoinCommand::sendInt(int socket, int msg) {
         throw "Error writing arg1 to socket";
     }
 }
-
 
 //Send move to the server
 void JoinCommand::sendMove(int socket, int x, int y) {

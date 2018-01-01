@@ -33,12 +33,14 @@ int main() {
     try {
         server.start();
         string str;
-        cin >> str;
-
-        if (str == "exit") {
-            server.stop();
-        }
-
+        do {
+            cin >> str;
+            if (str == "exit") {
+                server.stop();
+            }else {
+                cout << "invalid option!" << endl;
+            }
+        }while(str != "exit");
     } catch (const char *msg) {
         cout << "Cannot start server. Reason: " << msg << endl;
         exit(-1);
