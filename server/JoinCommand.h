@@ -7,15 +7,19 @@
 #define JOINCOMMAND_H
 #include "Command.h"
 #include <iostream>
-#include <pthread.h>
 #include "Server.h"
-#include "GameCollection.h"
 /**
  * JoinCommand.
  * A command to join a player to exists game.
  */
 class JoinCommand: public Command {
 public:
+    typedef struct  {
+        int clientSocket2;
+        string gameName;
+        GameCollection * gameCollection;
+        //Server* server;
+    }ThreadArgs;
     /**
      * Excecute.
      * @param args the arguments to the function to do.
@@ -25,21 +29,15 @@ public:
      */
     int execute(vector<string> args, GameCollection &gameCollection);
 
-
-
-
 private:
-    //static vector<pthread_t> threads;// The vector of threads
-   // static int index;
-    static void* clientHandle(void * arguments);
-    /**
+
     /**
     * HandleClients.
     * Handle with the both clients.
     * @param clientSocket1 The socket of the first player.
     * @param clientSocket2 The socket of the second player.
     */
-    static void handleClients(int clientSocket1, int clientSocket2);
+    static void handleClients(int client1Socket, int clientSocket2);
     // Send a message just for the client waiting for it.
     /**
      * SendActivation
@@ -63,6 +61,10 @@ private:
      * @param y the y cordinate.
      */
     static void sendMove(int socket, int x, int y);
+
+
+    static void* clientHandle(void * arguments);
+
 };
 
 

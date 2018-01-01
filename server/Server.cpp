@@ -28,6 +28,8 @@ void Server::start() {
     // Define the lib socket's structures
     struct sockaddr_in clientAddress; //Fixing error on accept.
     socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
+    vector<pthread_t> threads;
+    int index = -1;
     while (true) {
         int clientSocket1 = accept(serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
@@ -47,6 +49,7 @@ void Server::start() {
 void Server::clientHandle(int clientSocket1) {
    while (true) {
         vector<string> args;
+   //     Server s = *threadArgs.server;
         // while (true) {
         int size;
         int n;
@@ -56,8 +59,8 @@ void Server::clientHandle(int clientSocket1) {
             throw "Error reading a char from socket";
         }
         cout << "size is : " << size << endl;
-        string command = readString(clientSocket1, &size);
-        string typeCommand = readString(clientSocket1, &size);
+        string command = Server::readString(clientSocket1, &size);
+        string typeCommand = Server::readString(clientSocket1, &size);
         args.push_back(typeCommand);
         args.push_back(intToString(clientSocket1));
 
@@ -109,6 +112,4 @@ int n;
 
 }
 
-void Server::stop() {
-    close(serverSocket);
-}
+
