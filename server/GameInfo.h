@@ -80,11 +80,20 @@ public:
         this->socket2[0] = sock2;
     }
 
+    void setThread(pthread_t thread) {
+        this->thread = thread;
+    }
+
+    void closeThread() {
+        pthread_cancel(this->thread);
+    }
+
 private:
     string name;    //The name of the game.
     int*numPlayers; //The current players in the game.
     int socket1[1]; // Array of 1 int instead of pointer.
     int socket2[1]; // Array of 1 int instead of pointer.
+    pthread_t thread;
 };
 
 #endif //GAMEINFO_H

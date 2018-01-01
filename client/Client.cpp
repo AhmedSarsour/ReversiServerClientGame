@@ -50,27 +50,18 @@ void Client::connectToServer() {
 }
 int Client::wait() {
     int x;
-    // Waiting until reading the message from the server.
     int n = read(clientSocket, &x, sizeof(x));
-    if (n == -1) {
-        cout << "Error reading it" << endl;
-    }
+    // Check if there is a problem reading from the socket.
+    checkProblem(n);
     return x;
 }
 
 Point Client::getMove() {
     int arg1, arg2;
     int n = read(clientSocket, &arg1, sizeof(arg1));
-    if (n == -1) {
-        throw "Error reading arg1";
-    }
-    if (n == 0) {
-        throw "Client disconnected";
-    }
+    checkProblem(n);
     n = read(clientSocket, &arg2, sizeof(arg2));
-    if (n == -1) {
-        throw "Error reading arg2";
-    }
+    checkProblem(n);
     // Return point from the both arguments.
     return Point(arg1, arg2);
 
@@ -79,13 +70,12 @@ Point Client::getMove() {
 Point Client::sendMove(int x, int y) {
     // Write the point arguments to the socket
     int n = write(clientSocket, &x, sizeof(x));
-    if (n == -1) {
-        throw "Error writing arg1 to socket";
-    }
+    // Checking if there is problem writing to the socket.
+
+    checkProblem(n);
     n = write(clientSocket, &y, sizeof(y));
-    if (n == -1) {
-        throw "Error writing arg2 to socket";
-    }
+    // Checking if there is problem writing to the socket.
+    checkProblem(n);
     return Point(x, y);
 }
 
@@ -98,20 +88,23 @@ void Client::writeToSocket(string command) {
     int size = command.size();
     //writing the size of the command at the beginning of the socket.
     int n = write(clientSocket, &size, sizeof(size));
-    if (n == -1) {
-        throw "Error writing arg1 to socket";
+    checkProblem(n);
+
+    if (n == 0) {
+        throw "Sorry the server was closed";
     }
     //writing the command "char by char" in the socket.
     char c;
     for (int i = 0; i < command.size(); i++) {
         c = command.at(i);
         n = write(clientSocket, &c, sizeof(c));
-        if (n == -1) {
-            throw "Error writing arg1 to socket";
+        checkProblem(n);
+        if (n == 0) {
+            throw "Sorry the server was closed";
         }
     }
 }
-
+// Reading our operation
 int Client::readOperation() {
     char c;
     int n;

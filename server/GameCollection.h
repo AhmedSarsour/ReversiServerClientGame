@@ -69,6 +69,10 @@ public:
             this->games.erase(this->games.begin() + index);
         }
     }
+/**
+ * Closing all the games in this current gameCollection.
+ */
+    void closeAllGames();
 };
 
-#endif //REVERSI_GAMECOLLECTION_H
+#endif //GAMECOLLECTION_H

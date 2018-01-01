@@ -81,7 +81,7 @@ int main() {
             client.connectToServer();
         } catch (const char *msg) {
             cout << "Failed to connect to server. Reason:" << msg << endl;
-            exit(-1);
+            exit(0);
         }
         /***************************************************************************************/
         // Getting commands from the client.
@@ -132,9 +132,16 @@ int main() {
                   || strcmp(s2.c_str(), "close") == 0)) {
                 cout << "no such command!." << endl;
             } else {
-                client.writeToSocket(fullInput);
-                cout << "you picked : " << s2 << " command" << endl;
-                int checkVal = client.readOperation();
+                int checkVal;
+                try {
+                    client.writeToSocket(fullInput);
+                    cout << "you picked : " << s2 << " command" << endl;
+                    checkVal = client.readOperation();
+                } catch (const char *msg) {
+                    cout << "Failed to writing command to the server. " << endl;
+                    cout << "Reason:" << msg << endl;
+                    exit(0);
+                }
                 // In case the player presses join or start we go to connecting for an existing game.
                 if (checkVal != -1) {
                     if (strcmp(s2.c_str(), "join") == 0
@@ -155,12 +162,20 @@ int main() {
         // Until getting the player information.
         while (player == 0) {
             // Wait until connection or move of the other player.
-            if (index != 2) {
+            if (index != 2 && index < 3) {
                 cout << "Waiting for the other player" << endl;
                 // Here it staks
             }
-            // X will be 1 if the first player and 2 if the second player.
-            int x = client.wait();
+            int x;
+            try {
+                // X will be 1 if the first player and 2 if the second player.
+                x = client.wait();
+            } catch (const char *msg) {
+                cout << "Failed to waiting for the other player."<< endl;
+                cout << "Reason:" << msg << endl;
+                exit(0);
+            }
+
             if (x == 1) {
                 cout << "You are the first player X" << endl;
                 player = 1;
@@ -196,4 +211,8 @@ int main() {
         delete secondPlayer;
         delete rules;
     }
+}
+
+static void finishGame() {
+
 }

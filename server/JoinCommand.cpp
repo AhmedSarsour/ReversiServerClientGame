@@ -27,6 +27,8 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
             cout << "Error unable to create thread, " << rc << endl;
             exit(-1);
         }
+
+        gameCollection->getGame(gameName).setThread(threadId);
         return 1;
     } else { // Send '+' (as a signal) to the player's socket telling him "no such game".
         char x = '+';

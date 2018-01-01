@@ -8,7 +8,6 @@ CommandsManager::CommandsManager() {
     commandsMap["start"] = new StartCommand();
     commandsMap["list_games"] = new ListCommand();
     commandsMap["join"] = new JoinCommand();
-    commandsMap["close"] = new CloseCommand();
     // Initializing the game collection.
     this->gameCollection = GameCollection();
 

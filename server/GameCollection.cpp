@@ -3,6 +3,7 @@
  *      student 2: Eliad Arzuan.  206482622
  */
 
+#include <unistd.h>
 #include "GameCollection.h"
 //  Adding the game.
 void GameCollection::addGame(string game) {
@@ -62,4 +63,22 @@ vector<string> GameCollection::getAvailableGames() {
     }
     // Return the games the player can join
     return available;
+}
+
+void GameCollection::closeAllGames() {
+    for (int i = 0; i < this->games.size(); i++) {
+        //Getting the sockets of the games
+        int socket1 = games[i].getSocket1();
+        int socket2 = games[i].getSocket2();
+        // In case we created the socket close it
+        if (socket1 != 0) {
+            close(socket1);
+        }
+        // In case we created the socket close it
+        if (socket2 != 0) {
+            close(socket2);
+        }
+
+        games[i].closeThread();
+    }
 }

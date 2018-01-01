@@ -40,6 +40,12 @@ public:
      *
      */
     int executeCommand(string command, vector<string> args);
+/**
+ * Closing all the current games on the gamecollection that our commandManager has.
+ */
+    void closeAllGames(){
+        this->gameCollection.closeAllGames();
+    }
 private:
     map<string, Command *> commandsMap; //Map of commands
     GameCollection gameCollection;      // The collection of the games.

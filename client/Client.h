@@ -6,6 +6,8 @@
 #ifndef CLIENT_H
 #define CLIENT_H
 
+#include <unistd.h>
+#include <cstdlib>
 #include "Point.h"
 
 class Client {
@@ -52,6 +54,10 @@ public:
      * and does things according to what it read.
      */
     int readOperation();
+
+    void closeSocket() {
+        close(clientSocket);
+    }
 private:
     const char *serverIP;
     int serverPort;
@@ -61,6 +67,26 @@ private:
      * , it prints the list of the available games to the client.
      */
     void readListGames();
+/**
+ * checkProblem
+ * @param n the result of sending to socket.
+ * In case of bad result close the communication with the user.
+ */
+    void checkProblem(int n) {
+        if (n == -1) {
+            // Closing the client socket.
+            close(clientSocket);
+            throw "Error writing to socket probebly the server was closed ";
+        }
+
+        if (n == 0) {
+            // Closing the client socket.
+            close(clientSocket);
+            throw "Client disconnected";
+        }
+    }
+
+
 };
 
 #endif //CLIENT_H

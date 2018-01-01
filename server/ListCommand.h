@@ -16,10 +16,8 @@ public:
     /**
      * Excecute.
      * @param args the arguments to the function to do.
+     * In our function we get clientSocket as an argument.
      * @param gameCollection a games collection.
-     * @param clientAddresses array of 2 clients addresses (first on 0 second on 1)
-     * @param clientAddressLens array of 2 clients lens (first on 0 second on 1)
-     * @param serverSocket the socket to the server
      * @return 0 in our case because we want to continue after it getting commands.
      */
     int execute(vector<string> args, GameCollection *gameCollection) {

@@ -40,7 +40,7 @@ public:
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
-    pthread_t serverThreadId;
+    pthread_t serverThreadId; //The thread of clients handle in the game.
     /**
      * readString.
      * Reading a string from socket until space.

@@ -1,31 +1,31 @@
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/install/strip.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/install/local.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Server.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/install.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/list_install_components.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/Client.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/CMakeFiles/ReversiTests.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/install/strip.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/install/local.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/install.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/list_install_components.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/rebuild_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/edit_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/install/strip.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/install/local.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/install.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/list_install_components.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/rebuild_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/edit_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/install/strip.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/install/local.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/install.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/list_install_components.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/edit_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/rebuild_cache.dir
-/home/coraledge/CLionProjects/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/install/strip.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/install/local.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Server.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/install.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/list_install_components.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/Client.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/ReversiTests.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/install/strip.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/install/local.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/install.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/list_install_components.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/rebuild_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/CMakeFiles/edit_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/install/strip.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/install/local.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/install.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/list_install_components.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/rebuild_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/edit_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/install/strip.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/install/local.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/install.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/list_install_components.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/edit_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/rebuild_cache.dir
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir

@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread -g    -pthread -Wall -Wshadow -DGTEST_HAS_PTHREAD=1 -fexce
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/coraledge/CLionProjects/ex5/lib/googletest-release-1.8.0/googletest/include -I/home/coraledge/CLionProjects/ex5/lib/googletest-release-1.8.0/googletest 
+CXX_INCLUDES = -I"/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/lib/googletest-release-1.8.0/googletest/include" -I"/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/lib/googletest-release-1.8.0/googletest" 
 
