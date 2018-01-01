@@ -76,6 +76,7 @@ void GameCollection::closeAllGames() {
         }
         // In case we created the socket close it
         if (socket2 != 0) {
+            cout << "Closing the socket" << socket1 <<  endl;
             close(socket2);
         }
 
