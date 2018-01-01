@@ -7,7 +7,6 @@
 #include "Command.h"
 #include <iostream>
 #include <cstdlib>
-
 /**
  * ListCommand.
  * This command send to the client list of avaliable games that he can join.
@@ -23,9 +22,9 @@ public:
      * @param serverSocket the socket to the server
      * @return 0 in our case because we want to continue after it getting commands.
      */
-    int execute(vector<string> args, GameCollection *gameCollection){
+    int execute(vector<string> args, GameCollection *gameCollection) {
         //  Getting the available games.
-        vector<string> available = gameCollection->getAvailableGames();
+        vector < string > available = gameCollection->getAvailableGames();
         int n;
         int clientSocket1 = atoi(args[1].c_str());
         //first read e than the game names.
@@ -37,26 +36,24 @@ public:
         }
         int size; // Size of string to read.
         //First sending the size of the list_games
-        string send = "";
+        string send = ""; //send variable holds the whole information about the games.
         if (available.empty()) {
             cout << "no games" << endl;
             send = "No games";
-        }
-        else {
+        } else {
             send.append("The games are: \n");
             for (int i = 0; i < available.size(); i++) {
                 char comma = ',';
-                string s = available[i];
+                //printing the gameInfo into server.
                 cout << "GameInfo:" << available[i] << endl;
-                //i think we need to specify the size of the string, sizeof doesn't know..........
+                //appending the gamename into
                 send.append("Game: " + available[i]);
                 if (i != available.size() - 1) {
-                    send.append("\n");// "\n";
-                    }
+                    send.append("\n");        // "\n";
+                }
             }
         }
-        size = (int)send.size();
-
+        size = (int) send.size();
         //writing the size of the command at the beginning of the socket.
         n = write(clientSocket1, &size, sizeof(size));
         if (n == -1) {
@@ -64,17 +61,15 @@ public:
         }
         //writing the command "char by char" in the socket.
         char c;
-        for(int i = 0; i < size; i++) {
+        for (int i = 0; i < size; i++) {
             c = send.at(i);
             n = write(clientSocket1, &c, sizeof(c));
             if (n == -1) {
                 throw "Error writing arg1 to socket";
             }
         }
-
         return 0;
 
     }
 };
-
 #endif //LISTCOMMAND_H

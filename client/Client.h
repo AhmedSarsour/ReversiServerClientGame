@@ -1,10 +1,10 @@
-//
-// Created by eliad1998 on 05/12/17.
-//
+/*
+ *      student 1: ahmed sarsour 315397059
+ *      student 2: Eliad Arzuan  206482622
+ */
 
 #ifndef CLIENT_H
 #define CLIENT_H
-
 
 #include "Point.h"
 
@@ -30,7 +30,6 @@ public:
      * @return the move the player sent.
      */
     Point sendMove(int x, int y);
-
     /**
      * getMove.
      * @return the move from the other player.
@@ -42,15 +41,25 @@ public:
      */
     int wait();
     /**
-    * writeToSocket:it writes the given string in the client's socket.
-    * @param command the command we write to the socket.
-    */
+     * writeToSocket:it writes the given string in the client's socket.
+     * @param command the command we write to the socket.
+     */
     void writeToSocket(string command);
+    /**
+     * readOperation.
+     * @return int.
+     * this function reads what the server had written on the socket,
+     * and does things according to what it read.
+     */
     int readOperation();
 private:
     const char *serverIP;
     int serverPort;
     int clientSocket; //The socket of this client.
+    /**
+     * this function reads what the list_games option command had given on the socket.
+     * , it prints the list of the available games to the client.
+     */
     void readListGames();
 };
 

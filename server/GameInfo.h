@@ -3,7 +3,7 @@
  *      student 2: Eliad Arzuan.  206482622
  */
 /**
- * GameInfo
+ * GameInfo.
  * This class holds info about a game - name, currentPlayers and the sockets of the players.
  */
 
@@ -12,20 +12,20 @@
 
 #include <iostream>
 using namespace std;
-class GameInfo{
+class GameInfo {
 public:
     /**
      * The constructor.
      * @param name the name of the game we want to create.
      * Initialize the name, and the other parameters to 0.
      */
-    GameInfo(string &name):name(name) {
+    GameInfo(string &name) :
+            name(name) {
         // Initializing the sockets to 0.
         this->socket1[0] = 0;
         this->socket2[0] = 0;
         this->numPlayers = new int;
         *numPlayers = 0;
-
     }
     /**
      * getName
@@ -82,10 +82,9 @@ public:
 
 private:
     string name;    //The name of the game.
-    int * numPlayers; //The current players in the game.
+    int*numPlayers; //The current players in the game.
     int socket1[1]; // Array of 1 int instead of pointer.
-    int socket2[1];// Array of 1 int instead of pointer.
+    int socket2[1]; // Array of 1 int instead of pointer.
 };
-
 
 #endif //GAMEINFO_H

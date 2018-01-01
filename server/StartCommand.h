@@ -8,7 +8,6 @@
 #include "Command.h"
 #include <iostream>
 #include <cstdlib>
-
 /**
  * StarCommand.
  * This command starts new game that will add to the gameCollection.
@@ -23,7 +22,7 @@ public:
      * This args - args[0] - gameName args[1] - socket
      * @return 0 - something wrong otherwise - ok
      */
-    int execute(vector<string> args, GameCollection *gameCollection){
+    int execute(vector<string> args, GameCollection *gameCollection) {
         //  The name of the game we want to start.
         string gameName = args[0];
         int clientSocket1 = atoi(args[1].c_str());
@@ -53,7 +52,6 @@ public:
                 throw "Error writing arg1 to socket";
             }
             return 0; //Didn't start.
-
         }
     }
 };

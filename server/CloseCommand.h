@@ -8,12 +8,13 @@
 #include <iostream>
 /**
  * CloseCommand.
- * Close is command that is sent to the server after the player does the last move in the game (because the server
- * does not really know when the game over).
+ * Close is command that is sent to the server
+ * after the player does the last move in the game
+ * (because the server does not really know when the game over).
  * In this command the server has to:
-   1. Close the game.
-   2. Delete it from the game moves.
-   3. Close the thread that handles this game.
+ 1. Close the game.
+ 2. Delete it from the game moves.
+ 3. Close the thread that handles this game.
  */
 class CloseCommand: public Command {
 public:
@@ -23,14 +24,14 @@ public:
      * @param gameCollection a games collection.
      * @return 0 - something wrong otherwise - ok
      */
-    int execute(vector<string> args, GameCollection &gameCollection){
+    int execute(vector<string> args, GameCollection &gameCollection) {
         string gameName = args[0];
         //  Getting the sockets from the gameCollection.
         int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
         int clientSocket2 = gameCollection.getGame(gameName).getSocket2();
         // Close communication with the players
         close(clientSocket1);
-        close (clientSocket2);
+        close(clientSocket2);
         // Remove the game from list of games
         gameCollection.removeGame(gameName);
         return 1;

@@ -1,6 +1,7 @@
-//
-// Created by eliad1998 on 05/12/17.
-//
+/*
+ *      student 1: ahmed sarsour 315397059
+ *      student 2: Eliad Arzuan  206482622
+ */
 
 #ifndef SERVER_H
 #define SERVER_H
@@ -31,6 +32,10 @@ public:
      * Stops the server.
      */
     void stop();
+    /**
+     * clientHandle: this function handles the commands between the client and the server.
+     * @param clientSocket1
+     */
     static void clientHandle(int clientSocket1);
 private:
     int port; // The port we want to login the server.
@@ -41,7 +46,7 @@ private:
      * Reading a string from socket until space.
      * @return the string it read.
      */
-     static string readString(int socket, int *size);
+    static string readString(int socket, int *size);
     // Converting int to string - static because we want to use them in static functions.
     /**
      * intToStringHelper
@@ -49,11 +54,11 @@ private:
      * @param str an empty string
      * @return the int converted to string.
      */
-     static string intToStringHelper(int x, string str) {
+    static string intToStringHelper(int x, string str) {
         if (x == 0) {
             return str;
         }
-        char ch = (char) ((x%10 + '0'));
+        char ch = (char) ((x % 10 + '0'));
         // Put the char in the end because moves by the digits.
         return intToStringHelper(x / 10, str) + ch;
     }
@@ -63,10 +68,8 @@ private:
      * Here we put empty string and prevent put it all the time.
      * @return the int converted to string.
      */
-     static string intToString(int num) {
-        return intToStringHelper(num ,"");
+    static string intToString(int num) {
+        return intToStringHelper(num, "");
     }
 };
-
-
 #endif //SERVER_H

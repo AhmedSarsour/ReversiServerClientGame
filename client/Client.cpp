@@ -1,8 +1,7 @@
-//
-// Created by eliad1998 on 05/12/17.
-//
-
-
+/*
+ *      student 1: ahmed sarsour 315397059
+ *      student 2: Eliad Arzuan  206482622
+ */
 #include"Client.h"
 #include<iostream>
 #include<sys/socket.h>
@@ -13,9 +12,8 @@
 #include<unistd.h>
 #include "Point.h"
 using namespace std;
-Client::Client(const char *serverIP, int serverPort):
-        serverIP(serverIP), serverPort(serverPort),
-        clientSocket(0) {
+Client::Client(const char *serverIP, int serverPort) :
+        serverIP(serverIP), serverPort(serverPort), clientSocket(0) {
     cout << "Client" << endl;
 }
 
@@ -30,71 +28,71 @@ void Client::connectToServer() {
     if (!inet_aton(serverIP, &address)) {
         throw "Can't parse IP address";
     }
-
     // Get a hostent structure for the given host address
     struct hostent *server;
     server = gethostbyaddr((const void *) &address, sizeof(address), AF_INET);
     if (server == NULL) {
         throw "Host is unreachable";
     }
-// Create a structure for the server address
+    // Create a structure for the server address
     struct sockaddr_in serverAddress;
     bzero((char *) &address, sizeof(address));
     serverAddress.sin_family = AF_INET;
     memcpy((char *) &serverAddress.sin_addr.s_addr, (char *) server->h_addr, server->h_length);
-// htons converts values between host and network byteorders
+    // htons converts values between host and network byteorders
     serverAddress.sin_port = htons(serverPort);
     // Establish a connection with the TCP server
-    if (connect(clientSocket, (struct sockaddr*)&serverAddress, sizeof(serverAddress)) == -1) {
+    if (connect(clientSocket, (struct sockaddr*) &serverAddress,
+                sizeof(serverAddress)) == -1) {
         throw "Error connecting to server";
     }
     cout << "Connected to server" << endl;
 }
-    int Client::wait() {
-        int x;
-        // Waiting until reading the message from the server.
-        int n = read(clientSocket, &x, sizeof(x));
-        if (n == -1) {
-            cout << "Error reading it" << endl;
-        }
-        return x;
+int Client::wait() {
+    int x;
+    // Waiting until reading the message from the server.
+    int n = read(clientSocket, &x, sizeof(x));
+    if (n == -1) {
+        cout << "Error reading it" << endl;
     }
+    return x;
+}
 
-    Point Client::getMove() {
-        int arg1, arg2;
-        int n = read(clientSocket, &arg1, sizeof(arg1));
-        if (n == -1) {
-            throw "Error reading arg1";
-        }
-        if (n == 0) {
-            throw "Client disconnected";
-        }
-        n = read(clientSocket, &arg2, sizeof(arg2));
-        if (n == -1) {
-            throw "Error reading arg2";
-        }
-        // Return point from the both arguments.
-        return Point(arg1, arg2);
+Point Client::getMove() {
+    int arg1, arg2;
+    int n = read(clientSocket, &arg1, sizeof(arg1));
+    if (n == -1) {
+        throw "Error reading arg1";
+    }
+    if (n == 0) {
+        throw "Client disconnected";
+    }
+    n = read(clientSocket, &arg2, sizeof(arg2));
+    if (n == -1) {
+        throw "Error reading arg2";
+    }
+    // Return point from the both arguments.
+    return Point(arg1, arg2);
 
+}
+//Send move to the server
+Point Client::sendMove(int x, int y) {
+    // Write the point arguments to the socket
+    int n = write(clientSocket, &x, sizeof(x));
+    if (n == -1) {
+        throw "Error writing arg1 to socket";
     }
-    //Send move to the server
-    Point Client::sendMove(int x, int y) {
-        // Write the point arguments to the socket
-        int n = write(clientSocket, &x, sizeof(x));
-        if (n == -1) {
-            throw "Error writing arg1 to socket";
-        }
-        n = write(clientSocket, &y, sizeof(y));
-        if (n == -1) {
-            throw "Error writing arg2 to socket";
-        }
-        return Point(x, y);
+    n = write(clientSocket, &y, sizeof(y));
+    if (n == -1) {
+        throw "Error writing arg2 to socket";
     }
+    return Point(x, y);
+}
 
 /**
-* writeToSocket: it gets a string, writes it into the client's socket.
-* @param command
-*/
+ * writeToSocket: it gets a string, writes it into the client's socket.
+ * @param command
+ */
 void Client::writeToSocket(string command) {
     //getting the size of the input string.
     int size = command.size();
@@ -105,7 +103,7 @@ void Client::writeToSocket(string command) {
     }
     //writing the command "char by char" in the socket.
     char c;
-    for(int i = 0; i < command.size(); i++) {
+    for (int i = 0; i < command.size(); i++) {
         c = command.at(i);
         n = write(clientSocket, &c, sizeof(c));
         if (n == -1) {
@@ -117,27 +115,30 @@ void Client::writeToSocket(string command) {
 int Client::readOperation() {
     char c;
     int n;
+    //reading the symbol we got from the server.
     n = read(clientSocket, &c, sizeof(c));
     if (n == -1) {
         throw "Error writing arg1 to socket";
     }
+    //in case the symbol was '-' then printing:
     if (c == '-') {
         cout << "there is an already existing game with such name!" << endl;
         cout << "please pick another one." << endl;
         return -1;
+    //in case the symbol was '+' then printing the following:
     } else if (c == '+') {
         cout << "there is no existing game with the name you entered!" << endl;
         return -1;
         // List games- we are going to read more strings.
-    } else if(c == 'e') {
+    } else if (c == 'e') {
         readListGames();
         return 2;
     }
-
+    //read successfully.
     return 1;
 }
 
-void Client::readListGames()  {
+void Client::readListGames() {
     int n;
     int size;
     //we read the size of the given string in the socket.
@@ -148,7 +149,7 @@ void Client::readListGames()  {
     string com = "";
     //in this do-while, we read the command
     do {
-        if(size > 0) {
+        if (size > 0) {
             //reading the characters. saving them in c2.
             n = read(clientSocket, &c2, sizeof(c2));
             size--;
@@ -158,10 +159,8 @@ void Client::readListGames()  {
             //saving the char in c[0] in order to do append(append doesn't accept char, but char*).
             c[0] = c2;
             com.append(c);
-
         }
         //i did here && size > 0 because it is needed for the "list_games" command.
-    }while(size > 0);
+    } while (size > 0);
     cout << "Games : " << com << endl;
-
 }

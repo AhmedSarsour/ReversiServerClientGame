@@ -15,16 +15,16 @@
 /**
  * CommandsManager.
  * We are using it command design pattern-  Encapsulate a command as an object, thereby
-letting you parameterize clients with different
-requests, queue or log requests, and support
-undoable operations.
+ letting you parameterize clients with different
+ requests, queue or log requests, and support
+ undoable operations.
  */
 class CommandsManager {
 public:
     /**
-    * CommandsManager.
-    * The constructor of our class.
-    * Initialize a commands map and a Game Collection.
+     * CommandsManager.
+     * The constructor of our class.
+     * Initialize a commands map and a Game Collection.
      */
     CommandsManager();
     /**

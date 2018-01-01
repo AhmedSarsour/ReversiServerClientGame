@@ -45,7 +45,7 @@ public:
      */
     GameInfo getGame(string game);
     /**
-     *  searchGame.
+     * searchGame.
      * @param game the game name.
      * @return the index of game in games, -1 if didn't found.
      */
@@ -68,10 +68,7 @@ public:
             // Erasing the game
             this->games.erase(this->games.begin() + index);
         }
-
     }
-
 };
-
 
 #endif //REVERSI_GAMECOLLECTION_H

@@ -43,8 +43,8 @@ void AiPlayer::setBoardRowNCol(int rowsSize, int colsSize) {
  * pick choice, and then returns the choice he pick.
  */
 Point AiPlayer::playTurn(int** reversi, PointsList* choices,
-		int playersDivide) {
-    // Here we don't print its your move because the computer knows it his move.
+						 int playersDivide) {
+	// Here we don't print its your move because the computer knows it his move.
 	int computer = 2;
 	//checkHuman.. == scores when computer played(Each move)
 	//counter = the spot of the score with minimum points for the enemy.
@@ -79,7 +79,7 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 	}
 	//running of the list of moves.
 	for (iter = choices->getMyList().begin();
-			iter != choices->getMyList().end(); iter++) {
+		 iter != choices->getMyList().end(); iter++) {
 		//getting the currentMove (from the choices).
 		Point currentMove = *(iter);
 		//copying the main board status.
@@ -88,7 +88,7 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 		cpyBoard[currentMove.getX() - 1][currentMove.getY() - 1] = computer;
 		//converting the pieces on cpyBoard.
 		rules.convertPieces(cpyBoard, computer, currentMove.getX(),
-				currentMove.getY());
+							currentMove.getY());
 		//copying the board after the computer pick a choice.
 		this->copyValues(deepCopy, cpyBoard);
 		//list of choices for the human player.
@@ -107,7 +107,7 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 		list<int> humanScores;
 		//running on the choices of the human player.
 		for (iter2 = humanChoicesList.getMyList().begin();
-				iter2 != humanChoicesList.getMyList().end(); iter2++) {
+			 iter2 != humanChoicesList.getMyList().end(); iter2++) {
 			//trying all the moves.
 			Point curHumanMove = *(iter2);
 			//copying the status of the board before the player picks a move.
@@ -116,7 +116,7 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 			deeperCopy[curHumanMove.getX() - 1][curHumanMove.getY() - 1] = 1;
 			//converting the pieces according to the pick choice.
 			rules.convertPieces(deeperCopy, 1, curHumanMove.getX(),
-					curHumanMove.getY());
+								curHumanMove.getY());
 			//making the score 0 for counting.
 			checkHumanPlayerScore = 0;
 			countXs = 0, countOs = 0;
@@ -150,12 +150,12 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 	list<int>::iterator runOnScores;
 	//now filling the list of best choices.
 	for (humanScIter = humanDeepScores.begin();
-			humanScIter != humanDeepScores.end(); humanScIter++) {
+		 humanScIter != humanDeepScores.end(); humanScIter++) {
 		//getting the first score of each list.
 		maxInList = *(*humanScIter).begin();
 		//running on the scores on the list.
 		for (runOnScores = (*humanScIter).begin();
-				runOnScores != (*humanScIter).end(); runOnScores++) {
+			 runOnScores != (*humanScIter).end(); runOnScores++) {
 			//comparing the scores.
 			if (maxInList < *runOnScores) {
 				maxInList = *runOnScores;
@@ -168,7 +168,7 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 	//setting min to be the first score in the bestchoices list.
 	min = *(bestChoices.begin());
 	for (runOnScores = bestChoices.begin(); runOnScores != bestChoices.end();
-			runOnScores++) {
+		 runOnScores++) {
 		//finding the minimum score of the best choices' scores.
 		if (min > *runOnScores) {
 			min = *runOnScores;
@@ -177,7 +177,7 @@ Point AiPlayer::playTurn(int** reversi, PointsList* choices,
 	//countMin for finding the spot of the score in the list.
 	int countMin = 0;
 	for (runOnScores = bestChoices.begin(); runOnScores != bestChoices.end();
-			runOnScores++) {
+		 runOnScores++) {
 		/*
 		 * looking for the min spot in the list in order to
 		 * determine the number of steps we need to make

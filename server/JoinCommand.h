@@ -14,12 +14,12 @@
  */
 class JoinCommand: public Command {
 public:
-    typedef struct  {
+    typedef struct {
         int clientSocket2;
         string gameName;
         GameCollection * gameCollection;
         //Server* server;
-    }ThreadArgs;
+    } ThreadArgs;
     /**
      * Excecute.
      * @param args the arguments to the function to do.
@@ -30,13 +30,12 @@ public:
     int execute(vector<string> args, GameCollection *gameCollection);
 
 private:
-
     /**
-    * HandleClients.
-    * Handle with the both clients.
-    * @param clientSocket1 The socket of the first player.
-    * @param clientSocket2 The socket of the second player.
-    */
+     * HandleClients.
+     * Handle with the both clients.
+     * @param clientSocket1 The socket of the first player.
+     * @param clientSocket2 The socket of the second player.
+     */
     static void handleClients(int client1Socket, int clientSocket2);
     // Send a message just for the client waiting for it.
     /**
@@ -61,12 +60,13 @@ private:
      * @param y the y cordinate.
      */
     static void sendMove(int socket, int x, int y);
-
-
+    /**
+     * clientHandle.
+     * @param arguments
+     * it handles the connecting between the game the client enter, with the game
+     * that the first player started, connects both players and calls, handleClients
+     * function.
+     */
     static void* clientHandle(void * arguments);
-
 };
-
-
-
 #endif //JOINCOMMAND_H

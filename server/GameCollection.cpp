@@ -11,7 +11,6 @@ void GameCollection::addGame(string game) {
 }
 //  Searcing a game.
 int GameCollection::searchGame(string game) {
-//    cout << "Number of games is " << this->games.size();
     for (int i = 0; i < this->games.size(); i++) {
         if (this->games[i].getName().compare(game) == 0) {
             return i;
@@ -35,7 +34,7 @@ bool GameCollection::joinGame(string game, int socket) {
         return false;
     }
     // Getting the number of current players in the game.
-    int numPlayers =  this->games[search].getNumPlayers();
+    int numPlayers = this->games[search].getNumPlayers();
     // Can join the game only if there are no players or 1 player.
     if (numPlayers == 0 || numPlayers == 1) {
         // Increase number of players.
@@ -54,7 +53,7 @@ bool GameCollection::joinGame(string game, int socket) {
 }
 //  Getting the avaliable games.
 vector<string> GameCollection::getAvailableGames() {
-    vector<string> available;
+    vector < string > available;
     for (int i = 0; i < games.size(); i++) {
         // Can join the game - there are zero or 1 players
         // Otherwise won't join to the vector there are already two players.

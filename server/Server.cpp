@@ -1,14 +1,20 @@
+/*
+ * server
+ *      student 1: ahmed sarsour 315397059
+ *      student 2: Eliad Arzuan  206482622
+ */
 #include "Server.h"
-
-
+#define MAX_CONNECTED_CLIENTS 500
 using namespace std;
-#define MAX_CONNECTED_CLIENTS 500 //2 Players
-static void* acceptClients(void * arguments) ;
-Server::Server(int port): port(port), serverSocket(0) {
+
+static void* acceptClients(void * arguments);
+CommandsManager cm = CommandsManager();
+
+Server::Server(int port) :
+        port(port), serverSocket(0) {
     cout << "server" << endl;
 }
 
-CommandsManager cm = CommandsManager();
 void Server::start() {
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
@@ -17,36 +23,38 @@ void Server::start() {
     }
     // Assign a local address to the socket
     struct sockaddr_in serverAddress;
-    bzero((void *)&serverAddress, sizeof(serverAddress));
+    bzero((void *) &serverAddress, sizeof(serverAddress));
     serverAddress.sin_family = AF_INET;
     serverAddress.sin_addr.s_addr = INADDR_ANY;
     serverAddress.sin_port = htons(port);
     // Checks if the binding is ok
-    if (bind(serverSocket, (struct sockaddr *)&serverAddress, sizeof(serverAddress)) == -1) {
+    if (bind(serverSocket, (struct sockaddr *) &serverAddress,
+             sizeof(serverAddress)) == -1) {
         throw "Error on binding";
     }
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
-    pthread_create(&serverThreadId, NULL, acceptClients, (void*)serverSocket);
-  //  pthread_join(severThreadId,NULL);
+    pthread_create(&serverThreadId, NULL, acceptClients, (void*) serverSocket);
+    // pthread_join(severThreadId,NULL);
 
 }
+
 static void* acceptClients(void * arguments) {
-    long serverSocket = (long)arguments;
+    long serverSocket = (long) arguments;
     // Define the lib socket's structures
     struct sockaddr_in clientAddress; //Fixing error on accept.
-    socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
+    socklen_t clientAddressLen = sizeof((struct sockaddr*) &clientAddress);
     while (true) {
-        int clientSocket1 = accept(serverSocket, (struct
-                sockaddr *) &clientAddress, &clientAddressLen);
+        int clientSocket1 = accept(serverSocket,
+                                   (struct sockaddr *) &clientAddress, &clientAddressLen);
         // The arguments to clientHandle;
         Server::clientHandle(clientSocket1);
     }
 }
 void Server::clientHandle(int clientSocket1) {
-   while (true) {
-        vector<string> args;
-   //     Server s = *threadArgs.server;
+    while (true) {
+        vector < string > args;
+        //     Server s = *threadArgs.server;
         // while (true) {
         int size;
         int n;
@@ -69,25 +77,23 @@ void Server::clientHandle(int clientSocket1) {
         cout << "I pass the vector " << args[1] << endl;
         // 0 - chose list_games wrong with the command so we will continue.
         // Any other value is ok so we break.
-        if(cm.executeCommand(command, args) != 0){
+        if (cm.executeCommand(command, args) != 0) {
             break;
         }
-
-       }
-
     }
+}
 
 string Server::readString(int socket, int* sizeOf) {
     int size = *sizeOf;
-    int clientSocket1= socket;
-int n;
+    int clientSocket1 = socket;
+    int n;
     char c2;
     char c[1];
     //com is the string that holds the command.
     string com = "";
     //in this do-while, we read the command
     do {
-        if(size > 0) {
+        if (size > 0) {
             //reading the characters. saving them in c2.
             n = read(clientSocket1, &c2, sizeof(c2));
             size--;
@@ -100,19 +106,16 @@ int n;
                 com.append(c);
             }
         }
-        //i did here && size > 0 because it is needed for the "list_games" command.
-    }while(c[0] != ' ' && size > 0);
+        //i did "&& size > 0" because it is needed for the "list_games" command.
+    } while (c[0] != ' ' && size > 0);
     cout << "command is : " << com << endl;
+    //changing the original value of the size of the string.
     *sizeOf = size;
     return com;
 
-
 }
-
 void Server::stop() {
-    pthread_cancel(serverThreadId);
-    close(serverSocket);
+    pthread_cancel (serverThreadId);
+    close (serverSocket);
     cout << "Server stopped" << endl;
 }
-
-

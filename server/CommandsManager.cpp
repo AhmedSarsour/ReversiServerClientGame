@@ -28,4 +28,3 @@ CommandsManager::~CommandsManager() {
         delete it->second;
     }
 }
-

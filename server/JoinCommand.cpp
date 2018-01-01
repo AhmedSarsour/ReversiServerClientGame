@@ -6,14 +6,14 @@
 int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
     // Getting the name of the game.
     string gameName = args[0];
-    //NOTE: clientSocket2 is the socket for the guy who did join-command!.
+    //NOTE: clientSocket2 is the socket of the player who did the join-command!.
     int clientSocket2 = atoi(args[1].c_str());
     if (clientSocket2 == -1) {
         throw "Error on accept";
     }
     // Search if there is already game in this name.
     if (gameCollection->searchGame(gameName) != -1) {
-
+        //producing the threadArgs struct for clientHandle function thread.
         ThreadArgs * threadArgs = new ThreadArgs;
         threadArgs->clientSocket2 = clientSocket2;
         threadArgs->gameCollection = gameCollection;
@@ -22,6 +22,7 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
         pthread_t threadId;
         int rc = pthread_create(&threadId, NULL, clientHandle,
                                 (void*) threadArgs);
+        //if rc == 0, means that the thread was not created.
         if (rc) {
             cout << "Error unable to create thread, " << rc << endl;
             exit(-1);
@@ -42,11 +43,9 @@ void* JoinCommand::clientHandle(void * arguments) {
     int clientSocket2 = threadArgs->clientSocket2;
     string gameName = threadArgs->gameName;
     GameCollection gameCollection = *threadArgs->gameCollection;
-
     // There is this game.
     // Now we can get the first socket
     int clientSocket1 = gameCollection.getGame(gameName).getSocket1();
-
     cout << "socket 1:" << clientSocket1 << endl;
     cout << "socket 2: " << clientSocket2 << endl;
     cout << "Player 2 connected" << endl;
@@ -61,7 +60,8 @@ void* JoinCommand::clientHandle(void * arguments) {
     // The first player - his number is 1
     JoinCommand::sendActivation(clientSocket1);
     JoinCommand::handleClients(clientSocket1, clientSocket2);
-    gameCollection.removeGame(gameName);
+    //deleting the game from the gameCollection list (available games).
+    threadArgs->gameCollection->removeGame(gameName);
 }
 //  Sending int through the socket.
 void JoinCommand::sendInt(int socket, int msg) {
@@ -113,10 +113,7 @@ void JoinCommand::handleClients(int clientSocket1, int clientSocket2) {
                 return;
             }
             cout << "X played : (" << arg1 << "," << arg2 << ")" << endl;
-            // Send activation for player 2 that waited for player 1 to do a move.
-            // Sending activation just for waiting.
-            //sendActivation(clientSocket2);
-            // Sending the point arguments to the other player.
+            //sending the move to the otehr player.
             sendMove(clientSocket2, arg1, arg2);
             // The second Player.
         } else {
@@ -136,10 +133,7 @@ void JoinCommand::handleClients(int clientSocket1, int clientSocket2) {
             }
             cout << "O played : (" << arg1 << "," << arg2 << ")" << endl;
             // Sending the point arguments to the other player.
-            // sendActivation(clientSocket1);
             sendMove(clientSocket1, arg1, arg2);
-            // Sending activation just for waiting.
-            // Send activation for player 1 that waited for player 2 to do a move.
         }
         playersDivide++;
     }

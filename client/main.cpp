@@ -1,7 +1,7 @@
 /*
  * main.cpp
- *      student 1: ahmed sarsour. 315397059
- *      student 2: Eliad Arzuan 206482622
+ *      student 1: ahmed sarsour 315397059
+ *      student 2: Eliad Arzuan  206482622
  */
 #include <iostream>
 #include "Player.h"
@@ -19,8 +19,8 @@ using namespace std;
 int main() {
 
     int row, col;
-    row = 3;
-    col = 3;
+    row = 8;
+    col = 8;
     Player* firstPlayer;
     Player* secondPlayer;
     int option; //Option of the game type 1- against human 2 - against computer.
@@ -71,8 +71,7 @@ int main() {
             }
             // Closing the file.
             myfile.close();
-        }
-        else {
+        } else {
             cout << "Unable to open file";
         }
         // Creating new cliient.
