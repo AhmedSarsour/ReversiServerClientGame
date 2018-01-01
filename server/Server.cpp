@@ -27,8 +27,8 @@ void Server::start() {
     }
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
-    pthread_create(&severThreadId, NULL, acceptClients, (void*)serverSocket);
-    pthread_join(severThreadId,NULL);
+    pthread_create(&serverThreadId, NULL, acceptClients, (void*)serverSocket);
+  //  pthread_join(severThreadId,NULL);
 
 }
 static void* acceptClients(void * arguments) {
@@ -107,6 +107,12 @@ int n;
     return com;
 
 
+}
+
+void Server::stop() {
+    pthread_cancel(serverThreadId);
+    close(serverSocket);
+    cout << "Server stopped" << endl;
 }
 
 

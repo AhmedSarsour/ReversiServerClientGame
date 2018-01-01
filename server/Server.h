@@ -35,7 +35,7 @@ public:
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
-    pthread_t severThreadId;
+    pthread_t serverThreadId;
     /**
      * readString.
      * Reading a string from socket until space.
