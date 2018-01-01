@@ -31,16 +31,17 @@ public:
      * Stops the server.
      */
     void stop();
-     void clientHandle(int clientSocket1);
+    static void clientHandle(int clientSocket1);
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
+    pthread_t severThreadId;
     /**
      * readString.
      * Reading a string from socket until space.
      * @return the string it read.
      */
-     string readString(int socket, int *size);
+     static string readString(int socket, int *size);
     // Converting int to string - static because we want to use them in static functions.
     /**
      * intToStringHelper
@@ -48,7 +49,7 @@ private:
      * @param str an empty string
      * @return the int converted to string.
      */
-     string intToStringHelper(int x, string str) {
+     static string intToStringHelper(int x, string str) {
         if (x == 0) {
             return str;
         }
@@ -62,7 +63,7 @@ private:
      * Here we put empty string and prevent put it all the time.
      * @return the int converted to string.
      */
-     string intToString(int num) {
+     static string intToString(int num) {
         return intToStringHelper(num ,"");
     }
 };

@@ -3,9 +3,11 @@
 
 using namespace std;
 #define MAX_CONNECTED_CLIENTS 500 //2 Players
+static void* acceptClients(void * arguments) ;
 Server::Server(int port): port(port), serverSocket(0) {
     cout << "server" << endl;
 }
+
 CommandsManager cm = CommandsManager();
 void Server::start() {
     // Create a socket point
@@ -25,27 +27,22 @@ void Server::start() {
     }
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
+    pthread_create(&severThreadId, NULL, acceptClients, (void*)serverSocket);
+    pthread_join(severThreadId,NULL);
+
+}
+static void* acceptClients(void * arguments) {
+    long serverSocket = (long)arguments;
     // Define the lib socket's structures
     struct sockaddr_in clientAddress; //Fixing error on accept.
     socklen_t clientAddressLen =  sizeof((struct sockaddr*) &clientAddress);
-    vector<pthread_t> threads;
-    int index = -1;
     while (true) {
         int clientSocket1 = accept(serverSocket, (struct
                 sockaddr *) &clientAddress, &clientAddressLen);
         // The arguments to clientHandle;
-        clientHandle(clientSocket1);
-
-      //  pthread_exit(NULL);
-
-       // close(clientSocket1);
-
+        Server::clientHandle(clientSocket1);
     }
-
-
-    pthread_exit(NULL);
 }
-
 void Server::clientHandle(int clientSocket1) {
    while (true) {
         vector<string> args;
