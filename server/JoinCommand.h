@@ -27,7 +27,7 @@ public:
      * This args[0] - gameName args[1] - socket
      * @return 0 - something wrong otherwise - ok
      */
-    int execute(vector<string> args, GameCollection &gameCollection);
+    int execute(vector<string> args, GameCollection *gameCollection);
 
 private:
 

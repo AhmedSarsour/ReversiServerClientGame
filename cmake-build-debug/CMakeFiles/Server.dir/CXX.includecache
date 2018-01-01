@@ -229,6 +229,8 @@ Command.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
 iostream
 -
+cstdlib
+-
 
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Server.cpp
 Server.h

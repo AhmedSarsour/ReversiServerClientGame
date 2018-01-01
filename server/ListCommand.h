@@ -6,6 +6,8 @@
 #define LISTCOMMAND_H
 #include "Command.h"
 #include <iostream>
+#include <cstdlib>
+
 /**
  * ListCommand.
  * This command send to the client list of avaliable games that he can join.
@@ -21,9 +23,9 @@ public:
      * @param serverSocket the socket to the server
      * @return 0 in our case because we want to continue after it getting commands.
      */
-    int execute(vector<string> args, GameCollection &gameCollection){
+    int execute(vector<string> args, GameCollection *gameCollection){
         //  Getting the available games.
-        vector<string> available = gameCollection.getAvailableGames();
+        vector<string> available = gameCollection->getAvailableGames();
         int n;
         int clientSocket1 = atoi(args[1].c_str());
         //first read e than the game names.

@@ -18,7 +18,7 @@ int CommandsManager::executeCommand(string command, vector<string> args) {
     // Get a command from the map.
     Command *commandObj = commandsMap[command];
     //Doing the command
-    return commandObj->execute(args, this->gameCollection);
+    return commandObj->execute(args, &gameCollection);
 }
 //Destructor.
 CommandsManager::~CommandsManager() {

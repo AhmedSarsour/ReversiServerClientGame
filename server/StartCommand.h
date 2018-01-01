@@ -23,7 +23,7 @@ public:
      * This args - args[0] - gameName args[1] - socket
      * @return 0 - something wrong otherwise - ok
      */
-    int execute(vector<string> args, GameCollection &gameCollection){
+    int execute(vector<string> args, GameCollection *gameCollection){
         //  The name of the game we want to start.
         string gameName = args[0];
         int clientSocket1 = atoi(args[1].c_str());
@@ -33,10 +33,10 @@ public:
         }
         // Search if there is already game in this name
         // There is no already game in this name
-        if (gameCollection.searchGame(gameName) == -1) {
-            gameCollection.addGame(gameName);
+        if (gameCollection->searchGame(gameName) == -1) {
+            gameCollection->addGame(gameName);
             cout << "Waiting for another opponent..." << endl;
-            gameCollection.joinGame(gameName, clientSocket1);
+            gameCollection->joinGame(gameName, clientSocket1);
             /*
              * writing # to the socket means the client successfully started a game.
              */

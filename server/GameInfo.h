@@ -19,11 +19,13 @@ public:
      * @param name the name of the game we want to create.
      * Initialize the name, and the other parameters to 0.
      */
-    GameInfo(string &name):name(name)
-            , numPlayers(0){
+    GameInfo(string &name):name(name) {
         // Initializing the sockets to 0.
         this->socket1[0] = 0;
         this->socket2[0] = 0;
+        this->numPlayers = new int;
+        *numPlayers = 0;
+
     }
     /**
      * getName
@@ -37,7 +39,7 @@ public:
      * @return the current players in the game.
      */
     int getNumPlayers() {
-        return this->numPlayers;
+        return this->numPlayers[0];
     }
     /**
      * getSocket1.
@@ -59,7 +61,7 @@ public:
      * Setting the number of current players.
      */
     void setNumPlayers(int num) {
-        this->numPlayers = num;
+        *numPlayers = num;
     }
     /**
      * setSocket1.
@@ -80,7 +82,7 @@ public:
 
 private:
     string name;    //The name of the game.
-    int numPlayers; //The current players in the game.
+    int * numPlayers; //The current players in the game.
     int socket1[1]; // Array of 1 int instead of pointer.
     int socket2[1];// Array of 1 int instead of pointer.
 };

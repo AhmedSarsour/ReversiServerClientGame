@@ -3,7 +3,7 @@
  */
 #include "JoinCommand.h"
 //  Excecutes the commend.
-int JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
+int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
     // Getting the name of the game.
     string gameName = args[0];
     //NOTE: clientSocket2 is the socket for the guy who did join-command!.
@@ -12,11 +12,11 @@ int JoinCommand::execute(vector<string> args, GameCollection &gameCollection) {
         throw "Error on accept";
     }
     // Search if there is already game in this name.
-    if (gameCollection.searchGame(gameName) != -1) {
+    if (gameCollection->searchGame(gameName) != -1) {
 
         ThreadArgs *  threadArgs = new ThreadArgs;
         threadArgs->clientSocket2 = clientSocket2;
-        threadArgs->gameCollection = &gameCollection;
+        threadArgs->gameCollection = gameCollection;
         threadArgs->gameName = gameName;
         cout << "The game name is " << threadArgs->gameName << endl;
         pthread_t threadId;
