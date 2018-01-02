@@ -36,18 +36,14 @@ public:
      * clientHandle: this function handles the commands between the client and the server.
      * @param clientSocket1
      */
-    static void clientHandle(int clientSocket1);
+   // static void* clientHandle(void * arguments);
 
     int getSocket();
-private:
-    int port; // The port we want to login the server.
-    long serverSocket; // the socket's file descriptor
-    pthread_t serverThreadId; //The thread of clients handle in the game.
     /**
-     * readString.
-     * Reading a string from socket until space.
-     * @return the string it read.
-     */
+  * readString.
+  * Reading a string from socket until space.
+  * @return the string it read.
+  */
     static string readString(int socket, int *size);
     // Converting int to string - static because we want to use them in static functions.
     /**
@@ -64,6 +60,11 @@ private:
      * @return the int converted to string.
      */
     static string intToString(int num);
+private:
+    int port; // The port we want to login the server.
+    long serverSocket; // the socket's file descriptor
+    pthread_t serverThreadId; //The thread of clients handle in the game.
+
 
 
 };

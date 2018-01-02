@@ -48,7 +48,6 @@ CMakeFiles/Server.dir/client/PointsList.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.h
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o
- /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CommandsManager.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CommandsManager.h
@@ -66,7 +65,6 @@ CMakeFiles/Server.dir/server/GameInfo.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o
- /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CommandsManager.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameCollection.h
@@ -83,7 +81,6 @@ CMakeFiles/Server.dir/server/ListCommand.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.h
 CMakeFiles/Server.dir/server/Server.cpp.o
- /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CommandsManager.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameCollection.h
@@ -100,7 +97,6 @@ CMakeFiles/Server.dir/server/StartCommand.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o
- /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CommandsManager.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameCollection.h

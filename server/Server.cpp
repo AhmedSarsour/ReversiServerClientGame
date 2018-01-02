@@ -9,11 +9,12 @@ using namespace std;
 
 static void* acceptClients(void * arguments);
 CommandsManager cm = CommandsManager();
-vector <int> allSockets;
 Server::Server(int port) :
         port(port), serverSocket(0) {
     cout << "server" << endl;
 }
+
+static void* clientHandle(void * arguments);
 //Starts the server
 void Server::start() {
 //    cout <<  "my socket is " << serverSocket<<endl;
@@ -42,20 +43,23 @@ void Server::start() {
 
 }
 
-static void* acceptClients(void * arguments) {
+void* acceptClients(void * arguments) {
     long serverSocket = (long) arguments;
     // Define the lib socket's structures
     struct sockaddr_in clientAddress; //Fixing error on accept.
     socklen_t clientAddressLen = sizeof((struct sockaddr*) &clientAddress);
     while (true) {
-        int clientSocket1 = accept(serverSocket,
+        long clientSocket1 = accept(serverSocket,
                                    (struct sockaddr *) &clientAddress, &clientAddressLen);
-        allSockets.push_back(clientSocket1);
         // The arguments to clientHandle;
-        Server::clientHandle(clientSocket1);
+      //  Server::clientHandle((void*)clientSocket1);
+
+        pthread_t threadId;
+        pthread_create(&threadId, NULL,&clientHandle, (void *)clientSocket1);
     }
 }
-void Server::clientHandle(int clientSocket1) {
+void* clientHandle(void * argumnets) {
+    long clientSocket1 = (long)argumnets;
     int index = 0;
     while (true) {
         index++;
@@ -73,7 +77,7 @@ void Server::clientHandle(int clientSocket1) {
         string command = Server::readString(clientSocket1, &size);
         string typeCommand = Server::readString(clientSocket1, &size);
         args.push_back(typeCommand);
-        args.push_back(intToString(clientSocket1));
+        args.push_back(Server::intToString(clientSocket1));
 
         /***************************************/
         //Getting the argument after the command:
@@ -120,6 +124,7 @@ string Server::readString(int socket, int* sizeOf) {
     return com;
 
 }
+//Stops the server
 void Server::stop() {
 
     cm.closeAllGames();

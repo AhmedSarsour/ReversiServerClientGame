@@ -72,19 +72,7 @@ private:
  * @param n the result of sending to socket.
  * In case of bad result close the communication with the user.
  */
-    void checkProblem(int n) {
-        if (n == -1) {
-            // Closing the client socket.
-           // close(clientSocket);
-            throw "Error writing to socket probebly the server was closed ";
-        }
-
-        if (n == 0) {
-            // Closing the client socket.
-          //  close(clientSocket);
-            throw "Client disconnected";
-        }
-    }
+    void checkProblem(int n);
 
 
 };

@@ -156,12 +156,6 @@ iostream
 Player.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Player.h
 
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h
-Command.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
-iostream
--
-
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h
 vector
 -
@@ -193,8 +187,6 @@ ListCommand.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.h
 JoinCommand.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/JoinCommand.h
-CloseCommand.h
-/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h
 
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameCollection.cpp
 unistd.h

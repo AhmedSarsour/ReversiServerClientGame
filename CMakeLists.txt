@@ -9,7 +9,7 @@ set(SOURCE_FILES client/BasicRules.cpp client/BasicRules.h client/Board.cpp clie
         client/PointsList.h client/AiPlayer.cpp client/AiPlayer.h)
 
 set(SERVER_FILES server/Server.cpp server/Server.h server/main.cpp server/GameCollection.cpp server/GameCollection.h
-        server/Command.h server/CloseCommand.h server/CommandsManager.cpp server/CommandsManager.h
+        server/Command.h server/CommandsManager.cpp server/CommandsManager.h
         server/JoinCommand.h server/ListCommand.h server/StartCommand.h server/GameInfo.h server/JoinCommand.cpp server/GameInfo.cpp server/ListCommand.cpp server/StartCommand.cpp)
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread")

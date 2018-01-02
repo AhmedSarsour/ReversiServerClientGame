@@ -157,3 +157,18 @@ void Client::readListGames() {
     } while (size > 0);
     cout << "Games : " << com << endl;
 }
+
+
+void Client::checkProblem(int n) {
+    if (n == -1) {
+        // Closing the client socket.
+        // close(clientSocket);
+        throw "Error writing to socket probebly the server was closed ";
+    }
+
+    if (n == 0) {
+        // Closing the client socket.
+        //  close(clientSocket);
+        throw "Client disconnected or the server was closed";
+    }
+}

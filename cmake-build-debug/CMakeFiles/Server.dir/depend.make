@@ -47,7 +47,6 @@ CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/Point.h
 CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/PointsList.cpp
 CMakeFiles/Server.dir/client/PointsList.cpp.o: ../client/PointsList.h
 
-CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/CommandsManager.cpp
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/CommandsManager.h
@@ -65,7 +64,6 @@ CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameInfo.h
 CMakeFiles/Server.dir/server/GameInfo.cpp.o: ../server/GameInfo.cpp
 CMakeFiles/Server.dir/server/GameInfo.cpp.o: ../server/GameInfo.h
 
-CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/CommandsManager.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/GameCollection.h
@@ -82,7 +80,6 @@ CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/GameInfo.h
 CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/ListCommand.cpp
 CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/ListCommand.h
 
-CMakeFiles/Server.dir/server/Server.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/CommandsManager.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/GameCollection.h
@@ -99,7 +96,6 @@ CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/GameInfo.h
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.cpp
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.h
 
-CMakeFiles/Server.dir/server/main.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/CommandsManager.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/GameCollection.h

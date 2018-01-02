@@ -546,9 +546,6 @@
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/lib/googletest-release-1.8.0/googletest/src/gtest_main.cc">
 			<Option target="gtest_main"/>
 		</Unit>
-		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/CloseCommand.h">
-			<Option target="Server"/>
-		</Unit>
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Command.h">
 			<Option target="Server"/>
 		</Unit>
