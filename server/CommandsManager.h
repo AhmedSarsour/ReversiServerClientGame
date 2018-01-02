@@ -11,7 +11,6 @@
 #include "StartCommand.h"
 #include "ListCommand.h"
 #include "JoinCommand.h"
-#include "CloseCommand.h"
 /**
  * CommandsManager.
  * We are using it command design pattern-  Encapsulate a command as an object, thereby

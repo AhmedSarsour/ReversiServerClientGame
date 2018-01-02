@@ -41,7 +41,7 @@ public:
     int getSocket();
 private:
     int port; // The port we want to login the server.
-    int serverSocket; // the socket's file descriptor
+    long serverSocket; // the socket's file descriptor
     pthread_t serverThreadId; //The thread of clients handle in the game.
     /**
      * readString.

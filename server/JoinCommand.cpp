@@ -21,8 +21,7 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
             threadArgs->gameName = gameName;
             cout << "The game name is " << threadArgs->gameName << endl;
             pthread_t threadId;
-            int rc = pthread_create(&threadId, NULL, clientHandle,
-                                    (void *) threadArgs);
+            int rc = pthread_create(&threadId, NULL, clientHandle, threadArgs);
             //if rc == 0, means that the thread was not created.
             if (rc) {
                 cout << "Error unable to create thread, " << rc << endl;

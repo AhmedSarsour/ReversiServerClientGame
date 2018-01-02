@@ -8,7 +8,7 @@ int main() {
     int numberLine = 0;
     string ip;
     int port;
-    ifstream myfile("../server/ssettings.txt");
+    ifstream myfile("ssettings.txt");
     // The first line is the port
     if (myfile.is_open()) {
         while (getline(myfile, line)) {
