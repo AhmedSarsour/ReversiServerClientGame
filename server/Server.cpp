@@ -16,6 +16,10 @@ Server::Server(int port) :
 }
 //Starts the server
 void Server::start() {
+//    cout <<  "my socket is " << serverSocket<<endl;
+//    if (serverSocket > 0) {
+//        close(serverSocket);
+//    }
     // Create a socket point
     serverSocket = socket(AF_INET, SOCK_STREAM, 0);
     if (serverSocket == -1) {
@@ -117,12 +121,9 @@ string Server::readString(int socket, int* sizeOf) {
 
 }
 void Server::stop() {
-    for (int i = 0; i < allSockets.size(); i++) {
-        cout << "Closing" << allSockets[i] << endl;
-        close(allSockets[i]);
-    }
+
     cm.closeAllGames();
     pthread_cancel (serverThreadId);
-    close (serverSocket);
+    //close (serverSocket);
     cout << "Server stopped" << endl;
 }

@@ -37,6 +37,10 @@ public:
      * @param clientSocket1
      */
     static void clientHandle(int clientSocket1);
+
+    int getSocket() {
+        return this->serverSocket;
+    }
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
@@ -71,5 +75,7 @@ private:
     static string intToString(int num) {
         return intToStringHelper(num, "");
     }
+
+
 };
 #endif //SERVER_H

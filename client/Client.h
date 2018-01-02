@@ -75,13 +75,13 @@ private:
     void checkProblem(int n) {
         if (n == -1) {
             // Closing the client socket.
-            close(clientSocket);
+           // close(clientSocket);
             throw "Error writing to socket probebly the server was closed ";
         }
 
         if (n == 0) {
             // Closing the client socket.
-            close(clientSocket);
+          //  close(clientSocket);
             throw "Client disconnected";
         }
     }

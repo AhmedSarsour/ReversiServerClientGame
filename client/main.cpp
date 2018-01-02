@@ -173,7 +173,18 @@ int main() {
             } catch (const char *msg) {
                 cout << "Failed to waiting for the other player."<< endl;
                 cout << "Reason:" << msg << endl;
-                exit(0);
+
+                try {
+                    client.writeToSocket("aa");
+                 //   cout << "you picked : " << "aaa" << " command" << endl;
+               //     string x = client.readOperation();
+                } catch (const char *msg) {
+                    cout << "Failed to writing command to the server. " << endl;
+                    cout << "Reason:" << msg << endl;
+                    exit(0);
+                }
+               // client.closeSocket();
+                //exit(0);
             }
 
             if (x == 1) {
@@ -213,6 +224,3 @@ int main() {
     }
 }
 
-static void finishGame() {
-
-}
