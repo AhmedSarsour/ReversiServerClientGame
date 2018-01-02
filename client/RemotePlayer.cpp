@@ -97,11 +97,9 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
         } catch (const char *msg) {
             cout << "Failed to send exercise to server. Reason: " << msg << endl;
             try {
+                //We can not write to the socket but in case of writing we clean the port.
                 client.writeToSocket("aa");
-                //   cout << "you picked : " << "aaa" << " command" << endl;
-                //     string x = client.readOperation();
             } catch (const char *msg) {
-                cout << "Failed to writing command to the server. " << endl;
                 cout << "Reason:" << msg << endl;
                 exit(0);
             }
@@ -125,11 +123,9 @@ Point RemotePlayer::playTurn(int** reversi, PointsList* choices, int playersDivi
         } catch (const char *msg) {
             cout << "Failed to get exercise to server. Reason: " << msg << endl;
             try {
+                //We can not write to the socket but in case of writing we clean the port.
                 client.writeToSocket("aa");
-                //   cout << "you picked : " << "aaa" << " command" << endl;
-                //     string x = client.readOperation();
             } catch (const char *msg) {
-                cout << "Failed to writing command to the server. " << endl;
                 cout << "Reason:" << msg << endl;
                 exit(0);
             }

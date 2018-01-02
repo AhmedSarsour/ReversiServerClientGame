@@ -38,9 +38,7 @@ public:
      */
     static void clientHandle(int clientSocket1);
 
-    int getSocket() {
-        return this->serverSocket;
-    }
+    int getSocket();
 private:
     int port; // The port we want to login the server.
     int serverSocket; // the socket's file descriptor
@@ -58,23 +56,14 @@ private:
      * @param str an empty string
      * @return the int converted to string.
      */
-    static string intToStringHelper(int x, string str) {
-        if (x == 0) {
-            return str;
-        }
-        char ch = (char) ((x % 10 + '0'));
-        // Put the char in the end because moves by the digits.
-        return intToStringHelper(x / 10, str) + ch;
-    }
+    static string intToStringHelper(int x, string str);
     /**
      * intToString.
      * @param num a number.
      * Here we put empty string and prevent put it all the time.
      * @return the int converted to string.
      */
-    static string intToString(int num) {
-        return intToStringHelper(num, "");
-    }
+    static string intToString(int num);
 
 
 };

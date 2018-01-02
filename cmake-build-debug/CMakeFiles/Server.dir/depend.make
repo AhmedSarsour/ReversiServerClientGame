@@ -62,6 +62,9 @@ CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameCollection.cpp
 CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameCollection.h
 CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameInfo.h
 
+CMakeFiles/Server.dir/server/GameInfo.cpp.o: ../server/GameInfo.cpp
+CMakeFiles/Server.dir/server/GameInfo.cpp.o: ../server/GameInfo.h
+
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/CommandsManager.h
@@ -73,6 +76,12 @@ CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Server.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/StartCommand.h
 
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/Command.h
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/GameInfo.h
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/ListCommand.cpp
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/ListCommand.h
+
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/CommandsManager.h
@@ -83,6 +92,12 @@ CMakeFiles/Server.dir/server/Server.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.cpp
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/StartCommand.h
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/Command.h
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/GameCollection.h
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/GameInfo.h
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.cpp
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.h
 
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/CloseCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/Command.h

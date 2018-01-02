@@ -564,6 +564,9 @@
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameCollection.h">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.cpp">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.h">
 			<Option target="Server"/>
 		</Unit>
@@ -573,6 +576,9 @@
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/JoinCommand.h">
 			<Option target="Server"/>
 		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.cpp">
+			<Option target="Server"/>
+		</Unit>
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.h">
 			<Option target="Server"/>
 		</Unit>
@@ -580,6 +586,9 @@
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/Server.h">
+			<Option target="Server"/>
+		</Unit>
+		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.cpp">
 			<Option target="Server"/>
 		</Unit>
 		<Unit filename="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.h">

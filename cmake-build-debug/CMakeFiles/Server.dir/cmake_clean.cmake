@@ -11,6 +11,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/Server.dir/server/GameCollection.cpp.o"
   "CMakeFiles/Server.dir/server/CommandsManager.cpp.o"
   "CMakeFiles/Server.dir/server/JoinCommand.cpp.o"
+  "CMakeFiles/Server.dir/server/GameInfo.cpp.o"
+  "CMakeFiles/Server.dir/server/ListCommand.cpp.o"
+  "CMakeFiles/Server.dir/server/StartCommand.cpp.o"
   "Server.pdb"
   "Server"
 )

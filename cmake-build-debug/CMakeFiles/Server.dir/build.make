@@ -345,6 +345,78 @@ CMakeFiles/Server.dir/server/JoinCommand.cpp.o.provides: CMakeFiles/Server.dir/s
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o.provides.build: CMakeFiles/Server.dir/server/JoinCommand.cpp.o
 
 
+CMakeFiles/Server.dir/server/GameInfo.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/server/GameInfo.cpp.o: ../server/GameInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Server.dir/server/GameInfo.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/GameInfo.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.cpp"
+
+CMakeFiles/Server.dir/server/GameInfo.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/server/GameInfo.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.cpp" > CMakeFiles/Server.dir/server/GameInfo.cpp.i
+
+CMakeFiles/Server.dir/server/GameInfo.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/server/GameInfo.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/GameInfo.cpp" -o CMakeFiles/Server.dir/server/GameInfo.cpp.s
+
+CMakeFiles/Server.dir/server/GameInfo.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/server/GameInfo.cpp.o.requires
+
+CMakeFiles/Server.dir/server/GameInfo.cpp.o.provides: CMakeFiles/Server.dir/server/GameInfo.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameInfo.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/server/GameInfo.cpp.o.provides
+
+CMakeFiles/Server.dir/server/GameInfo.cpp.o.provides.build: CMakeFiles/Server.dir/server/GameInfo.cpp.o
+
+
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/ListCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Server.dir/server/ListCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/ListCommand.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.cpp"
+
+CMakeFiles/Server.dir/server/ListCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/server/ListCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.cpp" > CMakeFiles/Server.dir/server/ListCommand.cpp.i
+
+CMakeFiles/Server.dir/server/ListCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/server/ListCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/ListCommand.cpp" -o CMakeFiles/Server.dir/server/ListCommand.cpp.s
+
+CMakeFiles/Server.dir/server/ListCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/server/ListCommand.cpp.o.requires
+
+CMakeFiles/Server.dir/server/ListCommand.cpp.o.provides: CMakeFiles/Server.dir/server/ListCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ListCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/server/ListCommand.cpp.o.provides
+
+CMakeFiles/Server.dir/server/ListCommand.cpp.o.provides.build: CMakeFiles/Server.dir/server/ListCommand.cpp.o
+
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: CMakeFiles/Server.dir/flags.make
+CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Server.dir/server/StartCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Server.dir/server/StartCommand.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.cpp"
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Server.dir/server/StartCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.cpp" > CMakeFiles/Server.dir/server/StartCommand.cpp.i
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Server.dir/server/StartCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/server/StartCommand.cpp" -o CMakeFiles/Server.dir/server/StartCommand.cpp.s
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.o.requires:
+
+.PHONY : CMakeFiles/Server.dir/server/StartCommand.cpp.o.requires
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.o.provides: CMakeFiles/Server.dir/server/StartCommand.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/StartCommand.cpp.o.provides.build
+.PHONY : CMakeFiles/Server.dir/server/StartCommand.cpp.o.provides
+
+CMakeFiles/Server.dir/server/StartCommand.cpp.o.provides.build: CMakeFiles/Server.dir/server/StartCommand.cpp.o
+
+
 # Object files for target Server
 Server_OBJECTS = \
 "CMakeFiles/Server.dir/client/BasicRules.cpp.o" \
@@ -358,7 +430,10 @@ Server_OBJECTS = \
 "CMakeFiles/Server.dir/server/main.cpp.o" \
 "CMakeFiles/Server.dir/server/GameCollection.cpp.o" \
 "CMakeFiles/Server.dir/server/CommandsManager.cpp.o" \
-"CMakeFiles/Server.dir/server/JoinCommand.cpp.o"
+"CMakeFiles/Server.dir/server/JoinCommand.cpp.o" \
+"CMakeFiles/Server.dir/server/GameInfo.cpp.o" \
+"CMakeFiles/Server.dir/server/ListCommand.cpp.o" \
+"CMakeFiles/Server.dir/server/StartCommand.cpp.o"
 
 # External object files for target Server
 Server_EXTERNAL_OBJECTS =
@@ -375,9 +450,12 @@ Server: CMakeFiles/Server.dir/server/main.cpp.o
 Server: CMakeFiles/Server.dir/server/GameCollection.cpp.o
 Server: CMakeFiles/Server.dir/server/CommandsManager.cpp.o
 Server: CMakeFiles/Server.dir/server/JoinCommand.cpp.o
+Server: CMakeFiles/Server.dir/server/GameInfo.cpp.o
+Server: CMakeFiles/Server.dir/server/ListCommand.cpp.o
+Server: CMakeFiles/Server.dir/server/StartCommand.cpp.o
 Server: CMakeFiles/Server.dir/build.make
 Server: CMakeFiles/Server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable Server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -397,6 +475,9 @@ CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/main.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/GameCollection.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/CommandsManager.cpp.o.requires
 CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/JoinCommand.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/GameInfo.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/ListCommand.cpp.o.requires
+CMakeFiles/Server.dir/requires: CMakeFiles/Server.dir/server/StartCommand.cpp.o.requires
 
 .PHONY : CMakeFiles/Server.dir/requires
 

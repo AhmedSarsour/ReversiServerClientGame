@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מ
 CMakeFiles/Server.dir/all:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/depend
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38 "Built target Server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 "Built target Server"
 .PHONY : CMakeFiles/Server.dir/all
 
 # Include target in all.
@@ -76,7 +76,7 @@ all: CMakeFiles/Server.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" 13
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" 16
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/Server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" 0
 .PHONY : CMakeFiles/Server.dir/rule
@@ -218,7 +218,7 @@ lib/googletest-release-1.8.0/googlemock/preinstall: lib/googletest-release-1.8.0
 lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/all:
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build.make lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=42,43,44,45 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=45,46,47,48 "Built target gmock_main"
 .PHONY : lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Include target in all.
@@ -255,7 +255,7 @@ clean: lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock_main.dir/clean
 lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/all:
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build.make lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=39,40,41 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=42,43,44 "Built target gmock"
 .PHONY : lib/googletest-release-1.8.0/googlemock/CMakeFiles/gmock.dir/all
 
 # Include target in all.
@@ -312,7 +312,7 @@ lib/googletest-release-1.8.0/googlemock/gtest/preinstall:
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/all: lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=48,49 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=51,52 "Built target gtest_main"
 .PHONY : lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/all
 
 # Include target in all.
@@ -349,7 +349,7 @@ clean: lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest_main.dir/c
 lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build.make lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=46,47 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=49,50 "Built target gtest"
 .PHONY : lib/googletest-release-1.8.0/googlemock/gtest/CMakeFiles/gtest.dir/all
 
 # Include target in all.

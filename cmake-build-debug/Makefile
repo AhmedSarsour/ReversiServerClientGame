@@ -613,6 +613,33 @@ server/GameCollection.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameCollection.cpp.s
 .PHONY : server/GameCollection.cpp.s
 
+server/GameInfo.o: server/GameInfo.cpp.o
+
+.PHONY : server/GameInfo.o
+
+# target to build an object file
+server/GameInfo.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameInfo.cpp.o
+.PHONY : server/GameInfo.cpp.o
+
+server/GameInfo.i: server/GameInfo.cpp.i
+
+.PHONY : server/GameInfo.i
+
+# target to preprocess a source file
+server/GameInfo.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameInfo.cpp.i
+.PHONY : server/GameInfo.cpp.i
+
+server/GameInfo.s: server/GameInfo.cpp.s
+
+.PHONY : server/GameInfo.s
+
+# target to generate assembly for a file
+server/GameInfo.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/GameInfo.cpp.s
+.PHONY : server/GameInfo.cpp.s
+
 server/JoinCommand.o: server/JoinCommand.cpp.o
 
 .PHONY : server/JoinCommand.o
@@ -640,6 +667,33 @@ server/JoinCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/JoinCommand.cpp.s
 .PHONY : server/JoinCommand.cpp.s
 
+server/ListCommand.o: server/ListCommand.cpp.o
+
+.PHONY : server/ListCommand.o
+
+# target to build an object file
+server/ListCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ListCommand.cpp.o
+.PHONY : server/ListCommand.cpp.o
+
+server/ListCommand.i: server/ListCommand.cpp.i
+
+.PHONY : server/ListCommand.i
+
+# target to preprocess a source file
+server/ListCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ListCommand.cpp.i
+.PHONY : server/ListCommand.cpp.i
+
+server/ListCommand.s: server/ListCommand.cpp.s
+
+.PHONY : server/ListCommand.s
+
+# target to generate assembly for a file
+server/ListCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ListCommand.cpp.s
+.PHONY : server/ListCommand.cpp.s
+
 server/Server.o: server/Server.cpp.o
 
 .PHONY : server/Server.o
@@ -666,6 +720,33 @@ server/Server.s: server/Server.cpp.s
 server/Server.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/Server.cpp.s
 .PHONY : server/Server.cpp.s
+
+server/StartCommand.o: server/StartCommand.cpp.o
+
+.PHONY : server/StartCommand.o
+
+# target to build an object file
+server/StartCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/StartCommand.cpp.o
+.PHONY : server/StartCommand.cpp.o
+
+server/StartCommand.i: server/StartCommand.cpp.i
+
+.PHONY : server/StartCommand.i
+
+# target to preprocess a source file
+server/StartCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/StartCommand.cpp.i
+.PHONY : server/StartCommand.cpp.i
+
+server/StartCommand.s: server/StartCommand.cpp.s
+
+.PHONY : server/StartCommand.s
+
+# target to generate assembly for a file
+server/StartCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/StartCommand.cpp.s
+.PHONY : server/StartCommand.cpp.s
 
 server/main.o: server/main.cpp.o
 
@@ -911,12 +992,21 @@ help:
 	@echo "... server/GameCollection.o"
 	@echo "... server/GameCollection.i"
 	@echo "... server/GameCollection.s"
+	@echo "... server/GameInfo.o"
+	@echo "... server/GameInfo.i"
+	@echo "... server/GameInfo.s"
 	@echo "... server/JoinCommand.o"
 	@echo "... server/JoinCommand.i"
 	@echo "... server/JoinCommand.s"
+	@echo "... server/ListCommand.o"
+	@echo "... server/ListCommand.i"
+	@echo "... server/ListCommand.s"
 	@echo "... server/Server.o"
 	@echo "... server/Server.i"
 	@echo "... server/Server.s"
+	@echo "... server/StartCommand.o"
+	@echo "... server/StartCommand.i"
+	@echo "... server/StartCommand.s"
 	@echo "... server/main.o"
 	@echo "... server/main.i"
 	@echo "... server/main.s"

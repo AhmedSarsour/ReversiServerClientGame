@@ -127,3 +127,21 @@ void Server::stop() {
     //close (serverSocket);
     cout << "Server stopped" << endl;
 }
+//Getting the server socket.
+int Server::getSocket() {
+    return this->serverSocket;
+}
+
+//Helping converting int to string.
+string Server::intToStringHelper(int x, string str) {
+    if (x == 0) {
+        return str;
+    }
+    char ch = (char) ((x % 10 + '0'));
+    // Put the char in the end because moves by the digits.
+    return intToStringHelper(x / 10, str) + ch;
+}
+
+string Server::intToString(int num) {
+    return intToStringHelper(num, "");
+}

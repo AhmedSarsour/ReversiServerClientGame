@@ -83,3 +83,14 @@ void GameCollection::closeAllGames() {
         games[i].closeThread();
     }
 }
+
+//Removing a game
+void GameCollection::removeGame(string &game) {
+    //Finding the index of the game we want to remove.
+    int index = searchGame(game);
+    //Found the game.
+    if (index != -1) {
+        // Erasing the game
+        this->games.erase(this->games.begin() + index);
+    }
+}

@@ -176,10 +176,7 @@ int main() {
 
                 try {
                     client.writeToSocket("aa");
-                 //   cout << "you picked : " << "aaa" << " command" << endl;
-               //     string x = client.readOperation();
                 } catch (const char *msg) {
-                    cout << "Failed to writing command to the server. " << endl;
                     cout << "Reason:" << msg << endl;
                     exit(0);
                 }

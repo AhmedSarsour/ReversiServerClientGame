@@ -13,23 +13,33 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
     }
     // Search if there is already game in this name.
     if (gameCollection->searchGame(gameName) != -1) {
-        //producing the threadArgs struct for clientHandle function thread.
-        ThreadArgs * threadArgs = new ThreadArgs;
-        threadArgs->clientSocket2 = clientSocket2;
-        threadArgs->gameCollection = gameCollection;
-        threadArgs->gameName = gameName;
-        cout << "The game name is " << threadArgs->gameName << endl;
-        pthread_t threadId;
-        int rc = pthread_create(&threadId, NULL, clientHandle,
-                                (void*) threadArgs);
-        //if rc == 0, means that the thread was not created.
-        if (rc) {
-            cout << "Error unable to create thread, " << rc << endl;
-            exit(-1);
-        }
+        if (gameCollection->getGame(gameName).getNumPlayers() < 2) {
+            //producing the threadArgs struct for clientHandle function thread.
+            ThreadArgs *threadArgs = new ThreadArgs;
+            threadArgs->clientSocket2 = clientSocket2;
+            threadArgs->gameCollection = gameCollection;
+            threadArgs->gameName = gameName;
+            cout << "The game name is " << threadArgs->gameName << endl;
+            pthread_t threadId;
+            int rc = pthread_create(&threadId, NULL, clientHandle,
+                                    (void *) threadArgs);
+            //if rc == 0, means that the thread was not created.
+            if (rc) {
+                cout << "Error unable to create thread, " << rc << endl;
+                exit(-1);
+            }
 
-        gameCollection->getGame(gameName).setThread(threadId);
-        return 1;
+            gameCollection->getGame(gameName).setThread(threadId);
+            return 1;
+        } else { //Case of current game.
+            // Send '-' (as a signal) to the player's socket telling him there is already game
+            char x = '-';
+            int n = write(clientSocket2, &x, sizeof(x));
+            if (n == -1) {
+                throw "Error writing arg1 to socket";
+            }
+            return 0;
+        }
     } else { // Send '+' (as a signal) to the player's socket telling him "no such game".
         char x = '+';
         int n = write(clientSocket2, &x, sizeof(x));

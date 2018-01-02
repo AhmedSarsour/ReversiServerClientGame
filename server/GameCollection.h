@@ -60,15 +60,7 @@ public:
      * @param game the game we want to remove.
      * Removes the game from the collection.
      */
-    void removeGame(string &game) {
-        //Finding the index of the game we want to remove.
-        int index = searchGame(game);
-        //Found the game.
-        if (index != -1) {
-            // Erasing the game
-            this->games.erase(this->games.begin() + index);
-        }
-    }
+    void removeGame(string &game);
 /**
  * Closing all the games in this current gameCollection.
  */
