@@ -124,7 +124,7 @@ void Server::stop() {
 
     cm.closeAllGames();
     pthread_cancel (serverThreadId);
-    //close (serverSocket);
+    close (serverSocket);
     cout << "Server stopped" << endl;
 }
 //Getting the server socket.
