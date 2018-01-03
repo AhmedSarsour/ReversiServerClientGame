@@ -3,6 +3,7 @@
  *      student 2: Eliad Arzuan.  206482622
  */
 #include "StartCommand.h"
+pthread_mutex_t startMutex;
 int StartCommand::execute(vector<string> args, GameCollection *gameCollection) {
     //  The name of the game we want to start.
     string gameName = args[0];
@@ -13,10 +14,19 @@ int StartCommand::execute(vector<string> args, GameCollection *gameCollection) {
     }
     // Search if there is already game in this name
     // There is no already game in this name
-    if (gameCollection->searchGame(gameName) == -1) {
+    pthread_mutex_lock(&startMutex);
+    int searchGame = gameCollection->searchGame(gameName);
+    pthread_mutex_unlock(&startMutex);
+    if (searchGame == -1) {
+        //Locking - gamecollection is collaborated.
+        pthread_mutex_lock(&startMutex);
         gameCollection->addGame(gameName);
+        pthread_mutex_unlock(&startMutex); //Unlocking
         cout << "Waiting for another opponent..." << endl;
+        // Mutex because gameCollection is collaberated memmory.
+        pthread_mutex_lock(&startMutex);
         gameCollection->joinGame(gameName, clientSocket1);
+        pthread_mutex_unlock(&startMutex);  // Unlocking the mutex
         /*
          * writing # to the socket means the client successfully started a game.
          */

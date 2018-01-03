@@ -3,9 +3,14 @@
  *      student 2: Eliad Arzuan.  206482622
  */
 #include "ListCommand.h"
+pthread_mutex_t listMutex;
+
 int ListCommand::execute(vector<string> args, GameCollection *gameCollection) {
     //  Getting the available games.
+    //Locking - game collection is collaberated memmory.
+    pthread_mutex_lock(&listMutex);
     vector < string > available = gameCollection->getAvailableGames();
+    pthread_mutex_unlock(&listMutex); //Unlocking
     int n;
     int clientSocket1 = atoi(args[1].c_str());
     //first read e than the game names.

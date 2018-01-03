@@ -6,7 +6,6 @@
 #include "Server.h"
 #define MAX_CONNECTED_CLIENTS 500
 using namespace std;
-
 static void* acceptClients(void * arguments);
 CommandsManager cm = CommandsManager();
 Server::Server(int port) :
@@ -51,24 +50,17 @@ void* acceptClients(void * arguments) {
     while (true) {
         long clientSocket1 = accept(serverSocket,
                                    (struct sockaddr *) &clientAddress, &clientAddressLen);
-        // The arguments to clientHandle;
-      //  Server::clientHandle((void*)clientSocket1);
-
+        //Creating threads for commends getting.
         pthread_t threadId;
         pthread_create(&threadId, NULL,&clientHandle, (void *)clientSocket1);
     }
 }
 void* clientHandle(void * argumnets) {
     long clientSocket1 = (long)argumnets;
-    int index = 0;
     while (true) {
-        index++;
         vector < string > args;
-        //     Server s = *threadArgs.server;
-        // while (true) {
         int size;
         int n;
-        //we read the size of the given string in the socket.
         n = read(clientSocket1, &size, sizeof(size));
         if (n == -1) {
             throw "Error reading a char from socket";

@@ -3,6 +3,8 @@
  */
 #include "JoinCommand.h"
 //  Excecutes the commend.
+pthread_mutex_t joinMutex;
+pthread_mutex_t gameMutex;
 int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
     // Getting the name of the game.
     string gameName = args[0];
@@ -12,12 +14,23 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
         throw "Error on accept";
     }
     // Search if there is already game in this name.
-    if (gameCollection->searchGame(gameName) != -1) {
-        if (gameCollection->getGame(gameName).getNumPlayers() < 2) {
+    pthread_mutex_lock(&joinMutex); //Locking because gameCollection is collaberated.
+    int searchGame = gameCollection->searchGame(gameName);
+    pthread_mutex_unlock(&joinMutex); //Unlocking
+    //Checking if game exists
+    if (searchGame != -1) {
+        pthread_mutex_lock(&joinMutex);//Locking because gameCollection is collaberated.
+        int numPlayers = gameCollection->getGame(gameName).getNumPlayers();
+        pthread_mutex_unlock(&joinMutex);//Unlocking
+        if (numPlayers < 2) {
             //producing the threadArgs struct for clientHandle function thread.
             ThreadArgs *threadArgs = new ThreadArgs;
             threadArgs->clientSocket2 = clientSocket2;
+            //Locking because gameCollection is collaberated.
+            pthread_mutex_lock(&joinMutex);
             threadArgs->gameCollection = gameCollection;
+            //Unlocking
+            pthread_mutex_unlock(&joinMutex);
             threadArgs->gameName = gameName;
             cout << "The game name is " << threadArgs->gameName << endl;
             pthread_t threadId;
@@ -27,8 +40,10 @@ int JoinCommand::execute(vector<string> args, GameCollection *gameCollection) {
                 cout << "Error unable to create thread, " << rc << endl;
                 exit(-1);
             }
-
+            //Locking because gameCollection is collaberated.
+            pthread_mutex_lock(&joinMutex);
             gameCollection->getGame(gameName).setThread(threadId);
+            pthread_mutex_unlock(&joinMutex);//Unlocking
             return 1;
         } else { //Case of current game.
             // Send '-' (as a signal) to the player's socket telling him there is already game
@@ -60,7 +75,10 @@ void* JoinCommand::clientHandle(void * arguments) {
     cout << "socket 1:" << clientSocket1 << endl;
     cout << "socket 2: " << clientSocket2 << endl;
     cout << "Player 2 connected" << endl;
+    pthread_mutex_lock(&joinMutex);
     gameCollection.joinGame(gameName, clientSocket2);
+    pthread_mutex_unlock(&joinMutex);
+
     //writing # to the client means he succesfully joined the game.
     char x = '#';
     int n = write(clientSocket2, &x, sizeof(x));

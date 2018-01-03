@@ -91,7 +91,7 @@ int main() {
         int append = 0;
         while (1) {
             cout << "please choose a command: ";
-            cout << "start <name>, list_games, join <name>, close <name>"
+            cout << "start <name>, list_games, join <name>"
                  << endl;
             string input = "";
             char firstChar[1];
