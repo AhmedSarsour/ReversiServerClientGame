@@ -1,4 +1,4 @@
-# Install script for directory: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/lib/googletest-release-1.8.0/googlemock
+# Install script for directory: /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/lib/googletest-release-1.8.0/googlemock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -33,20 +33,20 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock_main.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/libgmock_main.a")
 endif()
 
 if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/lib/googletest-release-1.8.0/googlemock/include/gmock")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include" TYPE DIRECTORY FILES "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/lib/googletest-release-1.8.0/googlemock/include/gmock")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/cmake_install.cmake")
+  include("/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/lib/googletest-release-1.8.0/googlemock/gtest/cmake_install.cmake")
 
 endif()
 

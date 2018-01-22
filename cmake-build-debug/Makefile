@@ -48,10 +48,10 @@ RM = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5"
+CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,9 +126,9 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -748,6 +748,33 @@ server/StartCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/StartCommand.cpp.s
 .PHONY : server/StartCommand.cpp.s
 
+server/ThreadPool.o: server/ThreadPool.cpp.o
+
+.PHONY : server/ThreadPool.o
+
+# target to build an object file
+server/ThreadPool.cpp.o:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ThreadPool.cpp.o
+.PHONY : server/ThreadPool.cpp.o
+
+server/ThreadPool.i: server/ThreadPool.cpp.i
+
+.PHONY : server/ThreadPool.i
+
+# target to preprocess a source file
+server/ThreadPool.cpp.i:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ThreadPool.cpp.i
+.PHONY : server/ThreadPool.cpp.i
+
+server/ThreadPool.s: server/ThreadPool.cpp.s
+
+.PHONY : server/ThreadPool.s
+
+# target to generate assembly for a file
+server/ThreadPool.cpp.s:
+	$(MAKE) -f CMakeFiles/Server.dir/build.make CMakeFiles/Server.dir/server/ThreadPool.cpp.s
+.PHONY : server/ThreadPool.cpp.s
+
 server/main.o: server/main.cpp.o
 
 .PHONY : server/main.o
@@ -1007,6 +1034,9 @@ help:
 	@echo "... server/StartCommand.o"
 	@echo "... server/StartCommand.i"
 	@echo "... server/StartCommand.s"
+	@echo "... server/ThreadPool.o"
+	@echo "... server/ThreadPool.i"
+	@echo "... server/ThreadPool.s"
 	@echo "... server/main.o"
 	@echo "... server/main.i"
 	@echo "... server/main.s"

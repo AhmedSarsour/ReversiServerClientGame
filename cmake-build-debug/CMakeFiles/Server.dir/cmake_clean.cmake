@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Server.dir/server/GameInfo.cpp.o"
   "CMakeFiles/Server.dir/server/ListCommand.cpp.o"
   "CMakeFiles/Server.dir/server/StartCommand.cpp.o"
+  "CMakeFiles/Server.dir/server/ThreadPool.cpp.o"
   "Server.pdb"
   "Server"
 )

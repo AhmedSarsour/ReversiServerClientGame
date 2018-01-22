@@ -43,10 +43,10 @@ RM = /home/eliad1998/clion-2017.2.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5"
+CMAKE_SOURCE_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug"
+CMAKE_BINARY_DIR = "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/ReversiTests.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/ReversiTests.dir/flags.make
 
 CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o: ../client/BasicRules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/BasicRules.cpp"
 
 CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.cpp" > CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/BasicRules.cpp" > CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/BasicRules.cpp" -o CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/BasicRules.cpp" -o CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/ReversiTests.dir/client/BasicRules.cpp.o.provides.build: CMakeFiles/R
 
 CMakeFiles/ReversiTests.dir/client/Board.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/Board.cpp.o: ../client/Board.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ReversiTests.dir/client/Board.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/Board.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/ReversiTests.dir/client/Board.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/Board.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/Board.cpp"
 
 CMakeFiles/ReversiTests.dir/client/Board.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/Board.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.cpp" > CMakeFiles/ReversiTests.dir/client/Board.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/Board.cpp" > CMakeFiles/ReversiTests.dir/client/Board.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/Board.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/Board.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Board.cpp" -o CMakeFiles/ReversiTests.dir/client/Board.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/Board.cpp" -o CMakeFiles/ReversiTests.dir/client/Board.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/Board.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/ReversiTests.dir/client/Board.cpp.o.provides.build: CMakeFiles/Revers
 
 CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o: ../client/ConsoleBoard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/ConsoleBoard.cpp"
 
 CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.cpp" > CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/ConsoleBoard.cpp" > CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/ConsoleBoard.cpp" -o CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/ConsoleBoard.cpp" -o CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/ReversiTests.dir/client/ConsoleBoard.cpp.o.provides.build: CMakeFiles
 
 CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o: ../client/HumanPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/HumanPlayer.cpp"
 
 CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.cpp" > CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/HumanPlayer.cpp" > CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/HumanPlayer.cpp" -o CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/HumanPlayer.cpp" -o CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/ReversiTests.dir/client/HumanPlayer.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/ReversiTests.dir/client/Point.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/Point.cpp.o: ../client/Point.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ReversiTests.dir/client/Point.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/Point.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/ReversiTests.dir/client/Point.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/Point.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/Point.cpp"
 
 CMakeFiles/ReversiTests.dir/client/Point.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/Point.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.cpp" > CMakeFiles/ReversiTests.dir/client/Point.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/Point.cpp" > CMakeFiles/ReversiTests.dir/client/Point.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/Point.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/Point.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/Point.cpp" -o CMakeFiles/ReversiTests.dir/client/Point.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/Point.cpp" -o CMakeFiles/ReversiTests.dir/client/Point.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/Point.cpp.o.requires:
 
@@ -179,16 +179,16 @@ CMakeFiles/ReversiTests.dir/client/Point.cpp.o.provides.build: CMakeFiles/Revers
 
 CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o: ../client/PointsList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/PointsList.cpp"
 
 CMakeFiles/ReversiTests.dir/client/PointsList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/PointsList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.cpp" > CMakeFiles/ReversiTests.dir/client/PointsList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/PointsList.cpp" > CMakeFiles/ReversiTests.dir/client/PointsList.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/PointsList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/PointsList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/PointsList.cpp" -o CMakeFiles/ReversiTests.dir/client/PointsList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/PointsList.cpp" -o CMakeFiles/ReversiTests.dir/client/PointsList.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o.requires:
 
@@ -203,16 +203,16 @@ CMakeFiles/ReversiTests.dir/client/PointsList.cpp.o.provides.build: CMakeFiles/R
 
 CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o: ../client/AiPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/AiPlayer.cpp"
 
 CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.cpp" > CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/AiPlayer.cpp" > CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.i
 
 CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/client/AiPlayer.cpp" -o CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/client/AiPlayer.cpp" -o CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.s
 
 CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o.requires:
 
@@ -227,16 +227,16 @@ CMakeFiles/ReversiTests.dir/client/AiPlayer.cpp.o.provides.build: CMakeFiles/Rev
 
 CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o: ../test/TestBoard.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestBoard.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestBoard.cpp"
 
 CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestBoard.cpp" > CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestBoard.cpp" > CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.i
 
 CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestBoard.cpp" -o CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestBoard.cpp" -o CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.s
 
 CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o.requires:
 
@@ -251,16 +251,16 @@ CMakeFiles/ReversiTests.dir/test/TestBoard.cpp.o.provides.build: CMakeFiles/Reve
 
 CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o: ../test/TestPoint.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPoint.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPoint.cpp"
 
 CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPoint.cpp" > CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPoint.cpp" > CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.i
 
 CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPoint.cpp" -o CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPoint.cpp" -o CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.s
 
 CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o.requires:
 
@@ -275,16 +275,16 @@ CMakeFiles/ReversiTests.dir/test/TestPoint.cpp.o.provides.build: CMakeFiles/Reve
 
 CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o: ../test/TestPointList.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPointList.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPointList.cpp"
 
 CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPointList.cpp" > CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPointList.cpp" > CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.i
 
 CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPointList.cpp" -o CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPointList.cpp" -o CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.s
 
 CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o.requires:
 
@@ -299,16 +299,16 @@ CMakeFiles/ReversiTests.dir/test/TestPointList.cpp.o.provides.build: CMakeFiles/
 
 CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o: ../test/TestPlayer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPlayer.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPlayer.cpp"
 
 CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPlayer.cpp" > CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPlayer.cpp" > CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.i
 
 CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestPlayer.cpp" -o CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestPlayer.cpp" -o CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.s
 
 CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o.requires:
 
@@ -323,16 +323,16 @@ CMakeFiles/ReversiTests.dir/test/TestPlayer.cpp.o.provides.build: CMakeFiles/Rev
 
 CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o: ../test/TestRules.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestRules.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestRules.cpp"
 
 CMakeFiles/ReversiTests.dir/test/TestRules.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/test/TestRules.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestRules.cpp" > CMakeFiles/ReversiTests.dir/test/TestRules.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestRules.cpp" > CMakeFiles/ReversiTests.dir/test/TestRules.cpp.i
 
 CMakeFiles/ReversiTests.dir/test/TestRules.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/test/TestRules.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/TestRules.cpp" -o CMakeFiles/ReversiTests.dir/test/TestRules.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/TestRules.cpp" -o CMakeFiles/ReversiTests.dir/test/TestRules.cpp.s
 
 CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o.requires:
 
@@ -347,16 +347,16 @@ CMakeFiles/ReversiTests.dir/test/TestRules.cpp.o.provides.build: CMakeFiles/Reve
 
 CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o: CMakeFiles/ReversiTests.dir/flags.make
 CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o: ../test/gtest_main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/gtest_main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o -c "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/gtest_main.cpp"
 
 CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/gtest_main.cpp" > CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/gtest_main.cpp" > CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.i
 
 CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/test/gtest_main.cpp" -o CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/test/gtest_main.cpp" -o CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.s
 
 CMakeFiles/ReversiTests.dir/test/gtest_main.cpp.o.requires:
 
@@ -406,7 +406,7 @@ ReversiTests: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
 ReversiTests: lib/googletest-release-1.8.0/googlemock/gtest/libgtest_main.a
 ReversiTests: lib/googletest-release-1.8.0/googlemock/gtest/libgtest.a
 ReversiTests: CMakeFiles/ReversiTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ReversiTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX executable ReversiTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ReversiTests.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -435,6 +435,6 @@ CMakeFiles/ReversiTests.dir/clean:
 .PHONY : CMakeFiles/ReversiTests.dir/clean
 
 CMakeFiles/ReversiTests.dir/depend:
-	cd "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 5/ex5/cmake-build-debug/CMakeFiles/ReversiTests.dir/DependInfo.cmake" --color=$(COLOR)
+	cd "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug" "/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/cmake-build-debug/CMakeFiles/ReversiTests.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/ReversiTests.dir/depend
 
