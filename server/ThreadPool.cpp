@@ -8,6 +8,7 @@ ThreadPool::ThreadPool(int threadsNum) :
         stopped(false) {
     threads = new pthread_t[threadsNum];
     for (int i = 0; i < threadsNum; i++) {
+        //Creates our threades.
         pthread_create(threads + i, NULL, execute,
                        this);
     }
@@ -22,21 +23,27 @@ void ThreadPool::addTask(Task *task) {
 }
 void ThreadPool::executeTasks() {
     while (!stopped) {
+        //I do the locks in the commands.
         pthread_mutex_lock(&lock);
         if (!tasksQueue.empty()) {
             Task* task = tasksQueue.front();
             tasksQueue.pop();
-            pthread_mutex_unlock(&lock);
+            //I do the locks in the commands.
+             pthread_mutex_unlock(&lock);
             task->execute();
+           // delete task;
         }
         else {
+            //I do the locks in the commands.
+
             pthread_mutex_unlock(&lock);
-            sleep(1);
+            usleep(1);
         }
     }
 }
 void ThreadPool::terminate() {
     pthread_mutex_destroy(&lock);
+
     stopped = true;
 }
 ThreadPool::~ThreadPool() {

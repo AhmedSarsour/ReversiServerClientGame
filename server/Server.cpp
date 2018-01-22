@@ -6,12 +6,18 @@
 #include "Server.h"
 #define MAX_CONNECTED_CLIENTS 500
 using namespace std;
+#define THREADS_NUM 5
 static void* acceptClients(void * arguments);
 CommandsManager cm = CommandsManager();
 Server::Server(int port) :
-        port(port), serverSocket(0) {
+        port(port), serverSocket(0), threadPool(new ThreadPool(THREADS_NUM)) {
     cout << "server" << endl;
 }
+
+typedef struct {
+    long socket;
+    Server * server;
+} ExArgs;
 
 static void* clientHandle(void * arguments);
 //Starts the server
@@ -38,21 +44,31 @@ void Server::start() {
     }
     // Start listening to incoming connections
     listen(serverSocket, MAX_CONNECTED_CLIENTS);
-    pthread_create(&serverThreadId, NULL, acceptClients, (void*) serverSocket);
+    ExArgs * exArgs = new ExArgs;
+    exArgs->socket = serverSocket;
+    exArgs->server = this;
+    pthread_create(&serverThreadId, NULL, acceptClients, (void*) exArgs);
 
 }
 
 void* acceptClients(void * arguments) {
-    long serverSocket = (long) arguments;
+    ExArgs* exArgs = (ExArgs*)arguments;
+    long serverSocket = exArgs->socket;
+    Server * server = exArgs->server;
     // Define the lib socket's structures
     struct sockaddr_in clientAddress; //Fixing error on accept.
     socklen_t clientAddressLen = sizeof((struct sockaddr*) &clientAddress);
     while (true) {
         long clientSocket1 = accept(serverSocket,
                                    (struct sockaddr *) &clientAddress, &clientAddressLen);
+
+        exArgs->socket = clientSocket1;
         //Creating threads for commends getting.
-        pthread_t threadId;
-        pthread_create(&threadId, NULL,&clientHandle, (void *)clientSocket1);
+        Task * newTask =new Task(&clientHandle,  (void *)clientSocket1);
+        server->getThreadPool()->addTask(newTask);
+
+//        pthread_t threadId;
+//        pthread_create(&threadId, NULL,&clientHandle, (void *)clientSocket1);
     }
 }
 void* clientHandle(void * argumnets) {
@@ -122,6 +138,7 @@ void Server::stop() {
     cm.closeAllGames();
     pthread_cancel (serverThreadId);
     close (serverSocket);
+//    delete this->getThreadPool();
     cout << "Server stopped" << endl;
 }
 //Getting the server socket.

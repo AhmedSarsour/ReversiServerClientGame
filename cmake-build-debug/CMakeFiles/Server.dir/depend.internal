@@ -57,6 +57,8 @@ CMakeFiles/Server.dir/server/CommandsManager.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ListCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Server.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/StartCommand.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
 CMakeFiles/Server.dir/server/GameCollection.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/GameCollection.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/GameCollection.h
@@ -74,6 +76,8 @@ CMakeFiles/Server.dir/server/JoinCommand.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ListCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Server.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/StartCommand.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
 CMakeFiles/Server.dir/server/ListCommand.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/GameCollection.h
@@ -90,12 +94,18 @@ CMakeFiles/Server.dir/server/Server.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Server.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Server.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/StartCommand.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
 CMakeFiles/Server.dir/server/StartCommand.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/GameCollection.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/GameInfo.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/StartCommand.cpp
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/StartCommand.h
+CMakeFiles/Server.dir/server/ThreadPool.cpp.o
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.cpp
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
 CMakeFiles/Server.dir/server/main.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Command.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/CommandsManager.h
@@ -105,4 +115,6 @@ CMakeFiles/Server.dir/server/main.cpp.o
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ListCommand.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Server.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/StartCommand.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+ /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
  /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/main.cpp

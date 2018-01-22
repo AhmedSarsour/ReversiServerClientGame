@@ -14,9 +14,11 @@
 #include <cstdlib>
 #include "GameCollection.h"
 #include "CommandsManager.h"
+#include "ThreadPool.h"
 #include <pthread.h>
 class Server {
 public:
+
     /**
      * The constructor of our class
      * @param port
@@ -60,11 +62,15 @@ public:
      * @return the int converted to string.
      */
     static string intToString(int num);
+
+    ThreadPool * getThreadPool(){
+        return this->threadPool;
+    }
 private:
     int port; // The port we want to login the server.
     long serverSocket; // the socket's file descriptor
     pthread_t serverThreadId; //The thread of clients handle in the game.
-
+    ThreadPool* threadPool; //Our thread pool.
 
 
 };

@@ -56,6 +56,8 @@ CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/JoinCommand.h
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/Server.h
 CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/StartCommand.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/Task.h
+CMakeFiles/Server.dir/server/CommandsManager.cpp.o: ../server/ThreadPool.h
 
 CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameCollection.cpp
 CMakeFiles/Server.dir/server/GameCollection.cpp.o: ../server/GameCollection.h
@@ -73,6 +75,8 @@ CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/JoinCommand.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Server.h
 CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/StartCommand.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/Task.h
+CMakeFiles/Server.dir/server/JoinCommand.cpp.o: ../server/ThreadPool.h
 
 CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/ListCommand.cpp.o: ../server/GameCollection.h
@@ -89,12 +93,18 @@ CMakeFiles/Server.dir/server/Server.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.cpp
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Server.h
 CMakeFiles/Server.dir/server/Server.cpp.o: ../server/StartCommand.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/Task.h
+CMakeFiles/Server.dir/server/Server.cpp.o: ../server/ThreadPool.h
 
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/GameCollection.h
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/GameInfo.h
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.cpp
 CMakeFiles/Server.dir/server/StartCommand.cpp.o: ../server/StartCommand.h
+
+CMakeFiles/Server.dir/server/ThreadPool.cpp.o: ../server/Task.h
+CMakeFiles/Server.dir/server/ThreadPool.cpp.o: ../server/ThreadPool.cpp
+CMakeFiles/Server.dir/server/ThreadPool.cpp.o: ../server/ThreadPool.h
 
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/Command.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/CommandsManager.h
@@ -104,5 +114,7 @@ CMakeFiles/Server.dir/server/main.cpp.o: ../server/JoinCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/ListCommand.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/Server.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/StartCommand.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/Task.h
+CMakeFiles/Server.dir/server/main.cpp.o: ../server/ThreadPool.h
 CMakeFiles/Server.dir/server/main.cpp.o: ../server/main.cpp
 

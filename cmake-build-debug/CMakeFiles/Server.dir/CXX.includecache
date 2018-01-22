@@ -257,6 +257,8 @@ GameCollection.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/GameCollection.h
 CommandsManager.h
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/CommandsManager.h
+ThreadPool.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
 pthread.h
 -
 
@@ -270,6 +272,22 @@ Command.h
 iostream
 -
 cstdlib
+-
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.cpp
+ThreadPool.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
+unistd.h
+-
+
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/ThreadPool.h
+Task.h
+/home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/Task.h
+queue
+-
+pthread.h
 -
 
 /home/eliad1998/Documents/אוניברסיטה/תכנות מתקדם 1/תרגילי בית/תרגיל 7 תכנות מתקדם/ex7/server/main.cpp
