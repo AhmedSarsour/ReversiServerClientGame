@@ -1,7 +1,10 @@
 # ReversiServerClientGame
 Implemening Reversi game using C++. Advanced Programming 1 Course.
+
 Adding AI player to the Game.
+
 Implementing Server and client sides to the game.
+
 Multithreading and threadpool concurrency pattern is applied to allow multiple clients to play at the same time.
 
 NOTE:
